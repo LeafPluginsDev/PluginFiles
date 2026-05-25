@@ -1,0 +1,171 @@
+# Menu de administracao de um terreno especifico.
+# Os botoes com execute vazio sao tratados pelo plugin internamente.
+main-menu:
+  title: '&8Gerenciar terreno'
+  slots: 45
+  # Para mover botoes, altere slot. Para trocar visual, altere item/name/lore.
+  items:
+    frame-0:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 0
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-1:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 1
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-2:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 2
+      closeInventory: false
+      lore: []
+      execute: []
+    info:
+      name: '&a&l%terrain_name%'
+      item: 'FILLED_MAP'
+      slot: 4
+      closeInventory: false
+      lore:
+        - '&8Painel do terreno'
+        - ''
+        - '&7Dono: &f%terrain_owner%'
+        - '&7Área: &f%terrain_area% blocos'
+        - ''
+        - '&7Use os atalhos abaixo para'
+        - '&7administrar proteção e acesso.'
+      execute: []
+    frame-6:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 6
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-7:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 7
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-8:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 8
+      closeInventory: false
+      lore: []
+      execute: []
+    teleport:
+      name: '&aTeleportar'
+      item: 'ENDER_PEARL'
+      slot: 19
+      closeInventory: true
+      lore:
+        - '&7Ir para a home do terreno.'
+      execute: []
+    sethome:
+      name: '&eDefinir home'
+      item: 'COMPASS'
+      slot: 20
+      closeInventory: true
+      lore:
+        - '&7Salva sua posição atual'
+        - '&7como ponto de teleporte.'
+      execute: []
+    flags:
+      name: '&bFlags'
+      item: 'REDSTONE_TORCH'
+      slot: 21
+      closeInventory: false
+      lore:
+        - '&7Controle PvP, portas, mobs'
+        - '&7e permissões especiais.'
+        - ''
+        - '&eClique para abrir.'
+      execute: []
+    trusted:
+      name: '&dConfiados'
+      item: 'PLAYER_HEAD'
+      slot: 23
+      closeInventory: false
+      lore:
+        - '&7Veja e remova jogadores'
+        - '&7com acesso ao terreno.'
+        - ''
+        - '&eClique para abrir.'
+      execute: []
+    banned:
+      name: '&cBanidos'
+      item: 'BARRIER'
+      slot: 24
+      closeInventory: false
+      lore:
+        - '&7Gerencie jogadores bloqueados'
+        - '&7de entrar neste terreno.'
+        - ''
+        - '&eClique para abrir.'
+      execute: []
+    expand:
+      name: '&aExpandir'
+      item: 'PISTON'
+      slot: 29
+      closeInventory: true
+      lore:
+        - '&7Informe pelo chat quantos blocos'
+        - '&7serão adicionados aos lados.'
+        - ''
+        - '&eExige confirmacao no chat.'
+      execute: []
+    sell:
+      name: '&6Vender'
+      item: 'GOLD_INGOT'
+      slot: 30
+      closeInventory: true
+      lore:
+        - '&7Informe pelo chat o preço'
+        - '&7para anunciar no mercado.'
+        - ''
+        - '&eExige confirmacao no chat.'
+      execute: []
+    entry-message:
+      name: '&eMensagem de entrada'
+      item: 'OAK_SIGN'
+      slot: 31
+      closeInventory: true
+      lore:
+        - '&7Informe pelo chat a mensagem'
+        - '&7para quem entrar no terreno.'
+      execute: []
+    rename:
+      name: '&fRenomear'
+      item: 'NAME_TAG'
+      slot: 32
+      closeInventory: true
+      lore:
+        - '&7Informe pelo chat o novo'
+        - '&7nome de exibição.'
+      execute: []
+    delete:
+      name: '&cDeletar'
+      item: 'TNT'
+      slot: 33
+      closeInventory: true
+      lore:
+        - '&cAção sensível.'
+        - '&7Você ainda precisará confirmar'
+        - '&7pelo comando de segurança.'
+      execute: []
+    back:
+      name: '&7Voltar'
+      item: 'ARROW'
+      slot: 40
+      closeInventory: false
+      lore:
+        - '&7Retornar aos seus terrenos.'
+      execute: []

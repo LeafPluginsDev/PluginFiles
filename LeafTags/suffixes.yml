@@ -1,0 +1,44 @@
+leaf:
+  name: 'Leaf'
+  icon: 'head:97bb4da93df2de92ba639ba33437c14911c29be2ea57fbf305b80effaecc4bfc'
+  preset: '&5Leaf'
+  suffix: ' &8[&5Leaf&8]'
+  permission: ''
+
+heart:
+  name: 'Coração'
+  icon: 'head:1d0f2925df37fbd5f80829cafb3e9e9ac00f75a991b2131c26e0b2198e300018'
+  preset: '&dCoração'
+  suffix: ' &d&l❤'
+  permission: ''
+
+medal:
+  name: 'Medalha'
+  icon: 'head:33178d01aaf11e5ccfa38b190d7085ff37dd048d09b664f02570776f9b981466'
+  preset: '&eMedalha'
+  suffix: ' %leafmedals_medals%'
+  permission: ''
+
+clan:
+  name: 'Meu clan'
+  icon: 'head:a8832c1466c841cc79d5f10295d464279967975a2451c7a533c7996897408bea'
+  preset: '&bMeu clan'
+  suffix: '<when var="%simpleclans_clan_color_tag%" equals="!empty"> &8[%simpleclans_clan_color_tag%&8]</when>'
+  permission: ''
+
+# Não remova
+none:
+  # Nome do suffix
+  name: 'Nenhum'
+
+  # Icone
+  icon: 'name_tag'
+
+  # Preset do suffix
+  preset: '&fNenhum'
+
+  # Como será exibido
+  suffix: ''
+
+  # Permissão do suffix
+  permission: ''

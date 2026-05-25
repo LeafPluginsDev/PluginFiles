@@ -1,0 +1,155 @@
+# Agradecemos por escolher o LeafX1 ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+placeholders:
+  in-combat:
+    true: "&aEm combate"
+    false: "&cFora de combate"
+
+# Configurações do plugin.
+settings:
+  # Acao ao desconectar durante X1 com itens proprios.
+  # DROP = derruba os itens no chao, CLEAR = apaga os itens.
+  quit:
+    own-items-action: DROP
+
+  # Tempo máximo para o duelo, caso ultrapasse terminará empatado. (em minutos)
+  max-time-duel: 5
+
+  # Tempo restante para a coleta de itens após a vitória
+  time-to-finish: 15
+
+  # Configurações aplicadas aos jogadores ao iniciar o combate.
+  combat:
+    # true = define o máximo de vida e a escala visual do jogador para 20 (10 corações) durante o X1.
+    # false = não altera máximo/escala de corações; apenas cura até o máximo atual do jogador.
+    normalize-max-health: true
+
+  # Salvar e restaurar a experiencia ao usar X1 com itens setados.
+  save-experience: true
+
+  # Permitir X1 somente com os próprios itens
+  only-own-items: false
+
+  # Sistema de itens setados por arena.
+  # Desative para forçar todos os duelos a usarem o inventário próprio dos jogadores.
+  set-items:
+    enabled: true
+    # Caso esteja true, duelos com kit da arena só iniciam se ambos estiverem com inventário vazio.
+    # Duelos com itens próprios nunca limpam o inventário para iniciar.
+    require-empty-inventory: false
+
+  # Busca automática de X1 para uso em NPCs, menus ou /x1 buscar.
+  search:
+    enabled: true
+    own-items: false
+    announce: true
+
+  # Camarote/espectador simulado.
+  spectator:
+    enabled: true
+
+  # Aposta
+  bet:
+    # Habilitar sistema de apostas.
+    enabled: true
+
+    # Economia utilizada para apostas.
+    economy: 'Vault'
+    economy-selector: true
+
+    # Economias disponíveis no seletor do menu.
+    economies:
+      - 'Vault'
+      - 'NextCash'
+
+    # Nome amigável das economias no menu.
+    economy-display:
+      Vault: 'Saldo'
+      NextCash: 'Cash'
+
+    # Valor de aumento/diminuição de aposta.
+    raise-bet: 1000
+
+    # Valor mínimo de aposta.
+    bet-min: 0
+
+    # Valor máximo de aposta.
+    bet-max: 100000
+
+    # Valor de aposta padrão.
+    bet-default: 0
+
+    # Porcentagem de taxa removida do premio final do vencedor.
+    tax-percentage: 0.0
+
+  # Valor de aumento/diminuição de elo ao vencer duelo (não é o valor fixo, pois conta com cálculos matemáticos baseado no KDR).
+  raise-elo: 10
+
+  # Valor de elo padrão.
+  default-elo: 1000
+
+  # Comando para executar quando resetar o ranking mensal nos top jogadores de elo.
+  ranking-monthly-command:
+    - '' #1
+    - '' #2
+    - '' #3
+
+  # Comando para executar quando resetar o ranking mensal nos top jogadores de elo.
+  ranking-weekly-command:
+    - '' #1
+    - '' #2
+    - '' #3
+
+  # Tempo de expiração dos convites de duelo (em minutos).
+  invite-expiration: 2
+
+  # Anúncio de duelos para todos os jogadores.
+  announce-duel: true
+
+myth:
+  enabled: true
+  denies-to-lose: 3
+  # challenger = transfere o mito para quem desafiou; none = executa /mito remover.
+  transfer-to: challenger
+
+# Comandos permitidos em combate.
+bypass-commands:
+  - '/gamemode'
+  - '/gm'
+  - '/fly'
+  - '/voar'
+  - '/tp'
+  - '/teleport'
+  - '/v'
+  - '/vanish'
+  - '/god'
+  - '/x1'

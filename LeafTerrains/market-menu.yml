@@ -1,0 +1,101 @@
+# Menu de compra de terrenos anunciados por jogadores.
+# O preco e os dados do terreno vem do armazenamento, nao deste arquivo.
+main-menu:
+  title: '&8Mercado de terrenos'
+  slots: 54
+  # items sao botoes fixos; list e preenchida automaticamente com ofertas.
+  items:
+    frame-0:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 0
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-1:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 1
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-2:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 2
+      closeInventory: false
+      lore: []
+      execute: []
+    info:
+      name: '&6&lMercado de terrenos'
+      item: 'GOLD_INGOT'
+      slot: 4
+      closeInventory: false
+      lore:
+        - '&8Terrenos à venda'
+        - ''
+        - '&7Compare área, dono e preço'
+        - '&7antes de confirmar a compra.'
+        - ''
+        - '&7Página: &f%market_page%&7/&f%market_maxpages%'
+      execute: []
+    frame-6:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 6
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-7:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 7
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-8:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 8
+      closeInventory: false
+      lore: []
+      execute: []
+    empty:
+      name: '&7Nenhum terreno à venda'
+      item: 'CHEST'
+      slot: 22
+      closeInventory: false
+      lore:
+        - '&7Quando jogadores anunciarem'
+        - '&7terrenos, eles aparecerão aqui.'
+      execute: []
+    previous-page:
+      name: '&ePágina anterior'
+      item: 'ARROW'
+      slot: 45
+      closeInventory: false
+      lore:
+        - '&7Voltar na listagem.'
+      execute: []
+    next-page:
+      name: '&ePróxima página'
+      item: 'ARROW'
+      slot: 53
+      closeInventory: false
+      lore:
+        - '&7Avançar na listagem.'
+      execute: []
+  # Slots usados pelas ofertas do mercado.
+  list:
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+    format:
+      name: '&6&l%terrain%'
+      item: 'FILLED_MAP'
+      lore:
+        - '&8Oferta do mercado'
+        - ''
+        - '&7Dono: &f%owner%'
+        - '&7Área: &f%area% blocos'
+        - '&7Preço: &a%price%'
+        - ''
+        - '&eClique para comprar.'

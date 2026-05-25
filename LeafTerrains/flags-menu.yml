@@ -1,0 +1,90 @@
+# Menu para ligar ou desligar flags do terreno.
+# enabled-format e disabled-format controlam a aparencia de cada estado.
+main-menu:
+  title: '&8Flags do terreno'
+  slots: 54
+  items:
+    frame-0:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 0
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-1:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 1
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-2:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 2
+      closeInventory: false
+      lore: []
+      execute: []
+    info:
+      name: '&b&lFlags do terreno'
+      item: 'REDSTONE_TORCH'
+      slot: 4
+      closeInventory: false
+      lore:
+        - '&8Permissões e regras'
+        - ''
+        - '&7Itens verdes estão ativos.'
+        - '&7Itens cinza estão desativados.'
+        - ''
+        - '&eClique em uma flag para alternar.'
+      execute: []
+    frame-6:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 6
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-7:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 7
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-8:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 8
+      closeInventory: false
+      lore: []
+      execute: []
+    back:
+      name: '&7Voltar'
+      item: 'ARROW'
+      slot: 49
+      closeInventory: false
+      lore:
+        - '&7Retornar ao painel do terreno.'
+      execute: []
+  # Slots onde as flags serao exibidas.
+  list:
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+    enabled-format:
+      name: '&a&l%flag%'
+      item: 'LIME_DYE'
+      lore:
+        - '&8Flag ativa'
+        - ''
+        - '&7Status: &a%status%'
+        - ''
+        - '&eClique para desativar.'
+    disabled-format:
+      name: '&7&l%flag%'
+      item: 'GRAY_DYE'
+      lore:
+        - '&8Flag inativa'
+        - ''
+        - '&7Status: &c%status%'
+        - ''
+        - '&eClique para ativar.'

@@ -1,0 +1,9 @@
+# É necessário reiniciar o servidor após a alteração
+
+x1:
+  name: "x1"
+  use-command: true
+  permission: ''
+  aliases:
+    - desafiar
+    - chamarx1

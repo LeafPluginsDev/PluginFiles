@@ -1,0 +1,88 @@
+# Menu de jogadores banidos do terreno.
+# Clique em um jogador listado para remover o banimento.
+main-menu:
+  title: '&8Banidos'
+  slots: 54
+  items:
+    frame-0:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 0
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-1:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 1
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-2:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 2
+      closeInventory: false
+      lore: []
+      execute: []
+    info:
+      name: '&c&lJogadores banidos'
+      item: 'BARRIER'
+      slot: 4
+      closeInventory: false
+      lore:
+        - '&8Acesso bloqueado'
+        - ''
+        - '&7Clique em um jogador para'
+        - '&7remover o banimento.'
+        - ''
+        - '&7Banir: &f/terreno banir <jogador>'
+      execute: []
+    frame-6:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 6
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-7:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 7
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-8:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 8
+      closeInventory: false
+      lore: []
+      execute: []
+    empty:
+      name: '&aNenhum jogador banido'
+      item: 'LIME_DYE'
+      slot: 22
+      closeInventory: false
+      lore:
+        - '&7Este terreno não possui'
+        - '&7jogadores bloqueados.'
+      execute: []
+    back:
+      name: '&7Voltar'
+      item: 'ARROW'
+      slot: 49
+      closeInventory: false
+      lore:
+        - '&7Retornar ao painel do terreno.'
+      execute: []
+  # Slots onde os jogadores banidos aparecem.
+  list:
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+    format:
+      name: '&c&l%player%'
+      item: 'head:%player%'
+      lore:
+        - '&8Jogador bloqueado'
+        - ''
+        - '&eClique para desbanir.'

@@ -1,0 +1,26 @@
+# E necessario reiniciar o servidor apos alterar comandos.
+# name: comando principal registrado.
+# use-command: false desativa o registro deste comando pelo plugin.
+# permission: deixe vazio para liberar para todos.
+# aliases: atalhos aceitos no chat.
+# usage: texto curto mostrado em ajudas e mensagens de uso.
+
+terreno:
+  name: "terreno"
+  use-command: true
+  permission: ''
+  aliases:
+    - terrain
+    - claim
+    - tpclaim
+  usage: "para gerenciar terrenos."
+
+terrenos:
+  name: "terrenos"
+  use-command: true
+  permission: ''
+  aliases:
+    - terrains
+    - claims
+    - lands
+  usage: "para abrir o menu de terrenos."

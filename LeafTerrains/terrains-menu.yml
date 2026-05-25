@@ -1,0 +1,133 @@
+# Menu aberto em /terrenos e pela lista de terrenos do jogador.
+# slots deve ser multiplo de 9, como um inventario do Minecraft.
+main-menu:
+  title: '&8Terrenos'
+  slots: 54
+  # items sao botoes fixos do menu. Cada chave e apenas um identificador interno.
+  items:
+    frame-top-1:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 0
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-2:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 1
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-3:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 2
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-4:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 3
+      closeInventory: false
+      lore: []
+      execute: []
+    info:
+      name: '&a&lSeus terrenos'
+      item: 'GRASS_BLOCK'
+      slot: 4
+      closeInventory: false
+      lore:
+        - '&8Resumo da conta'
+        - ''
+        - '&7Terrenos: &f%terrains_count%'
+        - '&7Blocos livres: &a%terrains_available_blocks%'
+        - '&7Página: &f%terrains_page%&7/&f%terrains_maxpages%'
+      execute: []
+    frame-top-6:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 5
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-7:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 6
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-8:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 7
+      closeInventory: false
+      lore: []
+      execute: []
+    frame-top-9:
+      name: ' '
+      item: 'BLACK_STAINED_GLASS_PANE'
+      slot: 8
+      closeInventory: false
+      lore: []
+      execute: []
+    empty:
+      name: '&cNenhum terreno encontrado'
+      item: 'BARRIER'
+      slot: 22
+      closeInventory: false
+      lore:
+        - '&7Selecione uma área com a ferramenta'
+        - '&7e crie seu primeiro terreno.'
+        - ''
+        - '&eClique no item de criação abaixo.'
+      execute: []
+    previous-page:
+      name: '&ePágina anterior'
+      item: 'ARROW'
+      slot: 45
+      closeInventory: false
+      lore:
+        - '&7Voltar para a página &f%terrains_page%&7.'
+      execute: []
+    create:
+      name: '&a&lCriar terreno'
+      item: 'GOLDEN_HOE'
+      slot: 49
+      closeInventory: true
+      lore:
+        - '&8Assistente de seleção'
+        - ''
+        - '&7Receba a ferramenta e marque'
+        - '&7os dois cantos da sua área.'
+        - ''
+        - '&eClique para pegar a ferramenta.'
+      execute:
+        - '/terreno selecao'
+    next-page:
+      name: '&ePróxima página'
+      item: 'ARROW'
+      slot: 53
+      closeInventory: false
+      lore:
+        - '&7Avançar na lista de terrenos.'
+      execute: []
+  # list define onde os terrenos do jogador aparecem quando houver resultados.
+  list:
+    # Slots usados para paginar os terrenos. Evite repetir slots ocupados por items fixos.
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+    # Formato aplicado para cada terreno listado.
+    format:
+      name: '&a&l%terrain%'
+      item: 'MAP'
+      closeInventory: false
+      lore:
+        - '&8Terreno protegido'
+        - ''
+        - '&7Dono: &f%owner%'
+        - '&7Área: &f%area% blocos'
+        - '&7Confiados: &f%members%'
+        - ''
+        - '&eClique para gerenciar.'

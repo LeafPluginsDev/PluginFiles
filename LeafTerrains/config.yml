@@ -1,0 +1,213 @@
+# Agradecemos por escolher o LeafTerrains ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ative apenas enquanto estiver investigando algum problema.
+debug-mode: false
+# Use em redes com Bungee/Velocity quando o plugin precisar considerar servidores conectados.
+bungee-mode: false
+
+# Regras por mundo.
+# Mundos sem entrada propria usam o default-mode.
+worlds:
+  # SURVIVAL: terrenos existem, mas o mundo continua livre fora deles.
+  # DISABLED: nao permite criar terrenos/protecao no mundo.
+  # SURVIVAL_REQUIRING_CLAIMS: fora de terrenos bloqueia construir, quebrar e interagir.
+  default-mode: SURVIVAL
+  world:
+    mode: SURVIVAL
+  world_nether:
+    mode: DISABLED
+  world_the_end:
+    mode: DISABLED
+
+# Tamanho e distancia das protecoes.
+general:
+  # true exige leafterrains.create para criar terrenos e receber a ferramenta de selecao.
+  require-create-permission: true
+  # Menor e maior lado permitido ao criar terrenos.
+  terrain-min-size: 8
+  terrain-max-size: 64
+  # Distancia minima entre dois terrenos.
+  terrain-min-distance: 5
+  # Distancia em volta de terrenos onde a protecao extra pode bloquear acoes.
+  block-near-terrain-distance: 0
+
+# Limites por jogador.
+# O primeiro grupo cuja permissao o jogador tiver sera aplicado.
+limits:
+  default:
+    max-terrains: 1
+    # Blocos iniciais disponiveis para proteger areas.
+    base-blocks: 1024
+    # Teto de blocos que o jogador pode comprar alem dos blocos iniciais.
+    max-purchased-blocks: 85000
+  groups:
+    vip:
+      permission: 'leafterrains.limit.vip'
+      max-terrains: 2
+      base-blocks: 2500
+      max-purchased-blocks: 120000
+    mvp:
+      permission: 'leafterrains.limit.mvp'
+      max-terrains: 4
+      base-blocks: 5000
+      max-purchased-blocks: 200000
+
+# Custos opcionais com economia.
+# Provider 'Vault' exige Vault e um plugin de economia compativel.
+economy:
+  create:
+    enabled: false
+    provider: 'Vault'
+    price-per-block: 5.0
+  buy-blocks:
+    enabled: false
+    provider: 'Vault'
+    price-per-block: 10.0
+  expand:
+    enabled: false
+    provider: 'Vault'
+    price-per-block: 8.0
+  terrain-market:
+    provider: 'Vault'
+    # Porcentagem descontada do vendedor ao concluir uma compra no mercado.
+    tax-percent: 0.0
+
+# Flags sao permissioes internas do terreno.
+flags:
+  # Quais flags vem ativadas por padrao ao proteger.
+  # true = permite o comportamento, false = bloqueia.
+  default:
+    pvp: false
+    doors: true
+    entry-notify: true
+    view-inventories: false
+    ban-players: true
+    entry-message: true
+    mob-spawn: false
+    monster-spawn: false
+    ice-form: false
+    sethome: false
+    ender-pearl: false
+
+# Protecao fora dos terrenos quando o modo do mundo exigir claims.
+# false = bloqueia a acao fora de terrenos protegidos.
+world-protection:
+  explode: false
+  construct: false
+  break: false
+  interact: false
+  pvp: false
+
+# Protecoes aplicadas nas bordas e eventos globais do terreno.
+terrain-protection:
+  # false = explosoes nao danificam terrenos protegidos.
+  explode: false
+  # false = agua/lava nao atravessam a borda do terreno.
+  liquids-cross-border: false
+
+# Integra com plugins de protecao externos para evitar compra/criacao dentro de regioes ou claims.
+external-protection:
+  enabled: true
+  # Jogadores com esta permissao, ou listados abaixo, podem criar/comprar/expandir mesmo dentro de protecoes externas.
+  bypass-permission: 'leafterrains.externalprotection.bypass'
+  allowed-players: []
+  allowed-permissions: []
+  worldguard:
+    enabled: true
+    block-regions: true
+    bypass-permission: 'leafterrains.externalprotection.worldguard.bypass'
+    allowed-players: []
+    allowed-permissions: []
+    # Regioes nessa lista nao bloqueiam compra, criacao ou expansao de terrenos.
+    allowed-regions: []
+    ignore-global-region: true
+    allow-region-owners: false
+    allow-region-members: false
+    # Alias semantico de allowed-regions para quem prefere configurar como lista de regioes ignoradas.
+    ignored-regions: []
+  griefprevention:
+    enabled: true
+    block-claims: true
+    # Tambem cobre plugins/forks de GriefProtection que exponham mapa de claims ou API compativel.
+    # Nomes aceitos para detectar forks/renomes. Mantem compatibilidade sem dependencia fixa.
+    plugin-names:
+      - GriefPrevention
+      - GriefProtection
+      - GriefProtection999
+    bypass-permission: 'leafterrains.externalprotection.griefprevention.bypass'
+    allowed-players: []
+    allowed-permissions: []
+    # IDs de claims nessa lista nao bloqueiam compra, criacao ou expansao de terrenos.
+    allowed-claim-ids: []
+    ignore-admin-claims: false
+    allow-claim-owners: false
+    allow-trusted-players: false
+
+# Ferramenta usada para selecionar os cantos do terreno.
+selection:
+  tool: GOLDEN_HOE
+  # Distancia maxima entre o jogador e o bloco clicado.
+  max-distance: 80
+  # Evita previews grandes demais e pesados para o servidor.
+  max-preview-blocks: 5000
+  item-name: '&aFerramenta de terrenos'
+  item-lore:
+    - '&7Clique esquerdo: &fposicao 1'
+    - '&7Clique direito: &fposicao 2'
+    - '&7Shift + clique esquerdo no ar: &flimpar'
+  preview-blocks:
+    ok: LIME_STAINED_GLASS
+    blocked: ORANGE_STAINED_GLASS
+    no-blocks: YELLOW_STAINED_GLASS
+    prohibited: RED_STAINED_GLASS
+
+# Ajustes das acoes interativas por chat/clique.
+interaction:
+  # Tempo para confirmar acoes sensiveis como deletar, expandir, vender e transferir.
+  confirm-timeout-seconds: 30
+
+# Cerca visual criada ao proteger, quando ativada.
+fence:
+  enabled: true
+  material: OAK_FENCE
+  # false impede que cercas sejam colocadas em blocos ja ocupados.
+  overlap: false
+  # Limite por operacao para evitar travamentos em areas grandes.
+  max-blocks-per-operation: 12000
+
+# Recursos extras da versao Premium.
+premium:
+  creation:
+    easy-create: true
+    realtime-preview: true
+  expansion:
+    smart: true
