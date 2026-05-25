@@ -1,0 +1,20 @@
+user-load-failed: "&cNo se pudo procesar tu usuario. %reason%"
+command-cooldown: "&c¡Espere %timer% para usar de nuevo!"
+command-no-permission: "&c¡No tienes permiso para ejecutar este comando!"
+command-target-is-you: "&cN¡o puedes usar este comando contigo mismo!"
+command-target-not-found: "&c¡No se pudo encontrar el jugador '%player%'!"
+command-execute-preset: "&cUtiliza: /%label% %info%"
+command-currently-unavailable: "&cEsta funcionalidad no está funcionando actualmente."
+command-execute-failed: "&cHubo un error al ejecutar este comando. Llama a un administrador para que lo corrija."
+
+commands:
+  userinfo:
+    usage: "<jugador> %usage%"
+    result:
+      - "&7Información de &f%player%&7:"
+      - "&8- &7UUID: &f%uuid%"
+      - "&8- &7Dirección IP: &f%address%"
+      - "&8- &7Primer Login: &f%created%"
+      - "&8- &7Ultimo Login: &f%lastLogin%"
+    alts:
+      - "&7Cuentas alternativas: &f%alts%"

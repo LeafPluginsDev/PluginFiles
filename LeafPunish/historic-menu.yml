@@ -1,0 +1,297 @@
+# Menu principal
+main-menu:
+  title: "Histórico de punições"
+  slots: 27
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    punishments:
+      name: "&bPunições Sofridas"
+      item: "head:afd2400002ad9fbbbd0066941eb5b1a384ab9b0e48a178ee96e4d129a5208654"
+      slot: 11
+      lore:
+        - "&7Confira as punições"
+        - "&7que este jogador sofreu"
+        - ""
+        - "&7Punições &aAtivas&7 e &cInativas"
+        - ""
+        - "&eClique para conferir"
+      # Fechará o inventário caso clique
+      closeInventory: false
+      # Lista de comandos que o jogador executará
+      execute: [ ]
+    punishments-author:
+      name: "&bPunições Aplicadas"
+      item: "head:7a9566056da48a8b845e874f010f38a21089b914bf8eeb7f4e6d5e7f01c052ff"
+      slot: 12
+      lore:
+        - "&7Confira as punições"
+        - "&7que este jogador aplicou"
+        - ""
+        - "&eClique para conferir"
+      # Fechará o inventário caso clique
+      closeInventory: false
+      # Lista de comandos que o jogador executará
+      execute: [ ]
+    head:
+      name: "&b%target%"
+      item: "head:%target%"
+      slot: 15
+      lore:
+        - ""
+        - "&7 Você está visualizando o histórico"
+        - "&7 deste &fjogador"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+      # Lista de comandos que o jogador executará
+      execute: [ ]
+
+# Menu de listagem das punições
+punishments-menus:
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+
+  punishments:
+    title: "Punições Sofridas"
+    slots: 54
+
+    # Listagem das punições
+    list:
+      # Slots que os itens ocuparão
+      slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 28, 29, 30, 31, 32, 33 ]
+
+      # Formato dos itens de punição
+      format:
+        name: "%status_color%%type%"
+        item: "writable_book"
+        lore:
+          - "&7ID: &f#%id%"
+          - "&7Status: %status_colored%"
+          - "&7Servidor: &f%server%"
+          - ""
+          - "&7Data: &f%date%"
+          - "&7Término: &f%expiresdate%"
+          - ""
+          - "&7Autor: &f%author%"
+          - "&7Motivo: &f%reason%"
+          - "&7Prova: &f%proof%"
+
+    items:
+      type:
+        name: "&bTipo de punição"
+        item: "paper"
+        slot: 47
+        lore:
+          - ""
+          - "&7 Atual: &a%type%"
+          - " &8Todos, banimentos e silenciamentos"
+          - ""
+          - "&eClique para alternar"
+
+      order:
+        name: "&bOrdem"
+        item: "clock"
+        slot: 48
+        lore:
+          - ""
+          - "&7 Atual: &a%order%"
+          - " &8Recente, mais antigo"
+          - ""
+          - "&eClique para alternar"
+
+      status:
+        name: "&bStatus de punição"
+        item: "nether_star"
+        slot: 49
+        lore:
+          - ""
+          - "&7 Atual: &a%status%"
+          - " &8Todos, ativos e inativos"
+          - ""
+          - "&eClique para alternar"
+
+      return:
+        name: "&b%target%"
+        item: "head:%target%"
+        slot: 51
+        lore:
+          - ""
+          - "&7 Você está visualizando punições"
+          - "&7 sofridas por este &fjogador"
+          - ""
+          - "&eClique para voltar"
+        # Fechará o inventário caso clique
+        closeInventory: false
+        # Lista de comandos que o jogador executará
+        execute: [ ]
+
+      glass1:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 46
+        lore: [ ]
+
+      glass2:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 45
+        lore: [ ]
+
+      glass3:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 50
+        lore: [ ]
+
+      glass4:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 52
+        lore: [ ]
+
+      glass5:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 53
+        lore: [ ]
+
+      previous-page:
+        name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+        item: "arrow"
+        slot: 45
+        lore:
+          - ""
+          - " &7Ir para &fpágina anterior"
+          - ""
+
+      next-page:
+        name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+        item: "arrow"
+        slot: 53
+        lore:
+          - ""
+          - " &7Ir para &fpróxima página"
+          - ""
+
+  punishments-author:
+    title: "Punições Aplicadas"
+    slots: 54
+    # Listagem das punições
+    list:
+      # Slots que os itens ocuparão
+      slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 28, 29, 30, 31, 32, 33 ]
+
+      # Formato dos itens de punição
+      format:
+        name: "%status_color%%type%"
+        item: "writable_book"
+        lore:
+          - "&7ID: &f#%id%"
+          - "&7Status: %status_colored%"
+          - "&7Servidor: &f%server%"
+          - ""
+          - "&7Jogador: &f%player%"
+          - ""
+          - "&7Data: &f%date%"
+          - "&7Término: &f%expiresdate%"
+          - ""
+          - "&7Motivo: &f%reason%"
+          - "&7Prova: &f%proof%"
+
+    items:
+      type:
+        name: "&bTipo de punição"
+        item: "paper"
+        slot: 47
+        lore:
+          - ""
+          - "&7 Atual: &a%type%"
+          - " &8Todos, banimentos e silenciamentos"
+          - ""
+          - "&eClique para alternar"
+
+      order:
+        name: "&bOrdem"
+        item: "clock"
+        slot: 48
+        lore:
+          - ""
+          - "&7 Atual: &a%order%"
+          - " &8Recente, mais antigo"
+          - ""
+          - "&eClique para alternar"
+
+      status:
+        name: "&bStatus de punição"
+        item: "nether_star"
+        slot: 49
+        lore:
+          - ""
+          - "&7 Atual: &a%status%"
+          - " &8Todos, ativos e inativos"
+          - ""
+          - "&eClique para alternar"
+
+      return:
+        name: "&b%target%"
+        item: "head:%target%"
+        slot: 51
+        lore:
+          - ""
+          - "&7 Você está visualizando punições"
+          - "&7 sofridas por este &fjogador"
+          - ""
+          - "&eClique para voltar"
+        # Fechará o inventário caso clique
+        closeInventory: false
+        # Lista de comandos que o jogador executará
+        execute: [ ]
+
+      glass1:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 46
+        lore: [ ]
+
+      glass2:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 45
+        lore: [ ]
+
+      glass3:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 50
+        lore: [ ]
+
+      glass4:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 52
+        lore: [ ]
+
+      glass5:
+        name: "&7<->"
+        item: "stained_glass_pane:7"
+        slot: 53
+        lore: [ ]
+
+      previous-page:
+        name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+        item: "arrow"
+        slot: 45
+        lore:
+          - ""
+          - " &7Ir para &fpágina anterior"
+          - ""
+
+      next-page:
+        name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+        item: "arrow"
+        slot: 53
+        lore:
+          - ""
+          - " &7Ir para &fpróxima página"
+          - ""

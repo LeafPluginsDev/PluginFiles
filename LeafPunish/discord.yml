@@ -1,0 +1,88 @@
+# Insira a Webhook Geral do canal que irá enviar as embeds
+# Caso as embeds não hajam "webhook" individuais, serão usadas esta:
+webhookURL: ""
+
+# Observação: É necessário ter baixado o LeafDiscord em seu servidor
+
+embeds:
+  # Placeholders disponíveis:
+  # %player% - nome do jogador
+  # %uuid% - uuid do jogador
+  # %player_icon% - URL do icone do jogador
+  # %author_icon% - URL do icone do autor
+  #
+  # %id% - id da punição
+  # %author% - nome do autor
+  # %type% - tipo de punição
+  # %reason% - motivo da punição
+  # %server% - servidor da punição
+  # %proof% - prova da punição
+  # %date% - data da punição
+  # %expires% - tempo até expirar
+  # %expiresDate% - data de expiração
+  # %expiresTimeStamp% - timestamp de expiração
+  punishment:
+    enable: true
+    webhook: ""
+    title: "%player% foi punido!"
+    color: "#ff0000"
+    thumbnailURL: "%player_icon%"
+    description: "Na próxima vez leia as regras!"
+    field-inline: true
+    fields:
+      # O que vier antes do -> será o nome da field
+      # O que vier após o -> será o texto da field
+      - "ID -> #%id%"
+      - "Punição -> %type%"
+      - "Motivo -> %reason%"
+      - "Servidor -> %server%"
+      - "Prova -> %proof%"
+      - "Quem puniu -> %author%"
+    footer: "UUID do usuário: %uuid%"
+    footerURL: "%player_icon%"
+
+  # [Premium]
+  pardon:
+    enable: true
+    webhook: ""
+    title: "%player% foi perdoado!"
+    color: ""
+    thumbnailURL: "%player_icon%"
+    description: ""
+    field-inline: true
+    fields:
+      - "ID -> #%id%"
+      - "Punição -> %type%"
+      - "Motivo -> %reason%"
+      - "Quem revogou -> %author%"
+    footer: "UUID do usuário: %uuid%"
+    footerURL: "%player_icon%"
+
+  # [Premium]
+  warn:
+    enable: true
+    webhook: ""
+    title: "%player% foi alertado!"
+    color: ""
+    thumbnailURL: "%player_icon%"
+    description: ""
+    field-inline: true
+    fields:
+      - "Motivo -> %reason%"
+      - "Quem alertou -> %author%"
+    footer: "UUID do usuário: %uuid%"
+    footerURL: "%player_icon%"
+
+  # [Premium]
+  prevented:
+    enable: true
+    webhook: ""
+    title: "%player% foi barrado!"
+    color: "#ff0000"
+    thumbnailURL: "%player_icon%"
+    description: "%player% tentou entrar estando banido."
+    field-inline: true
+    fields:
+      - "Punição -> %type%"
+    footer: "UUID do usuário: %uuid%"
+    footerURL: "%player_icon%"

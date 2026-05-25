@@ -1,0 +1,12 @@
+# Condições de Scoreboard e linhas
+conditions:
+  hasClan:
+    placeholder: "%simpleclans_clan_color_tag%"
+    condition: "not-empty"
+    # Caso a placeholder não esteja vazia o resultado será 'true'
+    result: true
+  noClan:
+    placeholder: "%simpleclans_clan_color_tag%"
+    condition: "empty"
+    # Caso a placeholder esteja vazia o resultado será 'true'
+    result: true

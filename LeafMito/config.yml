@@ -1,0 +1,135 @@
+# Agradecemos por escolher o LeafMito ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# [PREMIUM] Abrir menu quando usar /mito sem permissão de gerenciar
+open-menu: true
+
+mito:
+  # Tag do Mito
+  tag: "&c[MITO]"
+
+  # Ativar efeito de brilho no mito
+  # Ficará até o jogador perder a tag de mito
+  glowing:
+    enable: true
+
+    # Mundos que não terão o destaque
+    blocked-worlds:
+      - "mundo_da_paz"
+
+  # Som enviado a todos os jogadores (Deixe vazio para desativar)
+  sound: "LEVEL_UP"
+
+  # Cair um efeito de raio no novo mito
+  thunder: true
+
+  # Spawnar entidades ao redor do novo mito (Deixe vazio para desativar)
+  spawn-entities:
+    - "BAT 5x"
+
+  # Defina o máximo de dias que o jogador
+  # poderá ficar com a TAG sem se conectar no servidor
+  max-days-offline: 20
+
+  # Comandos que o console executará quando um jogador se tornar o mito
+  commands:
+    - "give %player% golden_apple 32"
+    - "lp user %player% permission set kit.mito true"
+
+  # Comandos que o console executará ao remover algum mito (Por inatividade, morte ou por um administrador)
+  remove-commands:
+    - "lp user %player% permission set kit.mito false"
+
+  # Titulo enviado para todos
+  title:
+    enable: true
+    title: "&6&lMITO"
+    subtitle: "&c%display% &fse tornou o melhor!"
+
+  # Mensagens de Conexão (PlaceholderAPI disponivel)
+  # Deixe vazio para desativar a mensagem em especifico
+  connection:
+    broadcasts:
+      enable: true
+      join:
+        - ""
+        - "&a[MITO] &fO jogador &7%player_displayname% &fentrou."
+        - ""
+      leave:
+        - ""
+        - "&c[MITO] &fO jogador &7%player_displayname% &fsaiu."
+        - ""
+    actionbar:
+      enable: true
+      join: "&a[MITO] &fO jogador &7%player_displayname% &fentrou."
+      leave: "&c[MITO] &fO jogador &7%player_displayname% &fsaiu."
+
+npc:
+  # Utilizar o NPC
+  enable: true
+
+  # Ativará o efeito de brilho no NPC
+  glowing: true
+
+  # Efeito de raio quando houver mudança do mito atual
+  thunder: true
+
+  # Nome da skin caso não possua um mito
+  none-skin: Steve
+
+  # Holograma do NPC
+  # PlaceholderAPI disponível
+  hologram:
+    # Altura para o holograma
+    height: 1.3
+
+    # Linhas do holograma quando ninguém for mito
+    none:
+      - '&6&l%player_displayname%'
+      - '&fVocê foi mito &a%leafmito_vezes% veze(s)'
+      - '&fÚltima vez como mito: &a%leafmito_ultimavez%'
+      - ''
+      - '&6&lMITO ATUAL'
+      - '&fNenhum jogador'
+      - '&b» &e&lPODE SER VOCÊ! &b«'
+    current:
+      - '&6&lMINHAS INFORMAÇÕES'
+      - '&fVocê foi mito &a%leafmito_vezes% veze(s)'
+      - '&fÚltima vez como mito: &a%leafmito_ultimavez%'
+      - ''
+      - '&6&lMITO ATUAL > %player%'
+      - '&f&c&lIMBATÍVEL &fdesde &a%date%'
+      - '&b» &e&l%times%ª VEZ &b«'

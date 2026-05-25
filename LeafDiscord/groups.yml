@@ -1,0 +1,30 @@
+admin:
+  # ID exato do grupo no plugin de permissões
+  group: "admin"
+
+  # Prefix que será aplicado no nome do membro no Discord
+  prefix: "[Admin] "
+
+  # ID do cargo no Discord
+  discordRole: "1426766066721230960"
+
+moderador:
+  # ID exato do grupo no plugin de permissões
+  group: "mod"
+
+  # Prefix que será aplicado no nome do membro no Discord
+  prefix: "[Moderador] "
+
+  # ID do cargo no Discord
+  discordRole: "1426766066721230960"
+
+jogador:
+  # ID exato do grupo no plugin de permissões
+  group: "default"
+
+  # Prefix que será aplicado no nome do membro no Discord
+  prefix: "[Jogador] "
+
+  # ID do cargo no Discord
+  discordRole: "1426766066721230960"
+

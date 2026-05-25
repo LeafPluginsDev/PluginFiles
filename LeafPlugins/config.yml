@@ -1,0 +1,87 @@
+# Todos os direitos reservados a Leaf Plugins;
+#
+# Este plugin é responsável pelo funcionamento de outros plugins da Leaf Plugins!
+# Utilize com carinho o nosso trabalho ♥, lembre-se de dar sugestões em nosso Discord!
+#
+# Nosso site: https://leafplugins.com
+
+# Seção de configuração do banco de dados
+# Todos os plugins utilizarão o mesmo banco de dados
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+    # Configuração para todos os MySQL da Leaf
+    # SSL automático
+    auto-ssl: false
+
+    # Configuração para todos os MySQL da Leaf
+    # Ao deixar 'true' pode ser útil se você estiver enfrentando problemas com certificados SSL ao se conectar ao banco de dados
+    # Essa configuração desativa a verificação do certificado do servidor, o que pode ter implicações de segurança
+    ignoreServerCertificate: false
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Ativar/desativar depuração de eventos das nossas APIS
+# Necessário o debug-mode ativado
+# Útil para diagnóstico de problemas
+debug-events: false
+
+# Ativar o modo BungeeCord
+bungee-mode: false
+
+# Lista de plugins pagos que não serão ligados no servidor
+ignore-licenses:
+  - "LeafIgnored"
+
+# Código de cliente (Opcional)
+# Ao ativar, fará com que somente as licenças vinculadas a um cliente sejam aceitas,
+# evitando problemas de conflito de outras licenças vinculadas ao mesmo IP (Incomodo gerado em hospedagens)
+# Copie seu código no painel de cliente: https://leafplugins.com/dashboard/settings
+client-code: ""
+
+# Opções gerais dos plugins
+options:
+  # Idioma utilizado pelos plugins
+  # "pt" ==> Português do Brasil
+  # "en" ==> English
+  # "es" ==> Español
+  language: ''
+
+  # Defina qual fuso horário utilizar (GMT-3 = Horário em Brasília)
+  # Caso deixe vazio irá utilizar o da máquina do servidor
+  time-zone: "GMT-3"
+
+  # Retirar comandos registrados que possuirem o mesmo ID
+  # Por exemplo, retirar o comando /ban do minecraft devido ao LeafPunish
+  # Em alguns casos isto pode causar ou resolver problemas
+  # (Necessário reiniciar)
+  override-commands: false
+
+  # Fará que seja checado se há atualizações quando o servidor estiver online
+  # Caso desative, fará que só busque por atualizações ao iniciar
+  always-update: true
+
+  # Ativará o modo Bungee em plugins com compatibilidade automaticamente (Recomendado)
+  bungee-detect: false

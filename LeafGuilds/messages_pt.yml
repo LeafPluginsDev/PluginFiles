@@ -1,0 +1,315 @@
+commands:
+  guild:
+    header:
+      - ""
+      - "&eComandos de Guild:"
+    format: "&b/%label% %command% &8- &f%description%"
+    names:
+      criar: "criar"
+      expulsar: "expulsar"
+      convidar: "convidar"
+      online: "online"
+      info: "info"
+      chat: "chat"
+      aceitar: "aceitar"
+      recusar: "recusar"
+      convites: "convites"
+      pedidos: "pedidos"
+      promover: "promover"
+      rebaixar: "rebaixar"
+      transferir: "transferir"
+      upgrade: "upgrade"
+      set: "set"
+      bau: "bau"
+      sethome: "sethome"
+      home: "home"
+      ally: "ally"
+      inimigo: "inimigo"
+      sair: "sair"
+      excluir: "excluir"
+    descriptions:
+      criar: "Criar sua guilda"
+      expulsar: "Expulsar um membro"
+      convidar: "Convidar algum jogador"
+      online: "Conferir membros online"
+      info: "Informações da guilda"
+      chat: "Enviar uma mensagem"
+      aceitar: "Aceitar um convite"
+      recusar: "Recusar um convite"
+      convites: "Consultar os convites recebidos"
+      pedidos: "Gerenciar convites e pedidos"
+      promover: "Promover um membro"
+      rebaixar: "Rebaixar um membro"
+      transferir: "Transferir a posse"
+      upgrade: "Aprimorar a guilda"
+      set: "Alterar configurações da guilda"
+      bau: "Abrir baú comunitário"
+      sethome: "Definir home da guilda"
+      home: "Teleportar para a home da guilda"
+      ally: "Gerenciar alianças"
+      inimigo: "Gerenciar inimigos"
+      sair: "Abandonar a guilda"
+      excluir: "Excluir a guilda"
+
+menus:
+  permission:
+    leader: "&cNecessário ser Líder"
+    moderator: "&cNecessário ser Moderador"
+    recruiter: "&cNecessário ser Recrutador"
+    allowed: "&eClique para gerenciar"
+
+  discord:
+    buttons:
+      link:
+        name: "https://discord.gg/%discord%"
+        description: "&7Entrar no Discord"
+      update:
+        name: "&e[Alterar]"
+        description: "&aClique para atualizar"
+    usage: "{n}&9Escreva no chat o link do Discord.{n}&7Você pode cancelar escrevendo &c&ncancel{n}&r "
+    update: "{n}&a&lDISCORD ATUALIZADO!{n}&r&fDiscord atualizado para:{n}&ahttps://discord.gg/%discord%{n}&r "
+    message: "{n}&9&lNOSSO DISCORD {update}{n}&r&fEntre em nosso Discord:{n}&a{link}{n}&r "
+
+guilds:
+  notifications:
+    server-guild-created: "{n}&e&l(!) %guild_colortag% &fAcaba de ser fundada por &f%player_displayname%&f!{n}&r "
+    server-guild-deleted: "{n}&e&l(!) %guild_colortag% &fFoi excluida por &f%player_displayname%&f!{n}&r "
+
+    guild-delete: "{n}&c&l(!) GUILDA EXCLUIDA{n}&r&7Sua Guilda %guild_colortag% &7foi excluida.{n}&r "
+    guild-upgrade: "%guild_colortag% &a[+] &7A Guilda foi aprimorada por &f%author%&7!"
+    join-server: "%guild_colortag% %role_prefix% &f%player% &7entrou neste servidor."
+    new-member: "%guild_colortag% &a[+] &7O jogador &f%player% &7se juntou a Guilda!"
+    leave-member: "%guild_colortag% &c[-] &7O jogador &f%player% &7abandonou a Guilda!"
+    kick-member: "%guild_colortag% &c[!] &7O membro &f%player% &7foi &cexpulso(a) &7da Guilda por &f%author%&7!"
+    promote-member: "%guild_colortag% &b[+] &f%player% &7foi &bpromovido(a) &7para %role_color%%role_name%&7!"
+    demote-member: "%guild_colortag% &e[-] &f%player% &7foi &erebaixado(a) &7para %role_color%%role_name%&7!"
+    transfer-member: "%guild_colortag% &b[+] &7A posse de &f%role_prefix% &7de &f%leader% &7foi &btransferida &7para &f%player%&7!"
+
+  online:
+    result: "{n}&eMembros online: &r%online%{n} "
+    not-in-guild: "&cVocê não está em uma guilda."
+
+  chat:
+    command-usage: "<mensagem> para enviar uma mensagem."
+    not-in-guild: "&cVocê não está em uma guilda."
+
+  info:
+    not-in-guild: "&cVocê não está em uma guilda."
+
+  settings:
+    no-permission: "&cApenas o lider pode alterar as configuracoes da Guilda."
+
+  upgrade:
+    buttons:
+      confirm:
+        name: "CONFIRMAR"
+        description: "&aConfirmar upgrade"
+      retry:
+        name: "ALTERAR"
+        description: "&eEscolher outro pagamento"
+      cancel:
+        name: "CANCELAR"
+        description: "&cCancelar upgrade"
+      money:
+        name: "MONEY"
+        description: "&7Custara &e$%price% &7de seu saldo"
+      cash:
+        name: "CASH"
+        description: "&7Custara &2$%price% &7de seu cash"
+    title:
+      title: "&a&lGUILDA APRIMORADA"
+      subtitle: "&fNovos recursos foram liberados."
+    not-in-guild: "&cVoce nao esta em uma guilda."
+    no-permission: "&cVoce nao possui permissao para aprimorar guildas."
+    role-no-permission: "&cApenas moderadores+ podem aprimorar a Guilda."
+    already-upgraded: "&cEsta guilda ja possui upgrade."
+    select-economy: "{n}&a(!) &7Qual metodo de pagamento deseja usar?{n}&8&l> &e&l{money} &8&l- &a&l{cash} &8&l- &c&l{cancel} &8&l<{n} "
+    confirm-payment: "{n}&a(!) &7Deseja confirmar o upgrade por &f{costs}&7?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<{n} "
+    money-removed: "&a(!) &7Foi retirado &f$%price% &7do seu saldo de money."
+    cash-removed: "&a(!) &7Foi retirado &f$%price% &7do seu cash."
+    money-not-enough: "&c(!) Voce nao possui money suficiente."
+    cash-not-enough: "&c(!) Voce nao possui cash suficiente."
+    success: "&aGuilda aprimorada com sucesso."
+    cancelled: "&cUpgrade de guilda cancelado."
+
+  transfer:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Desde &f%joined_at%"
+      confirm:
+        name: "CONFIRMAR"
+        description: "&aConfirmar transferência"
+    not-in-guild: "&cVocê não está em uma guilda."
+    no-permission: "&cApenas o Líder pode transferir a posse para outro membro."
+    title:
+      title: "&b&lNOVO LÍDER"
+      subtitle: "&f%player% se tornou o novo líder!"
+    leader:
+      command-usage: "<jogador> para transferir sua posse."
+      confirm: "{n}&b&l(!) TRANSFERIR POSSE{n}&r&7Deseja transferir a posse de &f%guild_name% &f%guild_colortag% &7para &f%player%&7?{n}&r&7O membro faz parte da Guilda há &b{time}&7.{n}&r&c(!) Essa ação é irreversível e você será rebaixado.{n}&r&a&l{confirm}{n} "
+      target-is-you: "&cVocê já é o líder da Guilda."
+      player-new-member: "&cA posse só pode ser transferida a Membros que estejam pelo menos há &f7 dias&c. Este jogador está há &f{time}&c."
+      player-not-in-guild: "&cEste jogador não está na Guilda."
+
+  promote:
+    not-in-guild: "&cVocê não está em uma guilda."
+    no-permission: "&cApenas o Líder pode promover outros membros."
+    title:
+      title: "&b&lPROMOVIDO"
+      subtitle: "&f%player% &ffoi promovido a &a%role_prefix%"
+    leader:
+      command-usage: "<jogador> para promover um membro."
+      target-is-you: "&cVocê não pode alterar o seu cargo."
+      player-max-role: "&cEste jogador já está no cargo máximo."
+      player-not-in-guild: "&cEste jogador não está na Guilda."
+
+  demote:
+    not-in-guild: "&cVocê não está em uma guilda."
+    no-permission: "&cApenas o Líder pode rebaixar outros membros."
+    title:
+      title: "&c&lREBAIXADO"
+      subtitle: "&f%player% &ffoi rebaixado para &a%role_prefix%"
+    leader:
+      command-usage: "<jogador> para rebaixar um membro."
+      target-is-you: "&cVocê não pode alterar o seu cargo."
+      player-min-role: "&cEste jogador já está no cargo mínimo."
+      player-not-in-guild: "&cEste jogador não está na Guilda."
+
+  kick:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Desde &b%joined_at%"
+      confirm:
+        name: "CONFIRMAR"
+        description: "&aConfirmar expulsão"
+    not-in-guild: "&cVocê não está em uma Guilda."
+    no-permission: "&cApenas moderadores+ podem expulsar outros jogadores."
+    player:
+      title:
+        title: "&c&lEXPULSO"
+        subtitle: "&fVocê foi expulso da Guilda!"
+      message: "{n}&c&l(!) EXPULSO DA GUILDA{n}&r&7Você foi expulso de &f%guild_name% &f%guild_colortag%&7{n}&r&7Expulso por: &f%author%{n} "
+    moderator:
+      confirm: "{n}&c&l(!) EXPULSAR MEMBRO{n}&r&7Deseja expulsar &f%player% &7de &f%guild_name% &f%guild_colortag%&7?{n}&r&7O membro faz parte da Guilda há &b{time}&7.{n}&a&l{confirm}{n} "
+      command-usage: "<jogador> para expulsar um membro."
+      no-permission: "&cVocê não pode expulsar este jogador, pois ele possui um cargo igual ou maior que o seu."
+      player-not-in-guild: "&cEste jogador não está na Guilda."
+
+  delete:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Criado em &b%creation%"
+      confirm:
+        name: "CONFIRMAR"
+        description: "&cConfirmar exclusão"
+    not-in-guild: "&cVocê não está em uma Guilda."
+    no-permission: "&cApenas o líder pode excluir a Guilda."
+    sucessfull: "&aVocê excluiu a Guilda com sucesso!"
+    confirm: "{n}&c&l(!) EXCLUIR A GUILDA{n}&r&7Deseja excluir &f%guild_name% &f%guild_colortag%&7?{n}&r&7A guilda possui uma história de &b{time}&7.{n}&c&l{confirm}{n} "
+
+  leave:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Desde &b%joined_at%"
+      confirm:
+        name: "CONFIRMAR"
+        description: "&cConfirmar saída"
+    sucessfull: "&aVocê abandonou a Guilda com sucesso!"
+    the-leader: "&cVocê é o Líder da Guilda. Para abandona-la, sua posse deve ser transferida ou a Guilda deve ser excluida."
+    not-in-guild: "&cVocê não está em uma Guilda."
+    confirm: "{n}&b&l(!) SAIR DA GUILDA{n}&r&7Deseja abandonar &f%guild_name% &f%guild_colortag%&7?{n}&r&7Você faz parte da Guilda há &b{time}&7.{n}&c&l{confirm}{n} "
+
+  invites:
+    no-invites: "&cVocê não possui nenhum convite pendente."
+    already-in-guild: "&cVocê já está em uma guilda."
+
+  requests:
+    sent: "&aPedido enviado para %guild_name% &a%guild_colortag%&a."
+    already-sent: "&cVoce ja enviou um pedido para esta guilda."
+    closed: "&cEsta guilda nao esta recebendo pedidos de entrada."
+    accepted: "&aSeu pedido para entrar em %guild_name% &a%guild_colortag% &afoi aceito."
+
+  invite:
+    buttons:
+      accept:
+        name: "ACEITAR"
+        description: "&aAceitar convite"
+      deny:
+        name: "RECUSAR"
+        description: "&cRecusar convite"
+    not-in-guild: "&cVocê não está em uma Guilda."
+    recruiter:
+      invite: "{n}&b&l(!) CONVITE DE GUILDA{n}&r&7Você convidou &f%player% &7para &f%guild_name% &f%guild_colortag%{n}&r&7O jogador possui &b%expires%&7 para aceitar.{n} "
+      command-usage: "<jogador> para convidar um jogador."
+      no-permission: "&cApenas recrutadores+ podem convidar outros jogadores."
+      searching-player: "{n}&a(!) &7Escreva no &a&nbate-papo&r &7o nome do jogador que deseja convidar!{n}&c(!) &7Ou escreva &c&ncancel&7 para cancelar.{n} "
+      player-already-in-guild: "&cO jogador já está em uma guilda."
+      player-already-invited: "&cJá existe um convite pendente para este jogador."
+    player:
+      accept-title:
+        title: "%colortag%"
+        subtitle: "&fVocê entrou na Guilda!"
+      receive: "{n}&b&l(!) CONVITE DE GUILDA{n}&r&7Você foi convidado para entrar em &f%guild_name% &f%guild_colortag%{n}&r&7Você possui &b%expires%&7 para aceitar.{n}&7Você pode aceitar ou negar com o comando &f/clan <aceitar/recusar> #%guild_id%{n}&8&l> &a&l{accept} &8&l- &c&l{deny} &8&l<{n} "
+      accept: "&aVocê aceitou o convite para participar de &f%guild_name%&a."
+      decline: "&cVocê recusou o convite para participar de &f%guild_name%&c."
+      invite-not-found: "&cVocê não possui um convite pendente de ID #%id%."
+      deny-command-usage: "<id> para recusar um convite."
+      accept-command-usage: "<id> para aceitar um convite."
+      already-in-guild: "&cVocê já está em uma guilda."
+      no-permission: "&cVoce nao possui permissao para entrar em guildas."
+      blocked: "&cVoce esta bloqueado de entrar em guildas."
+      guild-full: "&cEsta guilda esta cheia."
+
+  creation:
+    buttons:
+      confirm:
+        name: "CONFIRMAR"
+        description: "&aConfirmar decisão"
+      retry:
+        name: "ALTERAR"
+        description: "&eTentar novamente"
+      cancel:
+        name: "CANCELAR"
+        description: "&cCancelar criação"
+      money:
+        name: "MONEY"
+        description: "&7Custará &e$%price% &7de seu Saldo"
+      cash:
+        name: "CASH"
+        description: "&7Custará &2$%price% &7de seu Cash"
+
+    title:
+      title: "%colortag%"
+      subtitle: "&fVocê fundou sua Guilda!"
+
+    select-name: "{n}&a(!) &7Escreva no &a&nbate-papo&r &7o nome que deseja para sua Guilda! &c&l{cancel}{n} "
+    blocked-name: "&c(!) Não é permitido que o nome possua \"%blocked%\". Tente novamente."
+    name-special-char: "&c(!) Não é permitido que o nome possua caracteres especiais. Tente novamente."
+    name-space: "&c(!) Não é permitido que o nome possua espaços. Tente novamente."
+    name-length: "&c(!) O nome da guilda deve conter entre %min% e %max% caracteres. Tente novamente."
+    name-taken: "&c(!) Este nome já está sendo utilizado por uma Guilda. Tente novamente."
+    confirm-name: "&a(!) &7Deseja confirmar &f\"%name%\" &7como nome da Guilda?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<"
+
+    select-tag: "{n}&a(!) &7Escreva no &a&nbate-papo&r &7a TAG que deseja para sua Guilda! &c&l{cancel}{n} "
+    blocked-tag: "&c(!) Não é permitido que a tag possua \"%blocked%\". Tente novamente."
+    tag-special-char: "&c(!) Não é permitido que a tag possua caracteres especiais. Tente novamente."
+    tag-space: "&c(!) Não é permitido que a tag possua espaços. Tente novamente."
+    tag-length: "&c(!) A tag deve conter entre %min% e %max% caracteres. Tente novamente."
+    tag-taken: "&c(!) Esta tag já está sendo utilizada por uma Guilda. Tente novamente."
+    confirm-tag: "&a(!) &7Deseja confirmar &f\"%tag%\" &7como tag da Guilda?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<"
+
+    confirm-price: "&a(!) &7Qual método de pagamento deseja utilizar?{n}&8&l> &e&l{money} &8&l- &a&l{cash} &8&l- &c&l{cancel} &8&l<"
+    money-removed: "&a(!) &7Foi retirado do seu saldo de money &f$%cust% &7para a criação!"
+    cash-removed: "&a(!) &7Foi retirado do seu saldo de cash &f$%cust% &7para a criação!"
+    money-not-enough: "&c(!) Você não possui saldo de money o suficiente."
+    cash-not-enough: "&c(!) Você não possui saldo de cash o suficiente."
+
+    guild-created: "{n}&a(!) &7Guilda &a%name% &7[&f%tag%&7] &7criada com sucesso!{n}&7Defina suas preferências como &aícone &7e mais em &a/guild gerenciar{n} "
+    cancelled: "&cCriação de guilda cancelada."
+    already-in-guild: "&cNão é possível criar uma guilda estando em uma."
+    no-permission: "&cVoce nao possui permissao para criar guildas."
+    blocked: "&cVoce esta bloqueado de criar guildas."

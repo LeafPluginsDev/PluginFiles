@@ -1,0 +1,180 @@
+main-menu:
+  title: "Suas medalhas"
+  slots: 5
+  items:
+    # Você pode remover os itens, como também pode por mais
+    # caso queira por mais um slot de medalha no menu, é só seguir o mesmo padrão
+    # medal1, medal2, medal3, medal4, medal5...
+    medal1:
+      name: '%color%&l➜ %color%<when="empty">%name%</when="Slot de Medalha #1">'
+      item: '<when="empty">%item%</when="RED_STAINED_GLASS_PANE">'
+      slot: 20
+      permission:
+        - "&7Você não tem permissão"
+        - "&7para usar este slot."
+        - ""
+        - "&cSem permissão"
+      selected:
+        - "&7Medalha com o"
+        - "&7símbolo %icon%"
+        - ""
+        - "&eClique para trocar"
+      undefined:
+        - "&7Escolha uma Medalha para colocar"
+        - "&7nesta posição."
+        - ""
+        - "&eClique para selecionar"
+
+    medal2:
+      name: '%color%&l➜ %color%<when="empty">%name%</when="Slot de Medalha #2">'
+      item: '<when="empty">%item%</when="RED_STAINED_GLASS_PANE">'
+      slot: 22
+      permission:
+        - "&7Você não tem permissão"
+        - "&7para usar este slot."
+        - ""
+        - "&cSem permissão"
+      selected:
+        - "&7Medalha com o"
+        - "&7símbolo %icon%"
+        - ""
+        - "&eClique para trocar"
+      undefined:
+        - "&7Escolha uma Medalha para colocar"
+        - "&7nesta posição."
+        - ""
+        - "&eClique para selecionar"
+
+    medal3:
+      name: '%color%&l➜ %color%<when="empty">%name%</when="Slot de Medalha #3">'
+      item: '<when="empty">%item%</when="RED_STAINED_GLASS_PANE">'
+      slot: 24
+      permission:
+        - "&7Você não tem permissão"
+        - "&7para usar este slot."
+        - ""
+        - "&cSem permissão"
+      selected:
+        - "&7Medalha com o"
+        - "&7símbolo %icon%"
+        - ""
+        - "&eClique para trocar"
+      undefined:
+        - "&7Escolha uma Medalha para colocar"
+        - "&7nesta posição."
+        - ""
+        - "&eClique para selecionar"
+
+    reset:
+      name: '&c&l➜ &cRemover todas as Medalhas'
+      item: 'barrier'
+      slot: 36
+      lore:
+        - "&7Remova todas as medalhas equipadas."
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    # Itens extras
+    book:
+      name: '&a&l➜ &aInformações'
+      item: 'book'
+      slot: 37
+      lore:
+        - "&7Você pode adquirir &6Medalhas"
+        - "&7jogando ou adquirindo em nosso site."
+        - ""
+        - "&7É possível selecionar até"
+        - "&6Três Medalhas &7ao mesmo tempo!"
+        - ""
+        - "&7Adquira suas medalhas em"
+        - "&bhttps://site.com/medalhas"
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    leave:
+      name: '&c&l➜ &cSair'
+      item: 'red_dye'
+      slot: 40
+      lore: []
+
+      # Fechará o inventário caso clique
+      closeInventory: true
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+select-menu:
+  title: "Selecione a Medalha #%slot%"
+  slots: 54
+
+  # Exibir todas as medalhas, mesmo se não houver permissão
+  show-all: true
+
+  # Itens das medalhas
+  medals:
+    # Slots que ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+
+    # Nome das medalhas
+    name: "%color%&l➜ %color%%name%"
+
+    # Icones das medalhas quando o jogador não houver permissão
+    icon-no-permission: "gray_dye"
+
+    none:
+      - "&eClique para remover"
+    select:
+      - "&7Medalha com o"
+      - "&7símbolo %icon%"
+      - ""
+      - "&7Preview:"
+      - "%player_displayname% &7%medals%"
+      - ""
+      - "&eCategoria: %rarity%"
+      - ""
+      - "&eClique para equipar"
+    permission:
+      - "&7Você não tem permissão"
+      - "&7para usar esta medalha."
+      - ""
+      - "&7Medalha com o"
+      - "&7símbolo %icon%"
+      - ""
+      - "&eCategoria: %rarity%"
+      - ""
+      - "&cSem permissão"
+
+  items:
+    leave:
+      name: '&c&l➜ &cSair'
+      item: 'red_dye'
+      slot: 49
+      lore: []
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

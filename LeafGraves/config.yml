@@ -1,0 +1,93 @@
+# Agradecemos por escolher o LeafGraves ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Opções de bloqueio
+block-options:
+  # Caso esteja 'true', fará que apenas os mundos da lista "worlds"
+  # funcione o sistema de covas (Invertendo de blocked para whitelist)
+  white-list: false
+
+  # Whitelist: Apenas os mundos dessa lista terão sistema de cova
+  # Blacklist: Todos os mundos terão sistema de cova, exceto os dessa lista
+  worlds:
+    - "blockedWorld"
+
+options:
+  permissions:
+    # Exigir permissão para o jogador poder ter cova
+    # leafgraves.create
+    require-grave-permission: false
+
+    # Exigir permissão para abrir cova de outro jogador
+    # leafgraves.open.others
+    require-open-others-permission: true
+
+    # Exigir permissão por mundo para criar/ter cova
+    # leafgraves.world.(nome do mundo)
+    require-world-permission: false
+
+graves:
+  # Apenas os próprios donos das covas podem coletar os itens e XP
+  owner-only: false
+
+  # Tempo em minutos para a cova desaparecer após ser criada
+  # O tempo só reduz enquanto o servidor está online
+  despawn-time: 10
+
+  visual:
+    head:
+      # Distância máxima para o jogador ver a cabeça
+      view-distance: 35
+      item: "head:%player%"
+      animation:
+        rotating: true
+        floating: true
+
+    hologram:
+      # Distância máxima para o jogador ver o holograma
+      view-distance: 50
+
+      # Linhas do holograma
+      # Placeholders:
+      # %uuid% - UUID do jogador
+      # %player% - Nome do jogador
+      # %item% - Itens na cova
+      # %xp% - XP na cova
+      # %despawn-time% - Tempo restante para a cova desaparecer
+      lines:
+        - '&4☠ &7Cova de %player% &4☠'
+        - '&e⌛ &f%despawn-time% &e⌛'
+        - '&a%item% &fitens &8— &b%xp% &fxp'

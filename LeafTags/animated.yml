@@ -1,0 +1,79 @@
+# Você pode usar o gerador de animações e copiar as linhas deste site:
+# https://www.birdflop.com/resources/animtab/
+# Você pode criar quantas TAGS quiser
+
+Animada:
+  visual:
+    # Nome da tag animada
+    name: "Animada"
+
+    # Preset da tag animada (Para placeholders)
+    preset: "&bAnimada"
+
+    # Cor principal da tag animada
+    color: "&b"
+
+    # Prefixo principal da tag animada (Para placeholders)
+    prefix: "&b[Animada] "
+
+    # Sufixo da tag animada
+    suffix: ""
+
+    # Cor do brilho aplicado no jogador
+    glowColor: "random"
+
+    # Prefixo que será exibido nos MODS de F5
+    selfPrefix: "&b"
+
+    # Animação
+    animation:
+      # Intervalo para atualizar o frame do prefixo
+      prefix-interval: 0.2
+
+      # Intervalo para atualizar o frame do aboveName
+      aboveName-interval: 0.3
+
+      # Intervalo para atualizar o frame do belowName
+      belowName-interval: 0.3
+
+      # Frames da animação do Prefixo da Nametag
+      # Recomendamos usar o gerador https://www.birdflop.com/resources/animtab/
+      prefix:
+        - "<rainbow:13>%player%</rainbow>"
+
+      # Frames da animação do texto em cima do Nametag
+      # Recomendamos usar o gerador https://www.birdflop.com/resources/animtab/
+      aboveName:
+        - "<rainbow:13>&l[TAG ANIMADA]</rainbow>"
+
+      # Frames da animação do texto em baixo do Nametag
+      belowName:
+        - "&f%player_health_rounded% &c❤ &7- &f%player_ping% &cms"
+        - "&f%player_health_rounded% &b❤ &7- &f%player_ping% &bms"
+        - "&f%player_health_rounded% &a❤ &7- &f%player_ping% &ams"
+
+    tablist:
+      # Caso deixe 'true', usará a animação do prefixo, deixando sincronizado
+      use-animated-prefix: true
+
+      # Prefix principal da tag animada no tab (Para placeholders)
+      prefix: "&b[Animada] "
+
+      # Sufixo da tag animada no tab
+      suffix: ""
+
+  acquisition:
+    purchase: 10000
+    obtainable: true
+
+  options:
+    icon: "head:e71ec1335799050d5f8fad28a8f6af9ed327caeb30301786b08d02d699fceb54"
+    position: 2
+    visible: true
+    category: "especial"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Esta é uma tag animada."
+    permission: "leaftags.tag.animada"
+    aliases: ["animated"]

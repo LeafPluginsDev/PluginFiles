@@ -1,0 +1,135 @@
+gradient:
+  name: "<GRADIENT:#d373ff>Gradiente</GRADIENT:#5377f5>"
+  color: "<GRADIENT:#d373ff>[{tag}]</GRADIENT:#5377f5>"
+  icon: "golden_apple"
+  permission:
+    only-vip: true
+    only-admin: false
+
+preto:
+  name: "&0Preto"
+  color: "&0[{tag}]"
+  icon: "black_dye"
+  # Permissão necessária
+  permission:
+    # Apenas Guildas VIPs podem selecionar
+    only-vip: false
+
+    # Apenas administradores da equipe podem defini-la em uma guilda
+    only-admin: false
+
+vermelho_escuro:
+  name: "&4Vermelho Escuro"
+  color: "&4[{tag}]"
+  icon: "redstone"
+  permission:
+    only-vip: false
+    only-admin: false
+
+vermelho:
+  name: "&cVermelho"
+  color: "&c[{tag}]"
+  icon: "red_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+verde_escuro:
+  name: "&2Verde Escuro"
+  color: "&2[{tag}]"
+  icon: "green_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+verde:
+  name: "&aVerde"
+  color: "&a[{tag}]"
+  icon: "lime_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+azul_escuro:
+  name: "&1Azul Escuro"
+  color: "&1[{tag}]"
+  icon: "blue_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+ciano:
+  name: "&3Ciano"
+  color: "&3[{tag}]"
+  icon: "cyan_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+azul:
+  name: "&9Azul"
+  color: "&9[{tag}]"
+  icon: "light_blue_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+cinza:
+  name: "&7Cinza"
+  color: "&7[{tag}]"
+  icon: "light_gray_dye"
+  # Permissão necessária
+  permission:
+    # Apenas Guildas VIPs podem selecionar
+    only-vip: false
+
+    # Apenas administradores da equipe podem defini-la em uma guilda
+    only-admin: false
+
+cinza_escuro:
+  name: "&8Cinza Escuro"
+  color: "&8[{tag}]"
+  icon: "gray_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+amarelo:
+  name: "&eAmarelo"
+  color: "&e[{tag}]"
+  icon: "yellow_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+laranja:
+  name: "&6Laranja"
+  color: "&6[{tag}]"
+  icon: "orange_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+roxo_escuro:
+  name: "&5Roxo Escuro"
+  color: "&5[{tag}]"
+  icon: "purple_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+rosa:
+  name: "&dRosa"
+  color: "&d[{tag}]"
+  icon: "pink_dye"
+  permission:
+    only-vip: false
+    only-admin: false
+
+branco:
+  name: "&fBranco"
+  color: "&f[{tag}]"
+  icon: "white_dye"
+  permission:
+    only-vip: false
+    only-admin: false

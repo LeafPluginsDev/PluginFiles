@@ -1,0 +1,38 @@
+# Insira a Webhook Geral do canal que irá enviar as embeds
+# Caso as embeds não hajam "webhook" individuais, serão usadas esta:
+webhookURL: ""
+
+# Observação: É necessário ter baixado o LeafDiscord em seu servidor
+
+embeds:
+  # Placeholders disponíveis:
+  # %player% - nome do jogador
+  # %uuid% - uuid do jogador
+  # %times% - quantidade de vezes
+  # %player_icon% - URL do icone do jogador
+  update:
+    enable: true
+    webhook: ""
+    title: ""
+    color: "#ff3535"
+    thumbnailURL: "%player_icon%"
+    description: "## ⚔️ %player% é o **NOVO MITO!**\n # ```Pela %times%ª vez o jogador se mostra IMBATÍVEL!```"
+    field-inline: true
+    fields: [ ]
+    # O que vier antes do -> será o nome da field
+    # O que vier após o -> será o texto da field
+    footer: "www.leafplugins.com"
+    footerURL: ""
+  inactive:
+    enable: true
+    webhook: ""
+    title: ""
+    color: "#ffcf1b"
+    thumbnailURL: "%player_icon%"
+    description: "## ⚔️ %player%  **PERDEU SEU MITO!**\n # ```O jogador perdeu por inatividade.```"
+    field-inline: true
+    fields: [ ]
+    # O que vier antes do -> será o nome da field
+    # O que vier após o -> será o texto da field
+    footer: "www.leafplugins.com"
+    footerURL: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Clock_JE3_BE3.gif/revision/latest/thumbnail/width/360/height/360?cb=20201125194053"

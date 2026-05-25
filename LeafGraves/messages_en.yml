@@ -1,0 +1,6 @@
+warn-join: "&a&lWARNING &fYou have &a%graves% grave(s) &fwith your items! Use &a/graves &fto see the location!"
+grave-created: "&a&lGRAVE CREATED &fA grave has been created for you! Use &a/graves &fto see the location!"
+only-owner: "&cOnly the grave owner has access to it!"
+already-opened: "&cThis grave is already being opened by another player!"
+no-permission-open-others: "&cYou do not have permission to open this grave!"
+no-graves-found: "&cThe player has no available graves!"

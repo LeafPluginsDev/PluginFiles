@@ -1,0 +1,24 @@
+prize:
+  - ""
+  - "&7[&6%box_name%&7] &fParabéns, &7%opener_displayname%&f! Você ganhou:"
+  - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+  - ""
+
+receive-box:
+  - ""
+  - "&7[&6%box_name%&7] &fParabéns, &7%player_displayname%&f! Você recebeu &a%amount% caixa(s) &fpara abrir."
+  - ""
+
+receive-key:
+  - ""
+  - "&7[&6%box_name%&7] &fParabéns, &7%player_displayname%&f! Você recebeu &a%amount% chaves(s) &fpara usar."
+  - ""
+
+cant-open: "&cPara abrir &f%box_name% &cé necessário possuir uma caixa ou uma chave desta caixa em mãos."
+max-boxes-openning: "&cVocê já está abrindo o número máximo de caixas permitido (&f%max_boxes%&c). Aguarde terminar de abrir as caixas atuais."
+no-permission-instantly-open: "&cVocê não possui permissão para abrir caixas instantaneamente."
+
+actionBar:
+  opening: "&aAbrindo &f%box_name%"
+  already_opening: "&cVocê já está abrindo esta caixa"
+  someone_already_opening: "&cA &f%box_name% &cjá está sendo aberta por &f%player_displayname%"

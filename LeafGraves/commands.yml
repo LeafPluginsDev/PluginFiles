@@ -1,0 +1,8 @@
+# É necessário reiniciar o servidor após a alteração
+graves:
+  name: graves
+  use-command: true
+  permission: ''
+  aliases:
+    - 'covas'
+  usage: ''

@@ -1,0 +1,92 @@
+None:
+  visual:
+    name: "Nenhuma"
+    color: ""
+    icon: ""
+    prefix: ""
+    suffix: ""
+    preset: "&7Nenhuma"
+  options:
+    permission: ""
+    itemId: name_tag
+    rarity: "&fComum"
+    description: []
+
+YinYang:
+  visual:
+    name: "YinYang"
+    color: "&f"
+    icon: "&f☯"
+    prefix: "&f☯ "
+    suffix: " &f☯"
+    preset: "&f☯"
+  options:
+    permission: "leafmedals.medal.yinyang"
+    itemId: name_tag
+    rarity: "&fComum"
+    description:
+      - "&7Exclusivo do &6Passe de"
+      - "&6Batalha &7da &aTemporada 1"
+
+Toxico:
+  visual:
+    name: "Tóxico"
+    color: "&a"
+    icon: "&a☣"
+    prefix: "&a☣ "
+    suffix: " &a☣"
+    preset: "&a☣"
+  options:
+    permission: "leafmedals.medal.toxico"
+    itemId: name_tag
+    rarity: "&fComum"
+    description:
+      - "&7Exclusivo do &6Passe de"
+      - "&6Batalha &7da &aTemporada 1"
+
+Cafe:
+  visual:
+    name: "Café"
+    color: "&e"
+    icon: "&e☕"
+    prefix: "&e☕ "
+    suffix: " &e☕"
+    preset: "&e☕"
+  options:
+    permission: "leafmedals.medal.cafe"
+    itemId: head:f2b89f5487548bf67f9ba2bcbb3a791733184586b3208f6d37f2e3548feaf7e4
+    rarity: "&9Raro"
+    description:
+      - "Quem não ama um café?"
+
+Flash:
+  visual:
+    name: "Flash"
+    color: "&6"
+    icon: "&6⚡"
+    prefix: "&6⚡ "
+    suffix: " &6⚡"
+    preset: "&6⚡"
+  options:
+    permission: "leafmedals.medal.flash"
+    itemId: head:313f8768b3f5b614d7589fb273c6d3b9b0208310a025bb99a271c73c4b36eb70
+    rarity: "&9Raro"
+    description:
+      - "&7Exclusivo do &6Passe de"
+      - "&6Batalha &7da &aTemporada 1"
+
+Musico:
+  visual:
+    name: "Músico"
+    color: "&6"
+    icon: "&5♬"
+    prefix: "&5♬ "
+    suffix: " &5♬"
+    preset: "&5♬"
+  options:
+    permission: "leafmedals.medal.musico"
+    itemId: note_block
+    rarity: "&9Raro"
+    description:
+      - "&7Exclusivo do &6Passe de"
+      - "&6Batalha &7da &aTemporada 1"

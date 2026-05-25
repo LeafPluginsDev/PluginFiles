@@ -1,0 +1,164 @@
+Hack:
+  name: "Uso de Hack"
+  aliases: [ "cheating", "trapaças", "trapaça", "cheat" ]
+  # Caso queira utilizar uma head customizada, utilize: 'head:codigo'
+  icon: "RED_DYE"
+
+  # Tipo de punição que será aplicada (Caso o progress não esteja sendo usado)
+  # tipos: <ipban, ban, mute, kick> (Caso haja duração definida, automaticamente será temp(tipo)[tempban,etc...])
+  type: Ban
+
+  # Permissão necessária para aplicar esta punição
+  permission: "leafpunish.command.ban"
+
+  # Fará que seja obrigatório inserir uma prova
+  requires-proof: true
+
+  # A duração até o término desta punição
+  # Deixe vazio para que seja permanente ou caso a punição não haja versão temporária
+  # formato: <1min, 1h, 1d, 1m, 1a>
+  duration: ""
+
+  # [Premium]
+  # Faça com esta punição seja progressiva (Desative deixando a lista vazia)
+  # Exemplo: 1x sendo punido será banido temporariamente por 30 dias,
+  # a partir da segunda será ipban permanente
+  progress:
+    - "ban 60d"
+    - "ipban"
+
+Divulgacao-grave:
+  name: "Divulgação Grave"
+  aliases: [ "divugrave" ]
+  icon: "RED_DYE"
+  type: Ban
+  permission: "leafpunish.command.ban"
+  requires-proof: true
+  duration: ""
+  progress:
+    - "mute 10d"
+    - "ban"
+
+Bug:
+  name: "Abuso de bugs"
+  aliases: [ "bugs" ]
+  icon: "RED_DYE"
+  type: IpBan
+  permission: "leafpunish.command.ipban"
+  requires-proof: true
+  duration: ""
+  progress:
+    - "ban 30d"
+    - "ipban"
+
+Comercio:
+  name: "Comércio não autorizado"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Ban
+  permission: "leafpunish.command.tempban"
+  requires-proof: true
+  duration: "7d"
+  progress:
+    - "ban 7d"
+    - "ban"
+
+Comportamento-toxico:
+  name: "Comportamento Tóxico"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Ban
+  permission: "leafpunish.command.tempban"
+  requires-proof: true
+  duration: "2d"
+  progress:
+    - "ban 2d"
+    - "ban 10d"
+    - "ban 30d"
+    - "ban"
+
+Ofensa-ao-servidor:
+  name: "Ofensa ao servidor/staff"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Ban
+  permission: "leafpunish.command.tempban"
+  requires-proof: true
+  duration: "2d"
+  progress:
+    - "ban 1d"
+    - "ban"
+
+Anti-jogo:
+  name: "Anti-Jogo"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Ban
+  permission: "leafpunish.command.tempban"
+  requires-proof: true
+  duration: "1d"
+  progress: [ ]
+
+# Punições de silenciamento
+Flood-grave:
+  name: "Spam/Flood Grave"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Mute
+  permission: "leafpunish.command.mute"
+  requires-proof: false
+  duration: ""
+  progress:
+    - "mute 10h"
+    - "mute"
+
+Flood:
+  name: "Spam/Flood"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Mute
+  permission: "leafpunish.command.tempmute"
+  requires-proof: false
+  duration: "1h"
+  progress:
+    - "mute 1h"
+    - "mute 5h"
+    - "mute 10h"
+
+Ofensa-a-jogadores:
+  name: "Ofensa a jogadores"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Mute
+  permission: "leafpunish.command.tempban"
+  requires-proof: true
+  duration: "12h"
+  progress:
+    - "mute 12h"
+    - "mute 1d"
+
+Divulgacao:
+  name: "Divulgação"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Mute
+  permission: "leafpunish.command.tempmute"
+  requires-proof: false
+  duration: "5h"
+  progress:
+    - "mute 5h"
+    - "mute 10h"
+    - "mute"
+
+Ofensas:
+  name: "Ofensas no bate-papo"
+  aliases: [ ]
+  icon: "RED_DYE"
+  type: Mute
+  permission: "leafpunish.command.mute"
+  requires-proof: false
+  duration: "3d"
+  progress:
+    - "mute 1h"
+    - "mute 10h"
+    - "mute 3d"

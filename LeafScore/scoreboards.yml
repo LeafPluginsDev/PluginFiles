@@ -1,0 +1,205 @@
+# https://docs.leafplugins.com/v/score/tutorials
+# O LeafScore suporta scoreboards da versão beta
+
+# Exemplo de Scoreboard por mundo
+plotme:
+  titles:
+    frames:
+      - '&6&lTERRENOS'
+    interval: 0.0
+  lines:
+    1:
+      frames: ['']
+      interval: 0.0
+      condition: ""
+    2:
+      frames:
+        - '&fAdquira um terreno usando:'
+        - '&fDúvidas?'
+      interval: 5
+      condition: ''
+    3:
+      frames:
+        - '&a/plot auto'
+        - '&b/plot help'
+      interval: 5
+      condition: ''
+    4:
+      frames: ['']
+      interval: 0.0
+      condition: ''
+    5:
+      frames:
+        - "&fJogadores: &a%server_online%"
+      interval: 0.0
+      condition: ''
+    6:
+      frames: ['']
+      interval: 0.0
+      condition: ''
+    site:
+      frames:
+        - "&ewww.leafplugins.com"
+      interval: 0.0
+      condition: ''
+  options:
+    worlds: ['plotme', 'plotme_world', 'Plotme', 'Plots']
+    regions: []
+    permission: ''
+
+# Exemplo de Scoreboard por região
+regions:
+  titles:
+    frames:
+      - '&a&lREGION'
+      - '&a&lSCORE'
+    interval: 0.6
+  lines:
+    1:
+      frames: ['']
+      interval: 0
+      condition: ""
+    2:
+      frames:
+        - 'Você está em uma região'
+        - 'com scoreboard exclusiva'
+      interval: 2
+      condition: ''
+    3:
+      frames:
+        - ''
+      interval: 0.0
+      condition: ''
+    5:
+      frames:
+        - '&ewww.leafplugins.com'
+      interval: 0.2
+      condition: ''
+  options:
+    worlds: []
+    # Regiões que a scorebord será enviada
+    regions: [spawn]
+    permission: ''
+
+# Scoreboard padrão do servidor (Configuração antiga)
+# O plugin suporta esse formato para scoreboards estáticas
+# Além disso, os parametros de animação também funcionam
+default-legacy:
+  # Caso haja mais de um nesta lista, fará um título animado
+  titles:
+    - '<rainbow:5>&lLEAF</rainbow> &8▪ &7%server_online%'
+    - '<rainbow:5>&lSCORE</rainbow> &8▪ &7%server_online%'
+  # Linhas da scoreboard
+  lines:
+    - ''
+    - '&fCargo: &7%leaftags_tag_preset%'
+    - '&fClan: &a<when="empty">%simpleclans_clan_color_tag%</when="&cSem clan">'
+    - '<when var="%simpleclans_clan_color_tag%" equals="empty" then="&7Entre em um clan!" else="&fKDR: §7%simpleclans_clan_total_kdr%"></when>'
+    - ''
+    - '&eBanco:'
+    - ' &fCoins: &2$&f%vault_eco_balance_formatted%'
+    - ' &fCash: &6✪%playerpoints_points%'
+    - ''
+    - '&fJogadores: &a%server_online%'
+    - ''
+    - '&7leafplugins.com'
+  options:
+    # Tempo em segundos para que o titulo atualize para o próximo da lista (ANIMAÇÃO)
+    title-update: 0.8
+    # Mundos que a scoreboard será enviada
+    worlds: []
+    # Essa scoreboard será enviada apenas para quem ter a permissão (Deixe vazio para ser para todos)
+    permission: ''
+
+# Scoreboard padrão do servidor
+default:
+  # Titulo da Scoreboard
+  titles:
+    # Caso haja mais de um nesta lista, fará um titulo animado
+    frames:
+      - '<rainbow:13>&lLeaf Plugins</rainbow>'
+      - 'stay:5 &lLeaf Plugins'
+      - '<rainbow:1>&l<scroll:left>Leaf Plugins</scroll></rainbow>'
+      - '<rainbow:1>&l<scroll:rightt>Leaf Plugins</scroll></rainbow>'
+    interval: 0.2
+
+  # Linhas da Scoreboard
+  lines:
+    1:
+      # Caso haja mais de um nesta lista, fará uma linha animada
+      frames: ['']
+      # Intervalo para mudar de frame (0.1 minimo para animações)
+      interval: 0.0
+      # Condição para visualizar esta linha
+      condition: ""
+    2:
+      frames:
+        - '&fCargo: &7%leaftags_tag_preset%'
+      interval: 0.5
+      condition: ''
+    3:
+      frames: ['']
+      interval: 0.0
+      condition: ''
+    4:
+      frames:
+        - '&fClan: &a<when="empty">%simpleclans_clan_color_tag%</when="&cSem clan">'
+      interval: 0.0
+      condition: ''
+    5:
+      frames: ['']
+      interval: 0.0
+      condition: 'noClan'
+    6:
+      frames:
+        - ' <rainbow:5>»</rainbow> &fKDR: &a%simpleclans_clan_total_kdr%'
+        - ' <rainbow:5>»</rainbow> &fKills: &a%simpleclans_clan_total_kills%'
+        - ' <rainbow:5>»</rainbow> &fDeaths: &a%simpleclans_clan_total_deaths%'
+      interval: 1
+      condition: 'hasClan'
+    7:
+      frames:
+        - ''
+      interval: 0.0
+      condition: 'hasClan'
+    8:
+      frames:
+        - '&eBanco:'
+      interval: 0.0
+      condition: ''
+    9:
+      frames:
+        - ' &fCoins: &2$&f%vault_eco_balance_formatted%'
+      interval: 0.0
+      condition: ''
+    10:
+      frames:
+        - ' &fCash: &6✪%playerpoints_points%'
+      interval: 0.0
+      condition: ''
+    11:
+      frames: ['']
+      interval: 0.0
+      condition: ''
+    12:
+      frames:
+        - 'Jogadores: &a%server_online%'
+      interval: 0.0
+      condition: ''
+    13:
+      frames: ['']
+      interval: 0.0
+      condition: ''
+    site:
+      frames:
+        - '<rainbow:13>www.leafplugins.com</rainbow>'
+        - 'stay:5 &ewww.leafplugins.com'
+      interval: 0.2
+      condition: ''
+  options:
+    # Mundos que a scoreboard será enviada
+    worlds: []
+    # Regiões que a scorebord será enviada
+    regions: []
+    # Essa scoreboard será enviada apenas para quem ter a permissão (Deixe vazio para ser para todos)
+    permission: ''

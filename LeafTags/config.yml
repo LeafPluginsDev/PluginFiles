@@ -1,0 +1,315 @@
+# Agradecemos por escolher o LeafTags ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Arquivo que será usado para os prefixos
+tags-file: "default.yml"
+
+# Sistema de compra de tags
+shop:
+  # Economia que será usada para a compra de tags
+  # https://docs.leafplugins.com/tutorials/economies
+  economy: "Vault"
+
+  # Comandos que serão executados pelo console ao comprar uma tag
+  commands:
+    - "lp user %player% permission set %tag_permission% true"
+
+# Opções de bloqueio
+block-options:
+  # Removerá o brilho os mundos bloqueados
+  disable-glow: true
+
+  # Removerá a tag da tablist nos mundos bloqueados
+  disable-tablist: true
+
+  # Removerá a nametag nos mundos bloqueados
+  disable-nametag: false
+
+  # Removerá a displayName nos mundos bloqueados
+  disable-display-name: false
+
+  # Removerá o aboveName nos mundos bloqueados
+  disable-above-name: true
+
+  # Removerá o belowName nos mundos bloqueados
+  disable-below-name: true
+
+  # Não permitirá a mudança de tag em mundos bloqueados
+  block-change-tag: true
+
+  # Caso esteja 'true', fará que apenas os mundos da lista "worlds"
+  # tenha nametags/tag (Invertendo de blocked para whitelist)
+  white-list: false
+
+  # Mundos que terão a tag bloqueada
+  # Caso o white-list esteja 'true',
+  # fará que somente estes mundos tenham nametag/tag
+  worlds:
+  - "blockedWorld"
+
+# Sistema de exibição da vida do jogador em baixo do nome
+# Funcionará somente se o nome do jogador nativo estiver visível
+# Por tanto, o uso do high-limit deverá estar desativado
+player-health:
+  enable: false
+  text: "&c❤"
+
+# Desative 'nickname, display-name' caso prefira usar outro plugin de NameTag (ex: NametagEdit)
+# Desativando a função de NameTag, você poderá usa-lo como plugins de tags especiais e afins ;)
+nametag:
+  # O prefix e o suffix serão aplicados em seu nickname [Nametag] (Em cima do jogador)
+  # (Caso não tenha um plugin de tab, também aparecerá no tab)
+  # Esta função é o scoreboard-teams, que também influencia pra aplicar as cores dos brilhos
+  nickname: true
+
+  # Os visuais serão aplicados no tablist
+  tablist: true
+
+  # Você pode desativar ou ativar o sistema de brilho das tags para evitar conflitos
+  use-glow: true
+
+  # O prefix será aplicado no displayName
+  # (Serve para placeholders como %player_displayname%)
+  display-name: true
+
+  # Fará que ignore o limite de tamanho do prefix no nickname
+  # (Ativa-lo pode causar bugs em seu servidor caso use como NameTag, a menos que use o high-limit true)
+  ignore-size: false
+
+  # Fará com que caso esteja utilizando hologramas,
+  # force o nametag animado no jogador para que seja exibido em MODS de F5 de ver o próprio nickname
+  # (Isso faz com que envie mais pacotes, podendo criar problemas de desconexão, desordem no tablist e etc.)
+  self-nametag:
+    force: false
+
+    # O prefixo que será aplicado para o próprio jogador caso o modo forçado esteja desativado
+    prefix: "%tag_selfprefix%"
+
+# [Premium]
+# Nosso sistema que permite limites ainda maiores para nametags e mais
+hologram:
+  # Substituir o nome em cima do jogador pelo nosso sistema
+  # que permite tags ainda maiores mesmo em versões 1.8+
+  # O belowName só estará disponível caso esta opção esteja ativada
+  # (Automaticamente ativará o ignore-size internamente)
+  high-limit: true
+
+  # Formato do nome do jogador (SUPORTA PLACEHOLDERAPI)
+  # Valores padrões:
+  # ==> {prefix}: Prefixo
+  # ==> {suffix}: Sufixo
+  # ==> {player}: Nome do jogador
+  nick-format: "{prefix}{player}{suffix}"
+
+  # Distância máxima entre os jogadores para exibir os hologramas
+  # Utilize 0 ou -1 para desativar
+  distance-range: 50.0
+
+  # Tipo de task responsável pelos hologramas
+  # 'true' ==> SYNC ==> SÍNCRONO (Funciona melhor em versões como a 1.8)
+  # 'false' ==> ASYNC ==> ASSÍNCRONO (Melhor desempenho)
+  task-sync: true
+
+  # Método de entidade que será utilizado para o chain-optimize
+  # Tipos disponíveis: [0, 1, 2]
+  # 0 ==> Adaptado automaticamente conforme a versão do jogador [Varia entre 1 e 2 conforme a versão do jogador]
+  # 1 ==> Entidade com maior espaçamento entre os hologramas (Usado automaticamente na 1.8)
+  # 2 ==> Entidade com menor espaçamento entre os hologramas (Usado automaticamente na 1.9+)
+  chain-type: 0
+
+  # Fará com que ao em vez de usar o sistema de teletransporte de hologramas,
+  # use o sistema de "chain", que fica fixo no jogador sem precisar teletransportar
+  # Melhorias:
+  # ==> Sistema otimizado
+  # ==> Sem tempo de delay
+  # ==> Menor uso de pacotes
+  # Observação: Isso fará com que a configuração de altura não funcione (Será automático)
+  # (Utilize o ViaVersion no Spigot para melhorar a compatibilidade de alturas entre versões do jogador se seu servidor for 1.8)
+  # [Obrigatório o uso do high-limit]
+  chain-optimize: true
+
+  # Disponível para 1.21+ em servidores que possuirem PacketEvents
+  text-display:
+    # => Caso o uso do Text Display esteja ativado:
+    # => Será exibido para o próprio jogador obrigatoriamente
+    enable: true
+
+    # Sombra sobre o texto
+    shadow: true
+
+    # Permitir ver através do texto
+    seeThrough: false
+
+  # Alturas dos hologramas
+  heights:
+    # Altura do nome do jogador
+    nickname: -0.3
+
+    # Altura dos textos em cima do nome
+    abovename: -0.1
+
+  # Visibilidade dos hologramas
+  visibility:
+    # => Caso o uso do Text Display esteja ativado:
+    # => Será exibido para o próprio jogador obrigatoriamente
+    #
+    # => Caso esteja com 'chain-optimize' desligado:
+    # => Fazer com que veja os próprios hologramas terá um delay somente para o próprio jogador
+    # => Pois o CLIENT é sempre a frente do SERVIDOR. Porém, pra outros jogadores, vai ficar sincronizado corretamente
+
+    # Caso esteja 'true', o jogador poderá ver seu próprio nickname
+    # (Somente com tags animadas ou high-limit)
+    # [RECOMENDADO SOMENTE PARA TESTES]
+    self-nickname: false
+
+    # Caso esteja 'true', o jogador poderá ver o próprio texto em cima do nome
+    # [RECOMENDADO SOMENTE PARA TESTES]
+    self-abovename: false
+
+    # Caso esteja 'true', o jogador poderá ver o próprio texto a baixo do nome
+    # [RECOMENDADO SOMENTE PARA TESTES]
+    self-belowname: false
+
+    # Caso esteja 'true', sempre exibirá os hologramas para TODOS mesmo se o jogador estiver AGACHADO
+    always-visible: false
+
+# [Premium]
+# Compatibilidade com plugins de fakes e nomes customizados
+# Mudará o nome do jogador no displayName, tablist e holograma.
+custom-name:
+  enable: false
+
+  # Placeholder que retornará o nome fake ou customizado do jogador
+  placeholder: "%plugin_name%"
+
+options:
+  # Sempre que o jogador entrar no servidor, entrará com a última tag usada
+  # (Recomendado para servidores BungeeCord)
+  # Observação: Caso seu servidor seja BungeeCord,
+  # só funcionará caso a tag exista em todos os servidores
+  last-tag: true
+
+  # Permitir o jogaddor ativar/desativar o brilho da tag (Quando houver)
+  # Necessário reiniciar para retirar ou ativar o comando
+  allow-disable-glow: true
+
+  # Forçará que o jogador sempre esteja usando alguma tag
+  # Caso esteja 'false', permitirá o jogador ficar sem tag (Desequipar)
+  force-player-tag: true
+
+  # Sempre que o jogador entrar no servidor, entrará com o último sufixo customizado usado
+  # (Recomendado para servidores BungeeCord)
+  # Observação: Caso seu servidor seja BungeeCord,
+  # só funcionará caso o sufixo exista em todos os servidores
+  last-suffix: true
+
+  # Fará que sempre que o jogador altere sua tag, atualize instantaneamente no banco de dados
+  database-update: true
+
+  # Organizar as tags pela "position" definida
+  # Isso influenciará na checagem da maior tag do jogador e organização do /tag
+  # Deixe 'false' caso queira manter como antigamente
+  organize-by-position: true
+
+  # Formato do nome do jogador no Tablist (SUPORTA PLACEHOLDERAPI)
+  # Valores padrões:
+  # ==> {prefix}: Prefixo
+  # ==> {suffix}: Sufixo
+  # ==> {player}: Nome do jogador
+  tab-format: "{prefix}{player}{suffix}"
+
+  # Sempre que o jogador alterar sua tag manualmente,
+  # será enviada uma log ao console
+  log-console: true
+
+  # Mensagem que será enviada na log (Suporta cores)
+  log-console-message: "&9[Tag] &rO jogador &a%player% &ralterou sua tag para %tag_name%"
+
+updates:
+  # Atualizar a tag do jogador quando mudar de mundo
+  on-world-change: true
+
+  # Atualizar a tag do jogador quando ter seu cargo alterado
+  on-group-change: true
+
+  # Qualquer ação detectada sobre o clan irá atualizar a tag
+  # (Ajuda a manter o suffix atualizado)
+  # Exemplos: Sair, entrar, atualização do clan
+  on-clan-update: true
+
+  # Segundos para atualizar a tag automaticamente
+  # (Deixe 0 para desativar) [Ajuda a manter o suffix atualizado]
+  seconds-to-update: 3
+
+  # O jogador sempre terá sua tag alterada para a máxima
+  # quando houver alguma tag update
+  always-max-tag: false
+
+command:
+  # Tempo em segundos para poder alterar a tag novamente
+  # (Deixe 0 para desativar)
+  cooldown: 1
+
+  # Permissão para não ter cooldown
+  # (Deixe vazio para desativar)
+  cooldown-permission: "leaftags.cooldown"
+
+  # Fará que caso o jogador tenha sua tag alterada por outra pessoa
+  # ela receba a mensagem 'tag-set'
+  target-set-message: true
+
+  # Fará que as tags sejam selecionadas através do menu
+  select-menu: true
+
+  # Fará que os sufixos sejam selecionadas através do menu
+  select-menu-suffix: false
+
+  # Fará que as tags possam ser selecionadas clicando
+  # (Funcionará apenas com 'select-menu' estando 'false')
+  json-click: true
+
+  # Fará que apareça de forma crescente conforme a configuração
+  reverse-list: true
+
+  # Enviará um titulo quando a tag for alterada
+  title:
+    enable: true
+    title: "%tag_preset%"
+    subtitle: "Tag selecionada"
+
+  # Som que irá tocar quando mudar de tag
+  # (Deixe vazio para desativar)
+  sound: CHICKEN_EGG_POP

@@ -1,0 +1,32 @@
+# É necessário reiniciar o servidor após a alteração
+vincular:
+  name: vincular
+  use-command: true
+  permission: ''
+  aliases:
+    - linkdiscord
+    - vinculardiscord
+
+desvincular:
+  name: desvincular
+  use-command: true
+  permission: ''
+  aliases:
+    - unlinkdiscord
+    - desvinculardiscord
+
+conferirvinculo:
+  name: conferirvinculo
+  use-command: true
+  permission: 'leafdiscord.admin'
+  aliases:
+    - checklink
+
+
+desvincularadmin:
+  name: desvincularadmin
+  use-command: true
+  permission: 'leafdiscord.admin'
+  aliases:
+    - unlinkadmin
+

@@ -1,0 +1,58 @@
+main-menu:
+  title: "%box_name% - Prêmios"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos prêmios
+    format:
+      name: "%prize_name%"
+      lore:
+        - ""
+        - " &fRaridade: &a%rarity_displayname%"
+        - " &fProbabilidade: &b%prize_chance%%"
+        - ""
+
+  # Altere como quiser (Adicionar, remover, editar itens)
+  items:
+    historic:
+      name: "&a%player_displayname%"
+      item: "head:player"
+      slot: 48
+      lore:
+        - ""
+        - " &fCaixas disponíveis: &a%boxes%"
+        - ""
+        - "&eClique para conferir seus ganhos"
+
+
+    open:
+      name: "&eAbrir caixa"
+      item: "TRIPWIRE_HOOK"
+      slot: 50
+      lore:
+        - ""
+        - "&f Sair do menu"
+        - ""
+
+      closeInventory: true
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

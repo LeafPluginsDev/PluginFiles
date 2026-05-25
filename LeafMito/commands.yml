@@ -1,0 +1,7 @@
+# É necessário reiniciar o servidor após a alteração
+mito:
+  name: "mito"
+  use-command: true
+  permission: ''
+  aliases: [ 'mitos', 'mitopvp' ]
+  usage: ''

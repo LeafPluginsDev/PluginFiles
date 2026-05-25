@@ -1,0 +1,37 @@
+plotme:
+  header:
+    - ""
+    - "&6&lTERRENOS"
+    - ""
+    - "&7Seu cargo: %leaftags_tag_preset%"
+    - "&7Sua conexão: &a%player_ping%ms"
+    - ""
+  footer:
+    - ""
+    - "&7Nossa loja: &bwww.leafplugins.com"
+    - "&7Nosso discord: &9discord.leafplugins.com"
+    - ""
+  options:
+    # Mundos que a tablist será enviada
+    worlds: ["Plotme"]
+    # Essa tablist será enviada apenas para quem ter a permissão (Deixe vazio para ser para todos)
+    permission: ""
+
+default:
+  header:
+    - ""
+    - "&b&lLEAFSCORE"
+    - ""
+    - "&7Seu cargo: %leaftags_tag_preset%"
+    - "&7Sua conexão: &a%player_ping%ms"
+    - ""
+  footer:
+    - ""
+    - "&7Nossa loja: &bwww.leafplugins.com"
+    - "&7Nosso discord: &9discord.leafplugins.com"
+    - ""
+  options:
+    # Mundos que a tablist será enviada
+    worlds: []
+    # Essa tablist será enviada apenas para quem ter a permissão (Deixe vazio para ser para todos)
+    permission: ""

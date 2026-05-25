@@ -1,0 +1,66 @@
+# Mensajes relacionados con la tienda
+shop:
+  buttons:
+    confirm:
+      name: "COMPRAR"
+      description:
+        - "&aConfirmar la compra"
+    cancel:
+      name: "CANCELAR"
+      description:
+        - "&cCancelar la compra"
+    equip:
+      name: "[Equipar]"
+      description:
+        - "&3Equipar la etiqueta"
+
+  confirm: "&7\\n&7¿Deseas confirmar la compra de la etiqueta &f%tag_color%%tag_name%&7?\\n&a&l{confirm} &7- &c&l{cancel}\\n"
+  sucessfull: "&7\\n&a¡Has adquirido la etiqueta &f%tag_color%%tag_name% &acon éxito! &3{equip}\\n"
+  money-not-enough: "&c¡No tienes saldo suficiente! Te faltan $%missing_formatted% de $%tag_price_formatted%!"
+
+# Mensaje de la lista de etiquetas
+tag-list: "&aTus tags: &f%tags%"
+
+# Visual de las etiquetas en la lista
+tag-list-visual: "%tag_preset%"
+
+# Visual de lo que separará las etiquetas en la lista
+tag-list-separe: "&f, "
+
+# Visual previo al pasar el mouse sobre la etiqueta
+tag-list-preview:
+  - "%tag_preview%"
+  - ""
+  - "&eHaz clic para seleccionar"
+
+tag-set: "&aTu tag ha sido cambiada a %tag_name%."
+tag-give: "&aTag %tag_name% otorgada a %player%."
+tag-remove: "&aTag %tag_name% eliminada de %player%."
+tag-target-set: "&aTag de %player% cambiada a %tag_name%."
+tag-already-set: "&cYa tienes la tag %tag_name%."
+tag-no-permission: "&cEsta tag no se encontró o no la tienes."
+tag-not-found: "&cEsta tag no se encontró o no la tienes."
+tag-blocked-world: "&cNo se permite cambiar de tag en este mundo."
+command-set-usage: "<jugador> <tag> %usage%"
+
+suffixes:
+  # Mensaje de la lista de sufijos
+  suffix-list: "&aTus sufijos: &f%suffixes%"
+
+  # Visual de los sufijos en la lista
+  suffix-list-visual: "%suffix_preset%"
+
+  # Visual de lo que separará los sufijos en la lista
+  suffix-list-separe: "&f, "
+
+  # Visual previo al pasar el mouse sobre el sufijo
+  suffix-list-preview:
+    - "%suffix_preview%"
+    - ""
+    - "&eHaz clic para seleccionar"
+
+  suffix-set: "&aTu sufijo ha sido cambiado a %suffix_name%."
+  suffix-already-set: "&cYa tienes el sufijo %suffix_name%."
+  suffix-no-permission: "&cEste sufijo no se encontró o no lo tienes."
+  suffix-not-found: "&cEste sufijo no se encontró o no lo tienes."
+  suffix-blocked: "&cNo se permite el uso de sufijos en tu tag actual."

@@ -1,0 +1,9 @@
+# Bloqueará todas as logs que possuirem as seguintes mensagens
+blocked-logs:
+  - "Disconnecting com.mojang.authlib"
+  - "lost connection:"
+  - "UUID of player"
+  - "org.apache.commons.lang.UnhandledException: Plugin Multiverse-Core"
+  - "[BuycraftX] Failed to send analytic events"
+  - "[BuycraftX] Can't send analytics"
+  - "[BuycraftX] Error whilst retrieving listing"

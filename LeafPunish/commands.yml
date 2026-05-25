@@ -1,0 +1,153 @@
+# É necessário reiniciar o servidor após a alteração
+warn:
+  name: warn
+  use-command: true
+  aliases:
+    - alertar
+    - avisar
+  usage: para alertar um jogador.
+
+punish:
+  name: punish
+  use-command: true
+  aliases:
+    - punir
+  usage: <motivo> para punir um jogador.
+
+ban:
+  name: ban
+  use-command: true
+  aliases:
+    - banir
+  usage: para banir um jogador.
+
+kick:
+  name: kick
+  use-command: true
+  aliases:
+    - expulsar
+  usage: para expulsar um jogador.
+
+mute:
+  name: mute
+  use-command: true
+  aliases:
+    - silenciar
+  usage: para silenciar um jogador.
+
+ipban:
+  name: ipban
+  use-command: true
+  aliases:
+    - banir-ip
+    - ban-ip
+    - ip-ban
+  usage: para banir o endereço-ip de um jogador.
+
+tempban:
+  name: tempban
+  use-command: true
+  aliases:
+    - temp-ban
+    - ban-temp
+  usage: para banir temporariamente um jogador.
+
+tempipban:
+  name: tempipban
+  use-command: true
+  aliases:
+    - temp-ipban
+    - ipban-temp
+    - temp-ip-ban
+  usage: para banir temporariamente o endereço-ip de um jogador.
+
+tempmute:
+  name: tempmute
+  use-command: true
+  aliases:
+    - temp-mute
+    - mute-temp
+  usage: para silenciar temporariamente um jogador.
+
+pardon:
+  name: pardon
+  use-command: true
+  aliases:
+    - perdoar
+    - revogar
+  usage: para revogar todas as punições de um jogador.
+
+pardonid:
+  name: pardonid
+  use-command: true
+  aliases:
+    - perdoar-id
+  usage: para revogar uma punição pelo id.
+
+unban:
+  name: unban
+  use-command: true
+  aliases:
+    - desbanir
+  usage: para revogar o banimento um jogador.
+
+unmute:
+  name: unmute
+  use-command: true
+  aliases: [ ]
+  usage: para revogar o silenciamento de um jogador.
+
+punishments:
+  name: punishments
+  use-command: true
+  aliases:
+    - punicoes
+    - banlist
+  usage: para ver as punições do servidor.
+
+historic:
+  name: historic
+  use-command: true
+  aliases:
+    - historico
+  usage: para ver o histórico de um jogador.
+
+clearhistoric:
+  name: clearhistoric
+  use-command: true
+  aliases:
+    - clearhc
+  usage: para limpar o histórico de um jogador.
+
+clearwarnings:
+  name: clearwarnings
+  use-command: true
+  aliases:
+    - clearwarns
+  usage: para retirar os alertas de um jogador.
+
+punishedit:
+  name: punishedit
+  use-command: true
+  aliases:
+    - editar-punicao
+  usage: para editar uma punição.
+
+punishinfo:
+  name: punishinfo
+  use-command: true
+  aliases:
+    - ver-punicao
+    - punish-info
+  usage: para ver as informações de uma punição.
+
+checkplayer:
+  name: checkplayer
+  use-command: true
+  aliases:
+    - "checkban"
+    - "checkmute"
+    - "checkpunish"
+    - "checarpunicao"
+    - "checarjogador"
+  usage: para checar um jogador.

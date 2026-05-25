@@ -1,0 +1,259 @@
+punish-expires-never: "Nunca"
+punish-status-active: "Ativo"
+punish-status-inactive: "Inativo"
+
+command-usage-temp-server: "<jogador> <servidor> <duração> <motivo> %usage%"
+command-usage-temp-server-proof: "<jogador> <servidor> <prova> <duração> <motivo> %usage%"
+command-usage-temp-target-server-reason: "<jogador> <servidor> <duração> <motivo> %usage%"
+command-usage-server-proof: "<jogador> <servidor> <prova> <motivo> %usage%"
+command-usage-target-server-reason: "<jogador> <servidor> <motivo> %usage%"
+command-usage-temp-proof: "<jogador> <prova> <duração> <motivo> %usage%"
+command-usage-temp: "<jogador> <duração> <motivo> %usage%"
+command-usage-proof: "<jogador> <prova> <motivo> %usage%"
+command-usage-target-server: "<jogador> <servidor> %usage%"
+command-usage-target: "<jogador> %usage%"
+command-usage: "<jogador> <motivo> %usage%"
+
+confirm-buttons:
+  confirm-yes:
+    name: "&a&nSim"
+    description:
+      - "&aConfirmar mesmo assim"
+  confirm-no:
+    name: "&c&nNão"
+    description:
+      - "&cCancelar punição"
+  confirm:
+    name: "&a&lCONFIRMAR"
+    description:
+      - "&7Motivo: &f%reason%"
+      - "&7Tipo: &f%type%"
+      - "&7Prova: &f%proof%"
+      - "&eClique para confirmar"
+  cancel:
+    name: "&c&lCANCELAR"
+    description:
+      - "&cCancelar punição"
+  silent:
+    name: "&e&lSILENCIOSO"
+    description:
+      - "&7Motivo: &f%reason%"
+      - "&7Tipo: &f%type%"
+      - "&7Prova: &f%proof%"
+      - ""
+      - "&aPunir sem anúncios"
+      - ""
+      - "&eClique para confirmar"
+
+command-punishment-processing: "&aProcessando punição..."
+command-punishment-proof: '\\n&aDigite no chat uma prova para continuar!\\n&cDigite &ncancel&c para cancelar!\\n'
+command-punishment-confirm: '\\n&7Você está prestes a punir &c%player%\\n&7Deseja confirmar esta punição?\\n{cancel} {confirm} {silent}\\n'
+command-punishment-cancel: "&aPunição cancelada."
+command-punishment-target-unregistered: "&7\\n&7O jogador &f\"%player%\" &7não está registrado em nosso banco de dados.\\n&7Deseja prosseguir a punição mesmo assim?\\n&7\\n{yes} &7- {no}"
+
+command-banning-concluded: "&aVocê baniu &f%player% &apor &f%reason% &acom sucesso em &f%server%&a!"
+command-muting-concluded: "&aVocê silenciou &f%player% &apor &f%reason% &acom sucesso em &f%server%&a!"
+command-kick-concluded: "&aVocê expulsou &f%player% &apor &f%reason% &acom sucesso em &f%server%&7!"
+command-warn-concluded: "&aVocê alertou &f%player%&a por &f%reason% &acom sucesso! (%current%/%max%)"
+command-warn-punished: "&aO jogador &f%player% &aexcedeu o máximo de alertas e foi punido!"
+command-pardonid-concluded: "&aA punição '%id%' foi revogada com sucesso!"
+command-pardon-concluded: "&aPunição de &f%player% &arevogada com sucesso em &f%server%&a!"
+command-pardon-concluded-2: "&aPunições de &f%player% &arevogadas com sucesso em &f%server%&a!"
+command-punishedit-concluded: "&aInformação &f'%info%' &ade &f#%id% &aalterada para &f'%result%'"
+command-clearwarnings-concluded: "&aAlertas de &f%player% &aremovidos!"
+command-clearhistoric-concluded: "&aHistórico de &f%player% &alimpo com sucesso!"
+
+command-punishment-not-found: "&cA punição '%id%' não foi encontrada."
+command-punishment-failed: "&cNão foi possível efetuar esta punição."
+command-punishment-failed-2: "&cO jogador &f%player%&c já está punido com &f%type% &cem &f%server%&c."
+command-something-is-missing: "&cAlguma informação está faltando."
+command-requires-server: "&cÉ necessário inserir um servidor."
+command-requires-reason: "&cÉ necessário inserir um motivo."
+command-requires-proof: "&cÉ necessário inserir uma prova."
+command-requires-proof-link: "&cÉ necessário que a prova comece com um destes endereços: &f%prooflinks%&c."
+command-requires-duration: "&cÉ necessário inserir uma duração."
+command-requires-duration-examples: "&cUtilize um destes formatos: &f1min, 1h, 1d, 1m, 1a&c."
+command-no-permission-target: "&cVocê não pode punir este jogador."
+command-blocked-nick: "&cEste jogador está na lista de nomes que não podem ser punidos."
+command-target-is-you: "&cVocê não pode punir a si mesmo."
+command-group-hierarchy: "&cO cargo do jogador é superior ou igual ao seu."
+command-reason-not-found: "&cO motivo '%reason%' não foi encontrado."
+command-server-not-found: "&cUse &fGlobal &cpara punir em todos ou use um dos servidores: &f%servers%"
+command-warn-failed: "&cNão foi possível efetuar este alerta."
+command-pardon-failed: "&cO jogador &f%player% &cnão possui punições em &f%server%&c."
+command-pardon-failed-2: "&cO jogador &f%player% &cnão possui &f%type% &cativo em &f%server%&c."
+command-punishedit-examples: "&cInformações que podem ser alteradas: &fmotivo, prova, expirar, servidor&c."
+command-clearwarnings-failed: "&cO jogador &f%player% &cnão possui alertas."
+command-clearhistoric-failed: "&cO jogador &f%player% &cnão possui um histórico de punições."
+command-historic-failed: "&cNão foi encontrada punições sofridas por este jogador."
+command-historic-author-failed: "&cNão foi encontrada punições feitas por este jogador."
+command-punish-creating-input: "&7Você pode cancelar escrevendo &fcancel&7!"
+command-punish-creating-type: "&cÉ necessário selecionar o tipo de punição."
+command-punish-creating-proof: "&cEscreva no chat para inserir a prova.\\n&cÉ necessário que a prova comece com um destes endereços: &f%prooflinks%&c."
+command-punish-creating-reason: "&cEscreva no chat para inserir o motivo ou selecione."
+command-punish-creating-server: "&cEscreva no chat para selecionar o servidor.\\n&cUse &fGlobal &cpara punir em todos ou use um dos servidores: &f%servers%"
+command-punish-creating-duration: "&cEscreva no chat para definir a duração.\\n&cUtilize um destes formatos: &f1s, 1min, 1h, 1d, 1m, 1a&c."
+
+ban-server-action-cancel: "&cVocê não pode fazer isto."
+ban-server-command-cancel: "&cVocê não pode utilizar este comando."
+
+# Placeholders disponíveis:
+# %player% - nome do jogador
+# %uuid% - uuid do jogador
+# %id% - id da punição
+# %author% - nome do autor
+# %type% - tipo de punição
+# %reason% - motivo da punição
+# %server% - servidor da punição
+# %proof% - prova da punição
+# %date% - data da punição
+# %expires% - tempo até expirar
+# %expiresDate% - data de expiração
+# %expiresTimeStamp% - timestamp de expiração
+
+disconnects:
+  kick:
+    - "&cVocê foi desconectado: &f%reason%"
+  ban:
+    - "&cVocê foi banido permanentemente."
+    - "&cMotivo: &f%reason%"
+    - "&cEvidência: &f%proof%"
+    - "&cID da punição: &f#%id%"
+    - ""
+    - "&7Adquira seu unban em: &bwww.leafplugins.com"
+    - "&cBanido injustamente? Contate-nos via"
+    - "&cwww.leafplugins.com/appeal"
+  tempban:
+    - "&cVocê foi banido temporariamente."
+    - "&cMotivo: &f%reason%"
+    - "&cEvidência: &f%proof%"
+    - "&cID da punição: &f#%id%"
+    - ""
+    - "&cExpira em: &f%expires%"
+    - ""
+    - "&7Adquira seu unban em: &bwww.leafplugins.com"
+    - "&cBanido injustamente? Contate-nos via"
+    - "&cwww.leafplugins.com/appeal"
+
+warns:
+  pardon:
+    - "&aSua punição foi revogada!"
+    - ""
+    - "&aPunição: &f%type%"
+    - "&aPunido em: &f%date%"
+    - ""
+    - "&aApós uma analise, decidimos remove-la"
+    - "&aNossa equipe pede desculpas por &nqualquer incomodo"
+    - ""
+  expired:
+    - "&aSua punição expirou!"
+    - ""
+    - "&aPunição: &f%type%"
+    - "&aPunido em: &f%date%"
+    - ""
+    - "&aNossa equipe pede desculpas por &nqualquer incomodo"
+    - ""
+  warn:
+    - ""
+    - "&cVocê foi alertado!"
+    - ""
+    - "&cMotivo: &f%reason%"
+    - "&cAutor: &f%author%"
+    - "&cChances: &f%current%/%max%"
+    - ""
+    - "&cCaso ultrapasse o limite, você será punido"
+    - ""
+  mute:
+    - ""
+    - "&cVocê está silenciado permanentemente!"
+    - ""
+    - "&cMotivo: &f%reason%"
+    - "&cAutor: &f%author%"
+    - "&cEvidência: &f%proof%"
+    - ""
+    - "&cPunido injustamente? Contate-nos em"
+    - "&c&nleafplugins.com"
+    - ""
+  tempmute:
+    - ""
+    - "&cVocê está silenciado temporariamente!"
+    - ""
+    - "&cMotivo: &f%reason%"
+    - "&cAutor: &f%author%"
+    - "&cEvidência: &f%proof%"
+    - "&cExpira em: &f%expires%"
+    - ""
+    - "&cPunido injustamente? Contate-nos em"
+    - "&c&nleafplugins.com"
+    - ""
+
+broadcasts:
+  status:
+    # Placeholders disponíveis:
+    # %total% - total de punições
+    # %total_period% - total de punições no período
+    # %bans% - banimentos no período
+    # %mutes% - silenciamentos no período
+    # %hours% - horas definidas no periodo
+    - ""
+    - " &4[PUNIÇOES DO SERVIDOR]"
+    - " &fEm nosso servidor, &c&l%total%&f punições já foram registradas."
+    - " &fCerca de &c&l%bans% &fbanimentos e &c&l%mutes%&f mutes em %hours% horas!"
+    - " &cContinue denunciando jogadores infratores para auxiliar nossa equipe."
+    - ""
+  prevented:
+    - ""
+    - "§c(!) O jogador &f%player% &ctentou entrar estando banido."
+    - ""
+  warn:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi alertado."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Chances: %current%/%max%"
+    - ""
+  kick:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi desconectado."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - ""
+  mute:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi silenciado permanentemente."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Servidor: &f%server%"
+    - ""
+  tempmute:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi silenciado temporariamente."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Expira em: &f%expires%"
+    - "&c(!) Servidor: &f%server%"
+    - ""
+  ban:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi banido permanentemente."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Evidência: &f%proof%"
+    - "&c(!) Servidor: &f%server%"
+    - ""
+  tempban:
+    - ""
+    - "&c(!) O jogador &f%player% &cfoi banido temporariamente."
+    - "&c(!) Motivo: &f%reason%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Evidência: &f%proof%"
+    - "&c(!) Expira em: &f%expires%"
+    - "&c(!) Servidor: &f%server%"
+    - ""
+  pardon:
+    - ""
+    - "&c(!) O jogador &f%player% &cteve sua punição revogada."
+    - "&c(!) Punição: &f%type%"
+    - "&c(!) Autor: &f%author%"
+    - "&c(!) Servidor: &f%server%"
+    - ""

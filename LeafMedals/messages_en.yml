@@ -1,0 +1,23 @@
+# Medal list message
+medal-list: "&aYour medals: &f%medals%"
+
+# Visual representation of the medals in the list
+medal-list-visual: "%medal_preset%"
+
+# Visual that separates the medals in the list
+medal-list-separe: "&f, "
+
+# Visual of the preview when hovering over the medal
+medal-list-preview:
+  - '%medal_color%%medal_name% %medal_icon%'
+  - ''
+  - '&eClick to select'
+
+medal-set: "&aYour medal has been changed to %medal_name%&a."
+medal-already-set: "&cYou already have the %medal_name% medal&c."
+medal-target-set: "&aSlot #%slot% set with %medal_name% for %player%."
+medal-target-set-failed-1: "&cThe player does not have permission for the slot."
+medal-target-set-failed-2: "&cThe player does not have the medal."
+medal-no-permission: "&cThis medal was not found or you do not have it."
+medal-not-found: "&cThis medal was not found or you do not have it."
+command-set-usage: "<player> <slot> <medal> %usage%"

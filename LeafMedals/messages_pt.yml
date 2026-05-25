@@ -1,0 +1,23 @@
+# Mensagem da lista de medalhas
+medal-list: "&aSuas medalhas: &f%medals%"
+
+# Visual das medalhas na lista
+medal-list-visual: "%medal_preset%"
+
+# Visual do que separará as medalhas na lista
+medal-list-separe: "&f, "
+
+# Visual do preview ao passar o mouse em cima da medalha
+medal-list-preview:
+  - '%medal_color%%medal_name% %medal_icon%'
+  - ''
+  - '&eClique para selecionar'
+
+medal-set: "&aSua medalha foi alterada para %medal_name%&a."
+medal-already-set: "&cVocê já está com a medalha %medal_name%&c."
+medal-target-set: "&aSlot #%slot% definido com %medal_name% para %player%."
+medal-target-set-failed-1: "&cO jogador não possui permissão para o slot."
+medal-target-set-failed-2: "&cO jogador não possui a medalha."
+medal-no-permission: "&cEsta medalha não foi encontrada ou você não a possui."
+medal-not-found: "&cEsta medalha não foi encontrada ou você não a possui."
+command-set-usage: "<jogador> <slot> <medalha> %usage%"

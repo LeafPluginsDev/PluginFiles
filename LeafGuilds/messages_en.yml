@@ -1,0 +1,315 @@
+commands:
+  guild:
+    header:
+      - ""
+      - "&eGuild Commands:"
+    format: "&b/%label% %command% &8- &f%description%"
+    names:
+      criar: "create"
+      expulsar: "kick"
+      convidar: "invite"
+      online: "online"
+      info: "info"
+      chat: "chat"
+      aceitar: "accept"
+      recusar: "deny"
+      convites: "invites"
+      pedidos: "requests"
+      promover: "promote"
+      rebaixar: "demote"
+      transferir: "transfer"
+      upgrade: "upgrade"
+      set: "set"
+      bau: "chest"
+      sethome: "sethome"
+      home: "home"
+      ally: "ally"
+      inimigo: "enemy"
+      sair: "leave"
+      excluir: "delete"
+    descriptions:
+      criar: "Create your guild"
+      expulsar: "Kick a member"
+      convidar: "Invite a player"
+      online: "Check online members"
+      info: "Guild information"
+      chat: "Send a message"
+      aceitar: "Accept an invite"
+      recusar: "Deny an invite"
+      convites: "View received invites"
+      pedidos: "Manage invites and join requests"
+      promover: "Promote a member"
+      rebaixar: "Demote a member"
+      transferir: "Transfer ownership"
+      upgrade: "Upgrade the guild"
+      set: "Change guild settings"
+      bau: "Open the community chest"
+      sethome: "Set the guild home"
+      home: "Teleport to the guild home"
+      ally: "Manage alliances"
+      inimigo: "Manage enemies"
+      sair: "Leave the guild"
+      excluir: "Delete the guild"
+
+menus:
+  permission:
+    leader: "&cYou must be the Leader"
+    moderator: "&cYou must be a Moderator"
+    recruiter: "&cYou must be a Recruiter"
+    allowed: "&eClick to manage"
+
+  discord:
+    buttons:
+      link:
+        name: "https://discord.gg/%discord%"
+        description: "&7Join the Discord"
+      update:
+        name: "&e[Change]"
+        description: "&aClick to update"
+    usage: "{n}&9Type the Discord link in chat.{n}&7You can cancel by typing &c&ncancel{n}&r "
+    update: "{n}&a&lDISCORD UPDATED!{n}&r&fDiscord updated to:{n}&ahttps://discord.gg/%discord%{n}&r "
+    message: "{n}&9&lOUR DISCORD {update}{n}&r&fJoin our Discord:{n}&a{link}{n}&r "
+
+guilds:
+  notifications:
+    server-guild-created: "{n}&e&l(!) %guild_colortag% &fhas just been founded by &f%player_displayname%&f!{n}&r "
+    server-guild-deleted: "{n}&e&l(!) %guild_colortag% &fwas deleted by &f%player_displayname%&f!{n}&r "
+
+    guild-delete: "{n}&c&l(!) GUILD DELETED{n}&r&7Your Guild %guild_colortag% &7was deleted.{n}&r "
+    guild-upgrade: "%guild_colortag% &a[+] &7The Guild was upgraded by &f%author%&7!"
+    join-server: "%guild_colortag% %role_prefix% &f%player% &7joined this server."
+    new-member: "%guild_colortag% &a[+] &7Player &f%player% &7joined the Guild!"
+    leave-member: "%guild_colortag% &c[-] &7Player &f%player% &7left the Guild!"
+    kick-member: "%guild_colortag% &c[!] &7Member &f%player% &7was &ckicked &7from the Guild by &f%author%&7!"
+    promote-member: "%guild_colortag% &b[+] &f%player% &7was &bpromoted &7to %role_color%%role_name%&7!"
+    demote-member: "%guild_colortag% &e[-] &f%player% &7was &edemoted &7to %role_color%%role_name%&7!"
+    transfer-member: "%guild_colortag% &b[+] &7The &f%role_prefix% &7ownership from &f%leader% &7was &btransferred &7to &f%player%&7!"
+
+  online:
+    result: "{n}&eOnline members: &r%online%{n} "
+    not-in-guild: "&cYou are not in a guild."
+
+  chat:
+    command-usage: "<message> to send a message."
+    not-in-guild: "&cYou are not in a guild."
+
+  info:
+    not-in-guild: "&cYou are not in a guild."
+
+  settings:
+    no-permission: "&cOnly the leader can change Guild settings."
+
+  upgrade:
+    buttons:
+      confirm:
+        name: "CONFIRM"
+        description: "&aConfirm upgrade"
+      retry:
+        name: "CHANGE"
+        description: "&eChoose another payment"
+      cancel:
+        name: "CANCEL"
+        description: "&cCancel upgrade"
+      money:
+        name: "MONEY"
+        description: "&7Costs &e$%price% &7from your balance"
+      cash:
+        name: "CASH"
+        description: "&7Costs &2$%price% &7from your cash"
+    title:
+      title: "&a&lGUILD UPGRADED"
+      subtitle: "&fNew features were unlocked."
+    not-in-guild: "&cYou are not in a guild."
+    no-permission: "&cYou do not have permission to upgrade guilds."
+    role-no-permission: "&cOnly moderators+ can upgrade the Guild."
+    already-upgraded: "&cThis guild is already upgraded."
+    select-economy: "{n}&a(!) &7Which payment method do you want to use?{n}&8&l> &e&l{money} &8&l- &a&l{cash} &8&l- &c&l{cancel} &8&l<{n} "
+    confirm-payment: "{n}&a(!) &7Do you want to confirm the upgrade for &f{costs}&7?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<{n} "
+    money-removed: "&a(!) &7Removed &f$%price% &7from your money balance."
+    cash-removed: "&a(!) &7Removed &f$%price% &7from your cash."
+    money-not-enough: "&c(!) You do not have enough money."
+    cash-not-enough: "&c(!) You do not have enough cash."
+    success: "&aGuild upgraded successfully."
+    cancelled: "&cGuild upgrade cancelled."
+
+  transfer:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Since &f%joined_at%"
+      confirm:
+        name: "CONFIRM"
+        description: "&aConfirm transfer"
+    not-in-guild: "&cYou are not in a guild."
+    no-permission: "&cOnly the Leader can transfer ownership to another member."
+    title:
+      title: "&b&lNEW LEADER"
+      subtitle: "&f%player% became the new leader!"
+    leader:
+      command-usage: "<player> to transfer your ownership."
+      confirm: "{n}&b&l(!) TRANSFER OWNERSHIP{n}&r&7Do you want to transfer ownership of &f%guild_name% &f%guild_colortag% &7to &f%player%&7?{n}&r&7This member has been in the Guild for &b{time}&7.{n}&r&c(!) This action is irreversible and you will be demoted.{n}&r&a&l{confirm}{n} "
+      target-is-you: "&cYou are already the Guild leader."
+      player-new-member: "&cOwnership can only be transferred to Members who have been in the Guild for at least &f7 days&c. This player has been in it for &f{time}&c."
+      player-not-in-guild: "&cThis player is not in the Guild."
+
+  promote:
+    not-in-guild: "&cYou are not in a guild."
+    no-permission: "&cOnly the Leader can promote other members."
+    title:
+      title: "&b&lPROMOTED"
+      subtitle: "&f%player% &fwas promoted to &a%role_prefix%"
+    leader:
+      command-usage: "<player> to promote a member."
+      target-is-you: "&cYou cannot change your own role."
+      player-max-role: "&cThis player is already at the highest role."
+      player-not-in-guild: "&cThis player is not in the Guild."
+
+  demote:
+    not-in-guild: "&cYou are not in a guild."
+    no-permission: "&cOnly the Leader can demote other members."
+    title:
+      title: "&c&lDEMOTED"
+      subtitle: "&f%player% &fwas demoted to &a%role_prefix%"
+    leader:
+      command-usage: "<player> to demote a member."
+      target-is-you: "&cYou cannot change your own role."
+      player-min-role: "&cThis player is already at the lowest role."
+      player-not-in-guild: "&cThis player is not in the Guild."
+
+  kick:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Since &b%joined_at%"
+      confirm:
+        name: "CONFIRM"
+        description: "&aConfirm kick"
+    not-in-guild: "&cYou are not in a Guild."
+    no-permission: "&cOnly moderators+ can kick other players."
+    player:
+      title:
+        title: "&c&lKICKED"
+        subtitle: "&fYou were kicked from the Guild!"
+      message: "{n}&c&l(!) KICKED FROM GUILD{n}&r&7You were kicked from &f%guild_name% &f%guild_colortag%&7{n}&r&7Kicked by: &f%author%{n} "
+    moderator:
+      confirm: "{n}&c&l(!) KICK MEMBER{n}&r&7Do you want to kick &f%player% &7from &f%guild_name% &f%guild_colortag%&7?{n}&r&7This member has been in the Guild for &b{time}&7.{n}&a&l{confirm}{n} "
+      command-usage: "<player> to kick a member."
+      no-permission: "&cYou cannot kick this player because they have a role equal to or higher than yours."
+      player-not-in-guild: "&cThis player is not in the Guild."
+
+  delete:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Created on &b%creation%"
+      confirm:
+        name: "CONFIRM"
+        description: "&cConfirm deletion"
+    not-in-guild: "&cYou are not in a Guild."
+    no-permission: "&cOnly the leader can delete the Guild."
+    sucessfull: "&aYou deleted the Guild successfully!"
+    confirm: "{n}&c&l(!) DELETE GUILD{n}&r&7Do you want to delete &f%guild_name% &f%guild_colortag%&7?{n}&r&7The guild has a history of &b{time}&7.{n}&c&l{confirm}{n} "
+
+  leave:
+    buttons:
+      time:
+        name: "%time%"
+        description: "&7Since &b%joined_at%"
+      confirm:
+        name: "CONFIRM"
+        description: "&cConfirm leave"
+    sucessfull: "&aYou left the Guild successfully!"
+    the-leader: "&cYou are the Guild Leader. To leave it, ownership must be transferred or the Guild must be deleted."
+    not-in-guild: "&cYou are not in a Guild."
+    confirm: "{n}&b&l(!) LEAVE GUILD{n}&r&7Do you want to leave &f%guild_name% &f%guild_colortag%&7?{n}&r&7You have been in the Guild for &b{time}&7.{n}&c&l{confirm}{n} "
+
+  invites:
+    no-invites: "&cYou do not have any pending invites."
+    already-in-guild: "&cYou are already in a guild."
+
+  requests:
+    sent: "&aRequest sent to %guild_name% &a%guild_colortag%&a."
+    already-sent: "&cYou already sent a request to this guild."
+    closed: "&cThis guild is not receiving join requests."
+    accepted: "&aYour request to join %guild_name% &a%guild_colortag% &awas accepted."
+
+  invite:
+    buttons:
+      accept:
+        name: "ACCEPT"
+        description: "&aAccept invite"
+      deny:
+        name: "DENY"
+        description: "&cDeny invite"
+    not-in-guild: "&cYou are not in a Guild."
+    recruiter:
+      invite: "{n}&b&l(!) GUILD INVITE{n}&r&7You invited &f%player% &7to &f%guild_name% &f%guild_colortag%{n}&r&7The player has &b%expires%&7 to accept.{n} "
+      command-usage: "<player> to invite a player."
+      no-permission: "&cOnly recruiters+ can invite other players."
+      searching-player: "{n}&a(!) &7Type the name of the player you want to invite in &a&nchat&r&7!{n}&c(!) &7Or type &c&ncancel&7 to cancel.{n} "
+      player-already-in-guild: "&cThe player is already in a guild."
+      player-already-invited: "&cThere is already a pending invite for this player."
+    player:
+      accept-title:
+        title: "%colortag%"
+        subtitle: "&fYou joined the Guild!"
+      receive: "{n}&b&l(!) GUILD INVITE{n}&r&7You were invited to join &f%guild_name% &f%guild_colortag%{n}&r&7You have &b%expires%&7 to accept.{n}&7You can accept or deny with &f/clan <accept/deny> #%guild_id%{n}&8&l> &a&l{accept} &8&l- &c&l{deny} &8&l<{n} "
+      accept: "&aYou accepted the invite to join &f%guild_name%&a."
+      decline: "&cYou denied the invite to join &f%guild_name%&c."
+      invite-not-found: "&cYou do not have a pending invite with ID #%id%."
+      deny-command-usage: "<id> to deny an invite."
+      accept-command-usage: "<id> to accept an invite."
+      already-in-guild: "&cYou are already in a guild."
+      no-permission: "&cYou do not have permission to join guilds."
+      blocked: "&cYou are blocked from joining guilds."
+      guild-full: "&cThis guild is full."
+
+  creation:
+    buttons:
+      confirm:
+        name: "CONFIRM"
+        description: "&aConfirm decision"
+      retry:
+        name: "CHANGE"
+        description: "&eTry again"
+      cancel:
+        name: "CANCEL"
+        description: "&cCancel creation"
+      money:
+        name: "MONEY"
+        description: "&7Costs &e$%price% &7from your Balance"
+      cash:
+        name: "CASH"
+        description: "&7Costs &2$%price% &7from your Cash"
+
+    title:
+      title: "%colortag%"
+      subtitle: "&fYou founded your Guild!"
+
+    select-name: "{n}&a(!) &7Type the name you want for your Guild in &a&nchat&r&7! &c&l{cancel}{n} "
+    blocked-name: "&c(!) The name cannot contain \"%blocked%\". Try again."
+    name-special-char: "&c(!) The name cannot contain special characters. Try again."
+    name-space: "&c(!) The name cannot contain spaces. Try again."
+    name-length: "&c(!) The guild name must contain between %min% and %max% characters. Try again."
+    name-taken: "&c(!) This name is already being used by a Guild. Try again."
+    confirm-name: "&a(!) &7Do you want to confirm &f\"%name%\" &7as the Guild name?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<"
+
+    select-tag: "{n}&a(!) &7Type the TAG you want for your Guild in &a&nchat&r&7! &c&l{cancel}{n} "
+    blocked-tag: "&c(!) The tag cannot contain \"%blocked%\". Try again."
+    tag-special-char: "&c(!) The tag cannot contain special characters. Try again."
+    tag-space: "&c(!) The tag cannot contain spaces. Try again."
+    tag-length: "&c(!) The tag must contain between %min% and %max% characters. Try again."
+    tag-taken: "&c(!) This tag is already being used by a Guild. Try again."
+    confirm-tag: "&a(!) &7Do you want to confirm &f\"%tag%\" &7as the Guild tag?{n}&8&l> &a&l{confirm} &8&l- &e&l{retry} &8&l- &c&l{cancel} &8&l<"
+
+    confirm-price: "&a(!) &7Which payment method do you want to use?{n}&8&l> &e&l{money} &8&l- &a&l{cash} &8&l- &c&l{cancel} &8&l<"
+    money-removed: "&a(!) &7Removed &f$%cust% &7from your money balance for the creation!"
+    cash-removed: "&a(!) &7Removed &f$%cust% &7from your cash balance for the creation!"
+    money-not-enough: "&c(!) You do not have enough money balance."
+    cash-not-enough: "&c(!) You do not have enough cash balance."
+
+    guild-created: "{n}&a(!) &7Guild &a%name% &7[&f%tag%&7] &7created successfully!{n}&7Set your preferences like &aicon &7and more with &a/guild manage{n} "
+    cancelled: "&cGuild creation cancelled."
+    already-in-guild: "&cYou cannot create a guild while already in one."
+    no-permission: "&cYou do not have permission to create guilds."
+    blocked: "&cYou are blocked from creating guilds."

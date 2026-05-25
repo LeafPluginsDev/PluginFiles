@@ -1,0 +1,65 @@
+main-menu:
+  title: "%box_name% - Meus prêmios"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos prêmios
+    format:
+      name: "%prize_name%"
+      lore:
+        - ""
+        - " &fRaridade: &a%rarity_displayname%"
+        - " &fProbabilidade: &b%prize_chance%%"
+        - " &fObtido: &a%times%"
+        - ""
+
+    locked-format:
+      item: "RED_DYE"
+      lore:
+        - ""
+        - " &fRaridade: &a%rarity_displayname%"
+        - " &fProbabilidade: &b%prize_chance%%"
+        - " &cVocê não obteve este prêmio ainda."
+        - ""
+
+  # Altere como quiser (Adicionar, remover, editar itens)
+  items:
+    latest:
+      name: "&a%player_displayname%"
+      item: "head:player"
+      slot: 48
+      lore:
+        - ""
+        - " &fClique para ver os últimos ganhos"
+        - ""
+
+    return:
+      name: "%box_name%"
+      item: "ENDER_CHEST"
+      slot: 50
+      lore:
+        - ""
+        - "&f Voltar para o menu anterior"
+        - ""
+
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

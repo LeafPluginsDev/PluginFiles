@@ -1,0 +1,83 @@
+# Menu principal
+main-menu:
+  title: "%name% - Nível"
+  slots: 4
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 31
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    upgraded:
+      name: "&aUpgrade Concluido"
+      item: "firework_rocket"
+      slot: 10
+      lore:
+        - ""
+        - " &fGuilda %colortag% &faprimorada"
+        - " &fe possui &bnovos recursos"
+        - ""
+        - " &7Aprimoramento:"
+        - " &a▸ &fFeita por: &c%upgrade_author%"
+        - " &a▸ &fFeita em: &a%upgrade_date%"
+        - ""
+
+    upgrade:
+      name: "&aFazer Upgrade"
+      item: "firework_rocket"
+      slot: 10
+      lore:
+        - ""
+        - " &fAprimore %colortag% &fpara expandir"
+        - " &fe desbloquear &bnovos recursos"
+        - ""
+        - "%permission%"
+
+
+    colors:
+      name: "&a+ Cores de Tag"
+      item: "red_dye"
+      slot: 12
+      lore:
+        - ""
+        - " &fA guilda desbloqueia:"
+        - " &8▸ &a%colors% cores"
+        - ""
+
+    icons:
+      name: "&a+ Ícones"
+      item: "blue_banner"
+      slot: 13
+      lore:
+        - ""
+        - " &fA guilda desbloqueia:"
+        - " &8▸ &a%icons% icones"
+        - ""
+
+    descriptions:
+      name: "&a+ Descrições"
+      item: "sign"
+      slot: 14
+      lore:
+        - ""
+        - " &fA guilda desbloqueia:"
+        - " &8▸ &a%descriptions% descrições"
+        - ""
+
+    members:
+      name: "&a+ Membros"
+      item: "head:b06c31249636361efd15dac1402cb3c8144a1798bd1af7257b95b12b8240399a"
+      slot: 15
+      lore:
+        - ""
+        - " &fA guilda aumenta o limite para:"
+        - " &8▸ &a%limit% participantes"
+        - ""
+

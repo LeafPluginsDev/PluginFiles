@@ -1,0 +1,72 @@
+warn:
+  # Nome do tipo de punição
+  name: "Aviso"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+kick:
+  name: "Expulsão"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+ban:
+  name: "Banimento"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+ipban:
+  name: "Banimento por IP"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+tempban:
+  name: "Banimento temporário"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+tempipban:
+  name: "Banimento por IP temporário"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+mute:
+  name: "Silenciamento"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true
+
+tempmute:
+  name: "Silenciamento temporário"
+  # Permitirá que este tipo de punição seja anunciado
+  broadcasts:
+    # Anunciar no servidor
+    server: true
+    # Anunciar no discord
+    discord: true

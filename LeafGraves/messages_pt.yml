@@ -1,0 +1,6 @@
+warn-join: "&a&lAVISO &fVocê possui &a%graves% cova(s) &fcom seus itens! Use &a/graves &fpara ver a localização!"
+grave-created: "&a&lCOVA CRIADA &fUma cova foi criada para você! Use &a/graves &fpara ver a localização!"
+only-owner: "&cApenas o dono da cova tem acesso a ela!"
+already-opened: "&cEsta cova já está sendo aberta por outro jogador!"
+no-permission-open-others: "&cVocê não tem permissão para abrir esta cova!"
+no-graves-found: "&cO jogador não possui covas disponíveis!"

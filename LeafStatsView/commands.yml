@@ -1,0 +1,7 @@
+# É necessário reiniciar o servidor após a alteração
+statsview:
+  name: "statsview"
+  use-command: true
+  permission: ''
+  aliases: []
+  usage: <jogador> para ver as estatisticas

@@ -1,0 +1,144 @@
+combatlog:
+  # Tempo em segundos para que o combatlog termine
+  combat-time: 15
+
+  # Manter o jogador em combate mesmo que aconteça uma destas coisas:
+  # Oponente morrer | Oponente desconectar
+  keep-after-end: false
+
+  # Fará que os jogadores entrem no modo SURVIVAL ao entrar em combate
+  auto-gamemode: true
+
+  # Fará que o fly seja desabilitado ao entrar em combate
+  disable-fly: true
+
+  # Matará o jogador ao desconectar em combate
+  kill-on-leave: true
+
+  # Forçará um drop seguro, fazendo que seja dropado no lugar onde morreu
+  # Evitando conflitos com plugins de auto-respawn
+  force-drop: true
+
+  # Não permitirá usar a Elytra em combate
+  cancel-elytra: true
+
+  # Fará que qualquer teleporte em combate para outro mundo seja cancelado
+  cancel-teleport: true
+
+  # Fará que não seja possível usar enderpeal em combate
+  cancel-enderpearl: true
+
+  # Fará que não entre em combate caso seja atingido por tais projéteis
+  # Você pode utilizar "ALL" para bloquear todos os projeteis
+  # Exemplo: enderpearl, snowball, arrow
+  cancel-entering-by-projectiles:
+    - "enderpearl"
+    - "snowball"
+
+# Esta função é uma compatibilidade com WorldGuard
+# Recomendamos que não crie multi-regiões dentro de uma para evitar conflitos
+regions:
+  # O jogador visualizará blocos ao redor da região evitando que saia
+  # Observação: Somente com 'cancel-leave' ou 'cancel-protected' ativado
+  # Caso o servidor possua ProtocolLib, será usado um sistema melhor e mais otimizado
+  use-blocks: true
+
+  # Material do bloco que será exibido
+  # Padrão: RED_STAINED_GLASS
+  block-material: RED_STAINED_GLASS
+
+  # Efetuar os cálculos necessários das regiões no iniciamento do servidor
+  # Para evitar problemas de desempenho futuros
+  # (Isto consumirá mais memória RAM)
+  optimize-blocks: false
+
+  # Forçar o uso do sistema nativo de blocos mesmo tendo ProtocolLib
+  # Observação: Necessário reiniciar
+  native-blocks-method: false
+
+  # Não permitirá que o jogador saia da região que o combate iniciou
+  cancel-leave: true
+
+  # Fará que não permita o jogador entrar em uma região com "pvp" deny
+  # Isso desabilitará a opção "cancel-leave" caso "use-blocks" esteja true
+  cancel-protected: false
+
+  # Regiões que serão ignoradas no sistema
+  ignore-regions:
+    - "IgnoredRegion"
+
+  # Regiões que não usarão os blocos
+  blocks-ignore-regions:
+    - "IgnoredRegion"
+
+bypass:
+  # Usará o sistema de bypass
+  enable: true
+
+  # Gamemode que permitirá o bypass
+  # Gamemodes -> ALL | SURVIVAL | CREATIVE | ADVENTURE
+  gamemode: "ALL"
+
+  # Permitir de usar qualquer comando
+  allow-commands: true
+
+  # Fará que não entre em combate
+  cancel-combat: false
+
+  # Permissão para ter bypass
+  permission: "leafcombatlog.bypass"
+
+placeholders:
+  # A mensagem é separada por "<-->"
+  # Respeite o formato para que não haja erros
+  inCombat: "&aEm combate <--> &cFora de combate"
+
+options:
+  # Usará a actionbar
+  action-bar: true
+
+  # Anunciará para todos quando um jogador desconectar em combate
+  # Caso desativado, enviará apenas para seu oponente
+  broadcast: true
+
+  # Avisar o jogador ao entrar em combate
+  combat-start-message: true
+
+  # Avisar o jogador ao sair de combate
+  combat-leave-message: true
+
+  # Sons que serão usados (Deixe vazio para desativar)
+  sounds:
+    # Som ao iniciar o combate
+    combat-start: WOOD_CLICK
+
+    # Som ao encerrar o combate
+    combat-end: LEVEL_UP
+
+# Comandos que o console executará quando os jogadores vencerem um combate
+commands-on-win:
+  - "money add %player% 10"
+
+# Comandos que o console executará ao jogador sair em combate ou morrer
+commands-on-leave:
+  - "money remove %player% 10"
+
+# Comandos que serão permitidos usar em combate
+allowed-commands:
+  - "/l"
+  - "/g"
+  - "/tell"
+
+# Mundos que não será permitido "atrapalhar" combates (anti 2v1 etc)
+# - Players em combate não poderão ser atingidos por outros jogadores, apenas pelo oponente
+# - Players em combate não poderão atingir outros jogadores, apenas seu oponente
+anti-boring-worlds:
+  - "world"
+  - "MinaPvP"
+  - "ArenaPvP"
+
+# Mundos que não será usado o CombatLog
+blocked-worlds:
+  - "Lobby"
+  - "Spawn"
+  - "MainLobby"

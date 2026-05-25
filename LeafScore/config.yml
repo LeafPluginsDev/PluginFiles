@@ -1,0 +1,50 @@
+# Agradecemos por escolher o LeafScore ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# https://docs.leafplugins.com/v/score/tutorials
+
+defaults:
+  # Tablist padrão do servidor (Deixe vazio para desativar)
+  tablist: 'default'
+
+  # Scoreboard padrão do servidor (Deixe vazio para desativar)
+  scoreboard: 'default'
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Fará que as expansões básicas sejam baixadas
+expansions-download: true
+
+# Segundos para as scoreboards serem reenviadas (Deixe 0 para desativar)
+resend-scoreboard: 20
+
+# Customização do nome do jogador no TABLIST
+player-name:
+  # Ativar ou desativar a customização do nome do jogador no TABLIST
+  enable: false
+
+  # Formato do nome do jogador
+  # Placeholders disponíveis:
+  # {player} => Nome do jogador
+  # {display} => DisplayName do jogador
+  # PlaceholderAPI disponível
+  format: '%luckperms_prefix%{display}'
+
+# Opções de bloqueio
+block-options:
+  # Removerá a scoreboard nos mundos bloqueados
+  disable-scoreboard: true
+
+  # Caso esteja 'true', fará que apenas os mundos da lista "worlds"
+  # tenha scoreboards (Invertendo de blocked para whitelist)
+  white-list: false
+
+  # Mundos que terão a scoreboard bloqueada
+  # Caso o white-list esteja 'true',
+  # fará que somente estes mundos tenham scoreboards
+  worlds:
+    - "blockedWorld"

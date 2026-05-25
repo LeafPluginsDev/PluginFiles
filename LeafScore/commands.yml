@@ -1,0 +1,21 @@
+# É necessário reiniciar o servidor após a alteração
+
+changescore:
+  name: "changescore"
+  use-command: true
+  permission: 'leafscore.command.score'
+  aliases:
+    - changescoreboard
+    - mudarscoreboard
+    - mudarscore
+  usage: ''
+
+scoreboardtoggle:
+  name: "scoreboardtoggle"
+  use-command: true
+  permission: ''
+  aliases:
+    - sb
+    - scoreboard
+    - stoggle
+  usage: '<true:false> para ativar/desativar sua scoreboard.'

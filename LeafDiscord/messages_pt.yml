@@ -1,0 +1,59 @@
+account-linking:
+  messages:
+    link:
+      invalid-request: "&cNenhum pedido de vínculo encontrado para o ID §f%id%"
+      no-request: "&cVocê não possui nenhum pedido de vínculo. Para se vincular, vá ao nosso Discord e utilize o comando §f/vincular§c!"
+      request-other-player: "&cEste pedido é de outro jogador."
+      already-linked: "&cVocê já está vinculado à §f@%discord%§c!"
+      already-linked-player: "&aVocê está vinculado à §f@%discord%§a!"
+      deny-success: "&cPedido de vínculo recusado com sucesso."
+      successful:
+        - "&8&l&m---------------------------------------------"
+        - ""
+        - "<center>&9&lVINCULAR AO DISCORD</center>"
+        - " &fConta &a%player_name% &fvinculada com sucesso ao Discord &9@%discord%&f."
+        - ""
+        - "&8&l&m---------------------------------------------"
+      request:
+        buttons:
+          confirm:
+            name: "CONFIRMAR"
+            description: "&aConfirmar vínculo"
+          deny:
+            name: "RECUSAR"
+            description: "&cRecusar vínculo"
+        message:
+          - "&8&l&m---------------------------------------------"
+          - ""
+          - "<center>&9&lVINCULAR AO DISCORD</center>"
+          - " &fHouve uma solicitação para vincular sua conta &a%player_name% &fao Discord &9@%discord%&f."
+          - " &fAo se vincular você receberá seus cargos especiais e suas recompensas!"
+          - "<center>&a&l{confirm} &7- &c&l{deny}</center>"
+          - ""
+          - "&8&l&m---------------------------------------------"
+    unlink:
+      no-linked: "&cVocê não possui nenhuma conta vinculada."
+      success: "&aConta desvinculada com sucesso de §f@%discord%§a."
+      successful:
+        - "&8&l&m---------------------------------------------"
+        - ""
+        - "<center>&9&lDESVINCULAR DO DISCORD</center>"
+        - " &fA conta &a%player_name% &ffoi desvinculada do Discord &9@%discord%&f."
+        - ""
+        - "&8&l&m---------------------------------------------"
+      cancel: "&cOperação cancelada. Sua conta permaneceu vinculada."
+      buttons:
+        confirm:
+          name: "CONFIRMAR"
+          description: "&aConfirmar desvinculação"
+        deny:
+          name: "RECUSAR"
+          description: "&cManter vínculo"
+      prompt:
+        - "&8&l&m---------------------------------------------"
+        - ""
+        - "<center>&9&lDESVINCULAR DO DISCORD</center>"
+        - " &fDeseja desvincular sua conta &a%player_name% &fdo Discord &9@%discord%&f?"
+        - "<center>&a&l{confirm} &7- &c&l{deny}</center>"
+        - ""
+        - "&8&l&m---------------------------------------------"

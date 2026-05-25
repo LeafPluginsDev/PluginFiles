@@ -1,0 +1,424 @@
+vip_rank:
+  chance: 1.0
+  rarity: legendary
+  display:
+    name: "&6VIP Rank"
+    lore:
+      - "&7Concede o rank VIP no servidor por tempo indeterminado."
+      - "&7Inclui permissões e vantagens exclusivas."
+      - "&7Comandos: ajuste conforme seu plugin de permissões."
+    icon:
+      item: "NAME_TAG"
+      glow: true
+  commands:
+    - "lp user {player} parent add vip"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+5000_money:
+  chance: 12.0
+  rarity: rare
+  display:
+    name: "&aMoney &ex5000"
+    lore:
+      - "&7Um bom aporte de &a5000 &7para gastar no servidor."
+      - "&7Ideal para comprar equipamentos e começar upgrades."
+    icon:
+      item: "GOLD_NUGGET"
+      glow: false
+  commands:
+    - "money give {player} 5000"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+15000_money:
+  chance: 4.0
+  rarity: epic
+  display:
+    name: "&aMoney &ex15000"
+    lore:
+      - "&7Grande recompensa: &a15000 &7de moeda do servidor."
+      - "&7Perfeito para compras importantes e investimentos."
+    icon:
+      item: "GOLD_BLOCK"
+      glow: true
+  commands:
+    - "money give {player} 15000"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+diamond_bundle_x32:
+  chance: 10.0
+  rarity: rare
+  display:
+    name: "&bDiamantes x32"
+    lore:
+      - "&7Um pacote generoso de &b32 &7diamantes."
+      - "&7Perfeito para forjar ferramentas e armaduras de alto nível."
+    icon:
+      item: "DIAMOND"
+      glow: false
+  commands:
+    - "give {player} minecraft:diamond 32"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+diamond_bundle_x64:
+  chance: 3.0
+  rarity: epic
+  display:
+    name: "&bDiamantes x64"
+    lore:
+      - "&7Pacote: &b64 &7diamantes para grandes construções e trocas."
+    icon:
+      item: "DIAMOND"
+      glow: true
+  commands:
+    - "give {player} minecraft:diamond 64"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+netherite_set:
+  chance: 2.5
+  rarity: legendary
+  display:
+    name: "&6Conjunto Netherite"
+    lore:
+      - "&7Um conjunto completo de netherite (capacete, peitoral, calça, botas)."
+    icon:
+      item: "NETHERITE_HELMET"
+      glow: false
+  commands:
+    - "give {player} minecraft:netherite_helmet 1"
+    - "give {player} minecraft:netherite_chestplate 1"
+    - "give {player} minecraft:netherite_leggings 1"
+    - "give {player} minecraft:netherite_boots 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+elytra_plus_fireworks:
+  chance: 2.0
+  rarity: epic
+  display:
+    name: "&bElytra + Fogos"
+    lore:
+      - "&7Elytra para voar junto com um pacote de fogos."
+      - "&7Perfeito para viagens rápidas e shows aéreos."
+    icon:
+      item: "ELYTRA"
+      glow: true
+  commands:
+    - "give {player} minecraft:elytra 1"
+    - "give {player} minecraft:firework_rocket 16"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+enchanted_golden_apple_x2:
+  chance: 0.8
+  rarity: legendary
+  display:
+    name: "&5Maçã Dourada Encantada x16"
+    lore:
+      - "&7Duas maçãs encantadas — salve-se de batalhas críticas."
+    icon:
+      item: "ENCHANTED_GOLDEN_APPLE"
+      glow: true
+  commands:
+    - "give {player} minecraft:enchanted_golden_apple 16"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+beacon_plus_nether_star:
+  chance: 1.2
+  rarity: legendary
+  display:
+    name: "&bBeacon + Estrela do Nether"
+    lore:
+      - "&7Um beacon completo e a estrela necessária para montar."
+    icon:
+      item: "BEACON"
+      glow: true
+  commands:
+    - "give {player} minecraft:beacon 1"
+    - "give {player} minecraft:nether_star 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+shulker_box_purple_x4:
+  chance: 6.0
+  rarity: uncommon
+  display:
+    name: "&5Shulker Box Roxa x4"
+    lore:
+      - "&7Quatro Shulker Boxes para armazenamento móvel."
+    icon:
+      item: "PURPLE_SHULKER_BOX"
+      glow: false
+  commands:
+    - "give {player} minecraft:purple_shulker_box 4"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+iron_tools_set:
+  chance: 8.0
+  rarity: common
+  display:
+    name: "&7Kit Ferramentas de Ferro"
+    lore:
+      - "&7Conjunto básico: picareta, pá, machado e espada de ferro."
+      - "&7Ótimo para mineração e aventuras iniciais."
+    icon:
+      item: "IRON_PICKAXE"
+      glow: false
+  commands:
+    - "give {player} minecraft:iron_pickaxe 1"
+    - "give {player} minecraft:iron_shovel 1"
+    - "give {player} minecraft:iron_axe 1"
+    - "give {player} minecraft:iron_sword 1"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+golden_apple:
+  chance: 6.0
+  rarity: rare
+  display:
+    name: "&eMaçã Dourada x8"
+    lore:
+      - "&7Item de cura rápido — útil em combates ou situações perigosas."
+      - "&7Um clássico que nunca perde valor."
+    icon:
+      item: "GOLDEN_APPLE"
+      glow: false
+  commands:
+    - "give {player} minecraft:golden_apple 8"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+ender_pearl_x16:
+  chance: 12.0
+  rarity: common
+  display:
+    name: "&5Ender Pearls x16"
+    lore:
+      - "&7Pacote de 16 ender pearls para teletransporte e navegação pelo mapa."
+      - "&7Ótimo para explorar ilhas e fugir de perigos."
+    icon:
+      item: "ENDER_PEARL"
+      glow: false
+  commands:
+    - "give {player} minecraft:ender_pearl 16"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+obsidian_x32:
+  chance: 7.0
+  rarity: uncommon
+  display:
+    name: "&5Obsidiana x32"
+    lore:
+      - "&7Blocos resistentes para construções, portais ao Nether ou bastiões."
+      - "&7Perfeito para quem vai criar defesas sólidas."
+    icon:
+      item: "OBSIDIAN"
+      glow: false
+  commands:
+    - "give {player} minecraft:obsidian 32"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+pumpkin_head:
+  chance: 3.0
+  rarity: uncommon
+  display:
+    name: "&aCabeça de Abóbora"
+    lore:
+      - "&7Uma cabeça divertida para decoração ou para se proteger de Endermen."
+      - "&7Ótima para construções temáticas."
+    icon:
+      item: "CARVED_PUMPKIN"
+      glow: false
+  commands:
+    - "give {player} minecraft:carved_pumpkin 1"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+saddle:
+  chance: 4.0
+  rarity: rare
+  display:
+    name: "&6Sela"
+    lore:
+      - "&7Permite montar em porcos, cavalo e outros mobs montáveis."
+      - "&7Item raro e muito útil em exploração."
+    icon:
+      item: "SADDLE"
+      glow: false
+  commands:
+    - "give {player} minecraft:saddle 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+music_disc:
+  chance: 2.0
+  rarity: uncommon
+  display:
+    name: "&dDisco de Música"
+    lore:
+      - "&7Um disco raro para tocar nas jukeboxes do servidor."
+      - "&7Ótimo para colecionadores e decorações."
+    icon:
+      item: "MUSIC_DISC_11"
+      glow: false
+  commands:
+    - "give {player} minecraft:music_disc_11 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+cooked_beef_x32:
+  chance: 10.0
+  rarity: common
+  display:
+    name: "&cCarne Cozida x32"
+    lore:
+      - "&7Um bom suprimento de comida — mantém a barra de fome cheia."
+      - "&7Útil em longas jornadas e batalhas."
+    icon:
+      item: "COOKED_BEEF"
+      glow: false
+  commands:
+    - "give {player} minecraft:cooked_beef 32"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+fishing_rod:
+  chance: 9.0
+  rarity: common
+  display:
+    name: "&bVara de Pescar"
+    lore:
+      - "&7Vara de pesca para conseguir itens, comida e troféus."
+      - "&7Simples e eficaz — ideal para relaxar no servidor."
+    icon:
+      item: "FISHING_ROD"
+      glow: false
+  commands:
+    - "give {player} minecraft:fishing_rod 1"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+emerald_bundle_x16:
+  chance: 5.0
+  rarity: uncommon
+  display:
+    name: "&aEsmeraldas x16"
+    lore:
+      - "&7Moeda de troca para comerciantes do vilarejo."
+      - "&7Ótimo para trocas e negociações com NPCs."
+    icon:
+      item: "EMERALD"
+      glow: false
+  commands:
+    - "give {player} minecraft:emerald 16"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+

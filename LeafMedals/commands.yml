@@ -1,0 +1,22 @@
+# É necessário reiniciar o servidor após a alteração
+
+medal:
+  name: "medal"
+  use-command: true
+  permission: ''
+  aliases:
+    - medals
+    - medalha
+    - medalhas
+
+setmedal:
+  name: "setmedal"
+  use-command: true
+  permission: 'leafmedals.command.setmedal'
+  aliases:
+    - setarmedalha
+  usage: para definir uma medalha a alguém.
+  # Caso queira fazer que o console execute algum comando, utilize:
+  # execute:
+  # - pex user %player% group set %tag_id%
+  execute: []

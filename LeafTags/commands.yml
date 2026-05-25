@@ -1,0 +1,91 @@
+# É necessário reiniciar o servidor após a alteração
+
+tag:
+  name: "tag"
+  use-command: true
+  permission: ''
+  aliases:
+    - tags
+    - prefix
+    - prefixes
+    - prefixos
+
+glow:
+  name: "glow"
+  use-command: true
+  permission: ''
+  aliases:
+    - brilho
+    - brilhar
+
+suffix:
+  name: "suffix"
+  use-command: true
+  permission: ''
+  aliases:
+    - suffixes
+    - customsuffix
+    - sufixo
+    - sufixos
+
+unequiptag:
+  name: "unequiptag"
+  use-command: true
+  permission: ''
+  aliases:
+    - desequipartag
+    - desequiparprefix
+
+shoptags:
+  name: "shoptags"
+  use-command: true
+  permission: ''
+  aliases:
+    - comprartags
+
+managetags:
+  name: "managetags"
+  use-command: true
+  permission: 'leaftags.command.managetags'
+  aliases:
+    - gerenciartags
+    - admintags
+  usage: para gerenciar as tags do servidor.
+
+settag:
+  name: "settag"
+  use-command: true
+  permission: 'leaftags.command.settag'
+  aliases:
+    - tagset
+    - setprefix
+  usage: para alterar o prefixo de alguém.
+  # Caso queira fazer que o console execute algum comando, utilize:
+  # execute:
+  # - pex user %player% group set %tag_id%
+  execute:
+    - lp user %player% parent set %tag_id%
+
+givetag:
+  name: "givetag"
+  use-command: true
+  permission: 'leaftags.command.givetag'
+  aliases:
+    - dartag
+    - darprefix
+  usage: para dar um prefixo a alguém.
+  execute:
+    - lp user %player% permission set %tag_permission%
+    #- pex user %player% add %tag_permission%
+
+removetag:
+  name: "removetag"
+  use-command: true
+  permission: 'leaftags.command.removetag'
+  aliases:
+    - removertag
+    - removerprefix
+  usage: para retirar um prefixo de alguém.
+  execute:
+    - lp user %player% permission unset %tag_permission%
+    #- pex user %player% remove %tag_permission%

@@ -1,0 +1,35 @@
+broadcasts:
+  # Placeholders disponíveis:
+  # %player% - nome do mito
+  # %display% - display do mito (caso esteja online, caso esteja offline, retornará o nome)
+  # %killer% - nome do killer
+  # %displaykiller% - display do killer
+  #
+  # Para desativar um broadcast, deixe-o vazio
+  morto:
+    - ""
+    - "&c[MITO] &fO &7%display% &ffoi morto por &7%displaykiller% &fe perdeu sua tag!"
+    - ""
+  setado:
+    - ""
+    - "&c[MITO] &fO &7%display% &fse tornou o novo mito!"
+    - ""
+  ausente:
+    - ""
+    - "&c[MITO] &fO &7%player% &fperdeu sua tag por inatividade!"
+    - ""
+  removido:
+    - ""
+    - "&c[MITO] &fO &7%player% &fteve sua tag retirada por um Administrador."
+    - ""
+
+command:
+  npc-setado: "&aLocalização para o NPC setada com sucesso!"
+  mito-transferencia-ativada: "&aTransferência de mito por morte ativada!"
+  mito-transferencia-pausada: "&eTransferência de mito por morte pausada até ser reativada ou o servidor reiniciar!"
+  mito-remover-nenhum: "&cO servidor não possui um mito!"
+  mito-resetar: "&aQuantidade de vezes que %player% foi mito resetada!"
+  mito-resetar-block: "&cO jogador %player% é o mito atual ou nunca foi mito."
+  mito-random-nenhum: "&cNão há jogadores online para ser sorteado."
+  mito-atual: [ "&c[MITO] &f%player% &7é o atual mito do servidor pela &f%times%ª vez&7!" ]
+  mito-atual-nenhum: [ "&c[MITO] &7Nenhum mito definido!" ]

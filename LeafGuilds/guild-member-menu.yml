@@ -1,0 +1,93 @@
+# Menu de convidar alguém online
+main-menu:
+  title: "%member% - Gerenciar"
+  slots: 4
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 31
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    player:
+      name: "%role_prefix% %member%"
+      item: "head:%member%"
+      slot: 10
+      lore:
+        - ""
+        - "&fMembro da guilda desde:"
+        - "&a%joined_at%"
+        - ""
+        - "&eVocê está gerenciando"
+
+    promote:
+      name: "&aPromover"
+      item: "emerald"
+      slot: 12
+      lore:
+        - ""
+        - "&fPromover membro de cargo"
+        - ""
+        - "&eEsta ação é reversível"
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute:
+        - "/%label% promote %member%"
+
+    demote:
+      name: "&cRebaixar"
+      item: "redstone"
+      slot: 13
+      lore:
+        - ""
+        - "&fRebaixar cargo do membro"
+        - ""
+        - "&eEsta ação é reversível"
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute:
+        - "/%label% demote %member%"
+
+    transfer:
+      name: "&bTransferir posse"
+      item: "nether_star"
+      slot: 14
+      lore:
+        - ""
+        - "&fConceder sua possa de líder"
+        - ""
+        - "&cEsta ação é irreversível"
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute:
+        - "/%label% transfer %member%"
+
+    kick:
+      name: "&4Expulsar"
+      item: "barrier"
+      slot: 16
+      lore:
+        - ""
+        - "&fExpulsa-lo da guilda"
+        - ""
+        - "&cEsta ação é irreversível"
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute:
+        - "/%label% kick %member%"

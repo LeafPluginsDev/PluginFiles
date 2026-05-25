@@ -1,0 +1,36 @@
+# É necessário reiniciar o servidor após a alteração
+givecrate:
+  name: givecrate
+  use-command: true
+  permission: 'leafcrates.command.givecrate'
+  aliases:
+    - givebox
+    - darcaixa
+    - darcrate
+
+removecrate:
+  name: removecrate
+  use-command: true
+  permission: 'leafcrates.command.removecrate'
+  aliases:
+    - removebox
+    - removercaixa
+
+givekey:
+  name: givekey
+  use-command: true
+  permission: 'leafcrates.command.givekey'
+  aliases:
+    - darchave
+
+editcrates:
+  name: editcrates
+  use-command: true
+  permission: 'leafcrates.admin'
+  aliases:
+    - editboxes
+    - editarcaixas
+    - editarcrates
+
+
+

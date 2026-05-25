@@ -1,0 +1,219 @@
+padrao:
+  # Nome do tipo de caixa
+  name: "&5&lCaixa Padrão"
+
+  # Arquivo de recompensas (/plugins/LeafCrates/prizes/)
+  prizes: "caixa-padrao.yml"
+
+  # [Premium] Estilo de caixa (Particulas, blocos internos)
+  # Styles.yml
+  style: "none"
+
+  # [Premium] Animação ao abrir a caixa
+  # Deixe '-1' para não usar animação
+  # Confira a lista de animações em https://leafplugins.com/plugin/LeafCrates
+  animation: 1
+
+  # Chave para abrir a caixa
+  key:
+    # Nome do item
+    name: "%box_name%"
+
+    # Tipo do item (Material)
+    item: "TRIPWIRE_HOOK"
+
+    # Descrição do item
+    lore:
+      - ""
+      - "&7Use esta chave para abrir"
+      - "&7uma caixa misteriosa do tipo"
+      - ""
+      - "&eUse o botão direito na caixa"
+
+  # Usar holograma customizado ao em vez da config.yml
+  holograms:
+    prize:
+      height: 0.5
+      lines:
+        1:
+          # Caso haja mais de um nesta lista, fará uma linha animada
+          frames:
+            - '&f« &5&lCAIXA PADRÃO &f»'
+            - '&f« &f&lCAIXA PADRÃO &f»'
+            - '&f« &5&lC&f&lAIXA PADRÃO &f»'
+            - "&f« &5&lCA&f&lIXA PADRÃO &f»"
+            - "&f« &5&lCAI&f&lXA PADRÃO &f»"
+            - "&f« &5&lCAIX&f&lA PADRÃO &f»"
+            - "&f« &5&lCAIXA &f&lPADRÃO &f»"
+            - "&f« &5&lCAIXA P&f&lADRÃO &f»"
+            - "&f« &5&lCAIXA PA&f&lDRÃO &f»"
+            - "&f« &5&lCAIXA PAD&f&lRÃO &f»"
+            - "&f« &5&lCAIXA PADA&f&lRÃO &f»"
+            - "&f« &5&lCAIXA PADR&f&lÃO &f»"
+            - "&f« &5&lCAIXA PADRA&f&lO &f»"
+            - "&f« &5&lCAIXA PADRÃO &f»"
+            - "&f« &f&lCAIXA PADRÃO &f»"
+            # Intervalo para mudar de frame (0.1 minimo para animações)
+          interval: 0.1
+        2:
+          frames:
+            - '&a%player_displayname% &fɢᴀɴʜᴏᴜ ᴀʟɢᴏ &b%prize_rarity%'
+          interval: 0.1
+        3:
+          frames:
+            - '&fᴘʀêᴍɪᴏ: &a%prize_name%'
+          interval: 0.1
+    display:
+      height: 0.5
+      lines:
+        1:
+          # Caso haja mais de um nesta lista, fará uma linha animada
+          frames:
+            - '&f« &f&lCAIXA PADRÃO &f»'
+            - '&f« &f&lCAIXA PADRÃO &f»'
+            - '&f« &f&lCAIXA PADRÃO &f»'
+            - '&f« &e&lCAIXA PADRÃO &f»'
+            - '&f« &b&lCAIXA PADRÃO &f»'
+            - '&f« &a&lCAIXA PADRÃO &f»'
+            - '&f« &5&lCAIXA PADRÃO &f»'
+            - '&f« &f&lCAIXA PADRÃO &f»'
+            - '&f« &5&lC&f&lAIXA PADRÃO &f»'
+            - "&f« &5&lCA&f&lIXA PADRÃO &f»"
+            - "&f« &5&lCAI&f&lXA PADRÃO &f»"
+            - "&f« &5&lCAIX&f&lA PADRÃO &f»"
+            - "&f« &5&lCAIXA &f&lPADRÃO &f»"
+            - "&f« &5&lCAIXA P&f&lADRÃO &f»"
+            - "&f« &5&lCAIXA PA&f&lDRÃO &f»"
+            - "&f« &5&lCAIXA PAD&f&lRÃO &f»"
+            - "&f« &5&lCAIXA PAD&f&lRÃO &f»"
+            - "&f« &5&lCAIXA PADR&f&lÃO &f»"
+            - "&f« &5&lCAIXA PADRÃ&f&lO &f»"
+            - "&f« &5&lCAIXA PADRÃO &f»"
+            - "&f« &f&lCAIXA PADRÃO &f»"
+
+            # Intervalo para mudar de frame (0.1 minimo para animações)
+          interval: 0.2
+        2:
+          frames:
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &a%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &b%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &d%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &e%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+          interval: 0.1
+        3:
+          frames:
+            - ''
+          interval: 1
+        4:
+          frames:
+            - '&eʙᴏᴛãᴏ ᴅɪʀᴇɪᴛᴏ &fᴘᴀʀᴀ &aᴀʙʀɪʀ'
+            - '&eꜱʜɪꜰᴛ &f+ &eʙᴏᴛãᴏ ᴅɪʀᴇɪᴛᴏ &fᴘᴀʀᴀ &bᴀʙʀɪʀ ɪɴꜱᴛᴀɴᴛâɴᴇᴏ'
+          interval: 5
+        5:
+          frames:
+            - '&eʙᴏᴛãᴏ ᴇꜱꞯᴜᴇʀᴅᴏ &fᴘᴀʀᴀ &dɪɴꜱᴘᴇᴄɪᴏɴᴀʀ'
+          interval: 1
+
+avancada:
+  name: "&6&lCaixa Avançada"
+  prizes: "caixa-avancada.yml"
+
+  # Styles.yml
+  style: "avancada"
+
+  animation: -1
+  key:
+    name: "%box_name%"
+    item: "TRIPWIRE_HOOK"
+    lore:
+      - ""
+      - "&7Use esta chave para abrir"
+      - "&7uma caixa misteriosa do tipo"
+      - ""
+      - "&eUse o botão direito na caixa"
+  holograms:
+    prize:
+      height: 0.5
+      lines:
+        1:
+          # Caso haja mais de um nesta lista, fará uma linha animada
+          frames:
+            - "&f⚡ &6&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &f&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lC&f&lAIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCA&f&lIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAI&f&lXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIX&f&lA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA &f&lAVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA A&f&lVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AV&f&lANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVA&f&lNÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVAN&f&lÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇ&f&lADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇA&f&lDA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇAD&f&lA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &f&lCAIXA AVANÇADA &f⚡"
+          interval: 0.1
+        2:
+          frames:
+            - '&a%player_displayname% &fɢᴀɴʜᴏᴜ ᴀʟɢᴏ &b%prize_rarity%'
+          interval: 0.1
+        3:
+          frames:
+            - '&fᴘʀêᴍɪᴏ: &a%prize_name%'
+          interval: 0.1
+    display:
+      height: 1
+      lines:
+        1:
+          # Caso haja mais de um nesta lista, fará uma linha animada
+          frames:
+            - "&f⚡ &6&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &f&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lC&f&lAIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCA&f&lIXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAI&f&lXA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIX&f&lA AVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA &f&lAVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA A&f&lVANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AV&f&lANÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVA&f&lNÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVAN&f&lÇADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇ&f&lADA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇA&f&lDA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇAD&f&lA &f⚡"
+            - "&f⚡ &6&lCAIXA AVANÇADA &f⚡"
+            - "&f⚡ &f&lCAIXA AVANÇADA &f⚡"
+          interval: 0.2
+        2:
+          frames:
+            - '&e&lNOVOS PRÊMIOS TODA SEMANA!'
+            - '&b&lNOVOS PRÊMIOS TODA SEMANA!'
+            - '&a&lNOVOS PRÊMIOS TODA SEMANA!'
+            - '&d&lNOVOS PRÊMIOS TODA SEMANA!'
+          interval: 0.1
+        3:
+          frames:
+            - ''
+          interval: 1
+        4:
+          frames:
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &a%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &b%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &d%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+            - '<when var="%boxes%" equals="0" then="&c&lVOCÊ NÃO POSSUI CAIXAS" else="&fᴠᴏᴄê ᴘᴏꜱꜱᴜɪ &e%boxes% ᴄᴀɪxᴀꜱ &fᴅɪꜱᴘᴏɴíᴠᴇɪꜱ"></when>'
+          interval: 1
+        5:
+          frames:
+            - ''
+          interval: 1
+        6:
+          frames:
+            - '&eʙᴏᴛãᴏ ᴅɪʀᴇɪᴛᴏ &fᴘᴀʀᴀ &aᴀʙʀɪʀ'
+            - '&eꜱʜɪꜰᴛ &f+ &eʙᴏᴛãᴏ ᴅɪʀᴇɪᴛᴏ &fᴘᴀʀᴀ &bᴀʙʀɪʀ ɪɴꜱᴛᴀɴᴛâɴᴇᴏ'
+          interval: 5
+        7:
+          frames:
+            - '&eʙᴏᴛãᴏ ᴇꜱꞯᴜᴇʀᴅᴏ &fᴘᴀʀᴀ &dɪɴꜱᴘᴇᴄɪᴏɴᴀʀ'
+          interval: 1

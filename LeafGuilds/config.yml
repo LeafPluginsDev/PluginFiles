@@ -1,0 +1,245 @@
+# Agradecemos por escolher o LeafGuilds ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Ativar o modo BungeeCord
+bungee-mode: false
+
+# Plugins de Economia que serão utilizados
+# https://docs.leafplugins.com/tutorials/economies
+economies:
+  # Plugin para Money
+  money: "Vault"
+
+  # Plugin para Cash
+  cash: "PlayerPoints"
+
+# Opções gerais de Guilda
+guilds:
+  # PvP entre membros da mesma guilda.
+  # true = permite dano como nas versoes anteriores.
+  # false = cancela dano entre membros da mesma guilda.
+  friendly-fire: true
+
+  # Formato do chat
+  chat-format: "&c[Chat da Guilda] %role_prefix% &f%player% %role_color%» &f%message%"
+
+  # Atalhos para enviar mensagem para Guilda
+  # Exemplos:
+  # => /. <mensagem>
+  # => /gc <mensagem>
+  chat-shortcuts:
+    - "/."
+    - "/c"
+    - "/gc"
+
+  # Enviar os titulos de anúncio da Guilda
+  # Exemplo: Alterações de cargo, expulsão.
+  announce-title: true
+
+  # Tempo para os convites expirarem desde seu envio
+  invite-expire: 7d
+
+  # Entrada em guildas por convite/comandos normais
+  join:
+    # Permissao necessaria para entrar em guildas. Deixe "" para nao exigir.
+    permission: ""
+
+  colors:
+    # Se ativado, cada cor exigira leafguilds.color.<id da cor>
+    require-permission: false
+
+  features:
+    chest:
+      enabled: false
+      rows: 3
+    home:
+      enabled: false
+    relations:
+      enabled: false
+    custom-icon:
+      enabled: false
+      requires-vip: true
+
+  # Dias necessário para que o membro possa ser
+  # apto a ser líder através da transferência de posse
+  # Deixe 0 para desativar
+  transfer-required-days: 7
+
+  # Anúncios para todos do servidor atual
+  broadcasts:
+    # Anunciar quando uma guilda for criada
+    guild-created:
+      enable: true
+
+      # Som que será tocado, deixe em branco ("") para desativar
+      sound: ENDER_DRAGON_GROWL
+
+    # Anunciar quando uma guilda for excluída
+    guild-deleted:
+      enable: true
+
+      # Som que será tocado, deixe em branco ("") para desativar
+      sound: ENDER_DRAGON_GROWL
+
+  # Máximo de membros em uma guilda (Incluindo todos)
+  max-members:
+    # Guildas comuns
+    default: 8
+
+    # Guildas Premiums
+    premium: 0
+
+  # Não remova/crie os cargos, apenas modifique-os
+  roles:
+    leader:
+      name: "Lider"
+      color: "&b"
+      prefix: "&b[Líder]"
+    moderator:
+      name: "Moderador"
+      color: "&a"
+      prefix: "&a[Moderador]"
+    recruiter:
+      name: "Recrutador"
+      color: "&6"
+      prefix: "&6[Recrutador]"
+    member:
+      name: "Membro"
+      color: "&7"
+      prefix: "&7[Membro]"
+
+  # Melhoria da Guilda para VIP
+  upgrade:
+    # Permissão necessária (Deixe "" para não exigir)
+    permission: ""
+
+    # Preço para a melhoria (Deixe zero em ambos para não exigir)
+    economy:
+      # Caso esteja 'true' fará que exija os dois ao mesmo tempo
+      requires-both: false
+
+      # Se Money estiver zero, só será possível pagar com Cash
+      money-price: 100000
+
+      # Se Cash estiver zero, só será possível pagar com money
+      cash-price: 10000
+
+      # Permissão para não exigir pagamento (Deixe "" para desativar)
+      bypass-permission: "leafguilds.upgrade.pricebypass"
+
+  # Criação da Guilda
+  create:
+    # Permissão necessária (Deixe "" para não exigir)
+    permission: ""
+
+    # Preço para a criação (Deixe zero em ambos para não exigir)
+    economy:
+      # Caso esteja 'true' fará que exija os dois ao mesmo tempo
+      requires-both: false
+
+      # Se Money estiver zereo, só será possível pagar com Cash
+      money-price: 100000
+
+      # Se Cash estiver zero, só será possível pagar com money
+      cash-price: 10000
+
+      # Permissão para não exigir pagamento (Deixe "" para desativar)
+      bypass-permission: "leafguilds.create.pricebypass"
+
+    # Opções por padrão após a criação
+    default:
+      # Icone padrão (icons.yml)
+      icon: "banner"
+
+      # Cor da tag padrão (colors.yml)
+      color-tag: "cinza"
+
+      # Descrição padrão (descriptions.yml)
+      description: "default"
+
+      # Deixe 'true' caso queira que seja público por padrão
+      public: false
+
+    options:
+      name:
+        # Tamanho máximo
+        max-length: 16
+
+        # Tamanho minimo
+        min-length: 3
+
+        # Permitir caracteres especiais
+        allow-special-char: true
+
+        # Permitir espaçamento
+        allow-space: true
+
+        # Fará que sempre seja em caixa alta (Tudo maiúsculo)
+        always-uppercase: false
+
+        # Os nomes das Guildas não irão poder conter estas palavras
+        blocked-names:
+          - "admin"
+          - "admins"
+          - "helper"
+          - "staff"
+          - "staffer"
+          - "server"
+
+      tag:
+        # Tamanho máximo (Não recomendado que aumente em servidores de versão inferior a 1.12)
+        max-length: 8
+
+        # Tamanho minimo
+        min-length: 3
+
+        # Fará que sempre seja em caixa alta (Tudo maiúsculo)
+        always-uppercase: true
+
+        # Permitir caracteres especiais
+        allow-special-char: false
+
+        # Permitir espaçamento (Não recomendado para servidores de versão inferior a 1.12)
+        allow-space: false
+
+        # As tags das Guildas não irão poder conter estas palavras
+        blocked-tags:
+          - "admin"
+          - "admins"
+          - "helper"
+          - "staff"
+          - "staffer"
+          - "server"

@@ -1,0 +1,243 @@
+main-menu:
+  title: "&bLoja de Tags &7| &fleafplugins.com"
+  slots: 54
+
+  # Mostrar as tags que o jogador já possui
+  showUnlockeds: true
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens das tags
+    format:
+      name: "%color%%name%"
+      item: "%icon%"
+      lore:
+        - ""
+        - "&fPreview: %preview%"
+        - ""
+        - "&b♦ &fCategoria: &b%category_display%"
+        - "&a♦ &fCusto: &a$%price_formatted%"
+        - ""
+        - "&e&l➡ &l&nCLIQUE&e para comprar"
+
+    # Formato dos itens das tags
+    format-unlocked:
+      name: "%color%%name%"
+      item: "%icon%"
+      lore:
+        - ""
+        - "&fPreview: %preview%"
+        - ""
+        - "&b♦ &fCategoria: &b%category_display%"
+        - "&a♦ &fCusto: &a$%price_formatted%"
+        - ""
+        - "&aVocê possui esta tag ✔"
+
+
+  # Altere como quiser
+  items:
+    # Vidros de decoração
+    glass_1:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 0
+      lore: []
+
+    glass_2:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 1
+      lore: []
+
+    glass_3:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 2
+      lore: []
+
+    glass_4:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 3
+      lore: []
+
+    glass_5:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 4
+      lore: []
+
+    glass_6:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 5
+      lore: []
+
+    glass_7:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 6
+      lore: []
+
+    glass_8:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 7
+      lore: []
+
+    glass_9:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 8
+      lore: []
+
+    # Preenchendo verticalmente (coluna 1 e 2)
+    glass_10:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 9
+      lore: []
+
+    glass_11:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 17
+      lore: []
+
+    glass_12:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 18
+      lore: []
+
+    glass_13:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 26
+      lore: []
+
+    glass_14:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 27
+      lore: []
+
+    glass_15:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 35
+      lore: []
+
+    glass_16:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 36
+      lore: []
+
+    glass_17:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 44
+      lore: []
+
+    # Preenchendo mais verticalmente (coluna 1 e 2)
+    glass_18:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 45
+      lore: []
+
+    glass_19:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 46
+      lore: []
+
+    glass_20:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 47
+      lore: []
+
+    glass_21:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 48
+      lore: []
+
+    glass_22:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 49
+      lore: []
+
+    glass_23:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 50
+      lore: []
+
+    glass_24:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 51
+      lore: []
+
+    glass_25:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 52
+      lore: []
+
+    glass_26:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 53
+      lore: []
+
+    category:
+      name: "&bCategoria &7| &f%category_name%"
+      item: "name_tag"
+      slot: 48
+      lore:
+        - "&eClique para alterar"
+
+    preference:
+      name: "&bPreferência &7| &f%preference%"
+      item: "sunflower"
+      slot: 49
+      lore:
+        - "&7Ordenação: &f%sort%"
+        - ""
+        - "&eClique esquerdo: alterna filtro"
+        - "&eClique direito: alterna ordem (Maior ⇄ Menor)"
+
+    tags:
+      name: "&bMinhas Tags"
+      item: "head:player"
+      slot: 50
+      execute:
+        - "/tags"
+      lore:
+        - "&eClique para conferir"
+      closeInventory: true
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%nextpage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

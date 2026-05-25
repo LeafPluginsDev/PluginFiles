@@ -1,0 +1,103 @@
+# Agradecemos por escolher o LeafDiscord ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Ativar/desativar o modo apenas API
+# Quando ativado, o plugin funcionará somente como uma biblioteca JDA sem aplicar nenhuma funcionalidade
+only-api: false
+
+# Configurações do bot do Discord
+bot:
+  # Token do bot (obrigatório)
+  token: '{TOKEN}'
+
+  # ID do servidor no Discord (obrigatório)
+  guild: '{GUILD_ID}'
+
+  # Atividade do bot
+  activity:
+    enable: true
+
+    # Intervalo em segundos para atualizar
+    # Recomendado no mínimo 5
+    interval: 5
+
+    # Textos exibidos na atividade
+    # Placeholders:
+    # %players% => Quantidade de jogadores online
+    # PlaceholderAPI disponível
+    frames:
+      - "%online% jogadores | wwww.leafplugins.com"
+      - "Somos o melhor servidor | wwww.leafplugins.com"
+      - "Vincule sua conta com /vincular | wwww.leafplugins.com"
+
+# Enviar as mensagens ingame para algum canal dedicado
+chat-bridge:
+  enable: true
+
+  # ID do canal no Discord
+  channel: "{ID}"
+
+  # Formato da mensagem enviada
+  # PlaceholderAPI disponível
+  format: "**{player}**: {message}"
+
+  # Ao enviar mensagens no canal destinado ao chat, enviará também para os jogadores dentro do servidor
+  discord:
+    enable: true
+
+    # Formato da mensagem enviada
+    format: "&9[DISCORD] §f@{member}: §7{message}"
+
+# Vincular a conta Discord + Minecraft
+account-linking:
+  enable: true
+
+  # Canal para enviar as logs de vínculo
+  channel: "{ID}"
+
+  # Ações com o membro no Discord
+  member:
+    # Definirá seu nickname como apelido
+    nickname: true
+
+    # Fará com que o jogador receba seus cargos respectivos (groups.yml)
+    role-sync: true
+
+  # Recompensas enviadas na primeira vez que o jogador vincular
+  rewards:
+    - "coins add %player% 500"
+    - "darkit %player% vinculado"
+

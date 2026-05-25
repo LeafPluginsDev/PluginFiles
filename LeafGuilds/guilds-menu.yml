@@ -1,0 +1,55 @@
+# Localizador de guildas
+main-menu:
+  title: "Guildas"
+  slots: 6
+
+  list:
+    slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34 ]
+
+    format:
+      name: "&f%name% &8(&f%colortag%&8)"
+      item: "%icon%"
+      lore:
+        - ""
+        - "&7ID: &f#%id%"
+        - "&7Criada em: &f%creation%"
+        - "&7Fundador: &f%founder%"
+        - "&7Membros: &f%members%&8/&f%maxmembers%"
+        - ""
+        - "&7Publica: %public%"
+        - "&7Aceita pedidos: %requests%"
+        - "&7Discord: &a%discord%"
+        - ""
+        - "&eClique para entrar ou pedir entrada"
+
+  items:
+    previous-page:
+      name: "&7Pag. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpagina anterior"
+        - ""
+
+    info:
+      name: "&aLocalizador de Guildas"
+      item: "compass"
+      slot: 49
+      lore:
+        - ""
+        - " &fGuildas publicas permitem"
+        - " &fentrada imediata."
+        - ""
+        - " &fGuildas privadas podem"
+        - " &freceber pedidos de entrada."
+        - ""
+
+    next-page:
+      name: "&7Prox. pagina &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fproxima pagina"
+        - ""

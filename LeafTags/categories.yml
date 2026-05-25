@@ -1,0 +1,25 @@
+staff:
+  name: "Equipe"
+  color: "&6"
+  display: "&6Equipe"
+
+vip:
+  name: "Vips"
+  color: "&a"
+  display: "&aVips"
+
+youtuber:
+  name: "Youtubers"
+  color: "&c"
+  display: "&cYoutubers"
+
+especial:
+  name: "Especial"
+  color: "&e"
+  display: "&eEspecial"
+
+default:
+  name: "Padrão"
+  color: "&7"
+  display: "&7Padrão"
+

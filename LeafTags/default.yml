@@ -1,0 +1,325 @@
+Dono:
+  visual:
+    name: "Dono"
+    color: "&4"
+    prefix: "&4[Dono] %player%"
+    suffix: ""
+    preset: "&4Dono"
+    glowColor: "&4"
+    selfPrefix: "&4[Dono] "
+    aboveName: "&6[EQUIPE]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&4[Dono] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: false
+  options:
+    icon: "head:252559f2bcead983f4b6561c2b5f2b588f0d6116d44666ceff1202079d27ca74"
+    position: 1
+    visible: true
+    category: "staff"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &4Donos&7."
+    permission: "leaftags.tag.dono"
+    aliases: ["subdono", "master", "owner"]
+
+Admin:
+  visual:
+    name: "Admin"
+    color: "&c"
+    prefix: "&c[Admin] %player%"
+    suffix: ""
+    preset: "&cAdmin"
+    glowColor: "&c"
+    selfPrefix: "&c[Admin] "
+    aboveName: "&6[EQUIPE]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&c[Admin] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: false
+  options:
+    icon: "diamond_axe"
+    position: 2
+    visible: true
+    category: "staff"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &cAdministradores&7."
+    permission: "leaftags.tag.admin"
+    aliases: ["adm"]
+
+Moderador:
+  visual:
+    name: "Moderador"
+    color: "&a"
+    prefix: "&a[Moderador] %player%"
+    suffix: ""
+    preset: "&aModerador"
+    glowColor: "&a"
+    selfPrefix: "&a[Moderador] "
+    aboveName: "&6[EQUIPE]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&a[Moderador] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: false
+  options:
+    icon: "diamond_pickaxe"
+    position: 3
+    visible: true
+    category: "staff"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &aModeradores&7."
+    permission: "leaftags.tag.mod"
+    aliases: ["mod", "moderator"]
+
+Ajudante:
+  visual:
+    name: "Ajudante"
+    color: "&b"
+    prefix: "&b[Ajudante] %player%"
+    suffix: ""
+    preset: "&bAjudante"
+    glowColor: "&b"
+    selfPrefix: "&b[Ajudante] "
+    aboveName: "&6[EQUIPE]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&b[Ajudante] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: false
+  options:
+    icon: "paper"
+    position: 4
+    visible: true
+    category: "staff"
+    playerGlow: false
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &bAjudantes&7."
+    permission: "leaftags.tag.ajudante"
+    aliases: ["helper", "ajuda"]
+
+YoutuberPlus:
+  visual:
+    name: "YouTuber+"
+    color: "&3"
+    prefix: "&3[YT+] %player%"
+    suffix: ""
+    preset: "&3YouTuber+"
+    glowColor: "&3"
+    selfPrefix: "&3[YT+] "
+    aboveName: "&6[Influenciador]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&3[Youtuber+] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: true
+  options:
+    icon: "head:c0c9a3a4ffbee61d1ee1c3a533355bda9cdc377e07b0ff8bc618d3977b7f86cc"
+    position: 5
+    visible: true
+    category: "youtuber"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &3Youtubers&f+&7."
+    permission: "leaftags.tag.ytPlus"
+    aliases: ["yt+", "ytplus"]
+
+Youtuber:
+  visual:
+    name: "YouTuber"
+    color: "&b"
+    prefix: "&b[YT] %player%"
+    suffix: ""
+    preset: "&bYouTuber"
+    glowColor: "&b"
+    selfPrefix: "&b[YT] "
+    aboveName: "&6[Influenciador]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&b[Youtuber] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: true
+  options:
+    icon: "head:c767ed79ede7b581de4c6c731f5b8598924cf456e5a4040e27fdf25ac602531d"
+    position: 6
+    visible: true
+    category: "youtuber"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &bYoutubers&7."
+    permission: "leaftags.tag.yt"
+    aliases: ["yt"]
+
+MVP:
+  visual:
+    name: "MvP+"
+    color: "&b"
+    prefix: "&b[MVP&6+&b] %player%"
+    suffix: ""
+    preset: "&bMvP&6+"
+    glowColor: "&b"
+    selfPrefix: "&b[MVP&6+&b] "
+    aboveName: "&6[VIP]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&b[MVP&6+&b] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: true
+  options:
+    icon: "nether_star"
+    position: 7
+    visible: true
+    category: "vip"
+    playerGlow: false
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &bMVPs&6+&7."
+    permission: "leaftags.tag.mvpPlus"
+    aliases: ["mvp+", "mvpplus", "vip2", "vipplus", "plus"]
+
+VIP:
+  visual:
+    name: "Vip"
+    color: "&a"
+    prefix: "&a[VIP] %player%"
+    suffix: ""
+    preset: "&aVip"
+    glowColor: "&a"
+    selfPrefix: "&a[VIP] "
+    aboveName: "&6[VIP]"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&a[VIP] "
+    tablistSuffix: ""
+  acquisition:
+    purchase: -1
+    obtainable: true
+  options:
+    icon: "gold_ingot"
+    position: 8
+    visible: true
+    category: "vip"
+    playerGlow: false
+    customSuffix: false
+    description:
+      - "&7Tag destinada aos &aVIPs&7."
+    permission: "leaftags.tag.vip"
+    aliases: []
+
+Natal:
+  visual:
+    name: "Natal"
+    color: "&c"
+    prefix: "&c[Natal] &f%player%"
+    suffix: ""
+    preset: "&cNatal"
+    glowColor: "&c"
+    selfPrefix: "&c[Natal] "
+    aboveName: "&6Ho! Ho! Ho! Feliz Natal"
+    belowName: "&f%player_health_rounded% &c❤"
+    tablistPrefix: "&c[Natal] &f%player%"
+    tablistSuffix: ""
+  acquisition:
+    purchase: 2512
+    obtainable: true
+  options:
+    icon: "SNOWBALL"
+    position: 9
+    visible: true
+    category: "especial"
+    playerGlow: true
+    customSuffix: false
+    description:
+      - "&7Tag especial de &cNatal&7."
+    permission: "leaftags.tag.natal"
+    aliases: []
+
+Membro:
+  visual:
+    # Nome da nametag
+    name: "Membro"
+
+    # Cor da nametag
+    color: "&7"
+
+    # Prefixo da nametag (Antes do nome)
+    prefix: "&7"
+
+    # Suffix da nametag (Depois do nome)
+    suffix: ""
+
+    # Preset da nametag (Geralmente utilizado em menus, mensagens e scoreboards)
+    preset: "&7Membro"
+
+    # Cor do brilho aplicado no jogador
+    # Use 'random' pra ir mudando aleatoriamente
+    glowColor: ""
+
+    # Prefixo da nametag que será visto nos MODS de F5
+    selfPrefix: "&7"
+
+    # [Premium] Texto em cima do nome
+    aboveName: ""
+
+    # [Premium] Texto a baixo do nome
+    belowName: "&f%player_health_rounded% &c❤"
+
+    # Prefix da nametag na TabList (Caso deixe vazio irá utilizar o prefix/suffix padrão da tag)
+    tablistPrefix: "&7[Membro] "
+    tablistSuffix: ""
+
+  # Maneiras de adquirir
+  acquisition:
+    # Preço de compra (-1 desativa)
+    purchase: -1
+
+    # Define se é um tipo de tag que pode ser adquirida (Eventos, etc.)
+    # Isso fará com que possa ser exibida no menu como bloqueada
+    obtainable:  false
+
+  options:
+    # Icone que aparecerá no menu
+    icon: "name_tag"
+
+    # Posição do jogador na TabList
+    position: 26
+
+    # Caso esteja 'false', fará que o nickname
+    # do jogador não apareça em cima do jogador
+    visible: true
+
+    # Categoria da tag (categories.yml)
+    category: "default"
+
+    # [Premium] Fará que o jogador brilhe (1.9+)
+    playerGlow: false
+
+    # Permitirá que os jogadores usem outros sufixos
+    # Caso esteja 'false', fará que use o suffix da tag
+    customSuffix: false
+
+    # Descrição da tag
+    description:
+      - "&7Tag destinada aos &fjogadores&7."
+
+    # Permissão da nametag (Deixe vazio para que não seja necessário)
+    permission: ""
+
+    # Variáveis de como utilizar a tag - /tag <variavel>
+    aliases: ["player", "padrão", "default", "padrao", "jogador"]

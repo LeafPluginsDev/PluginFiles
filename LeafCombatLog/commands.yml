@@ -1,0 +1,19 @@
+# É necessário reiniciar o servidor após a alteração
+
+combatlog:
+  name: "combatlog"
+  use-command: true
+  permission: 'leafcombatlog.command.combatlog'
+  aliases:
+    - combat
+    - sairdecombate
+    - cancelarcombate
+    - leavecombat
+    - cancelcombat
+
+reloadregions:
+  name: "reloadregions"
+  use-command: true
+  permission: 'leafcombatlog.admin'
+  aliases:
+    - combatlogregions

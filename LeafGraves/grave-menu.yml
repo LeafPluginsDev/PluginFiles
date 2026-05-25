@@ -1,0 +1,44 @@
+main-menu:
+  title: "Cova de %player%"
+  items:
+    xp:
+      name: "%color%Coletar XP"
+      item: "experience_bottle"
+      slot: 48
+      lore:
+        - ""
+        - " &fXP: &a%xp%"
+        - ""
+        - "&eClique para coletar"
+    items:
+      name: "%color%Coletar itens"
+      item: "chest"
+      slot: 50
+      lore:
+        - ""
+        - " &fItens: &a%item%"
+        - ""
+        - "&eClique para coletar todos"
+
+graves-menu:
+  title: "Covas de %player%"
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato das graves
+    format:
+      name: "&aCova #%id%"
+      item: "head:%player%"
+      lore:
+        - ""
+        - "&d♦ &fItens: &d%items%"
+        - "&6♦ &fXP: &6%xp%"
+        - ""
+        - "&a♦ &fMundo: &a%world%"
+        - "&b♦ &fLocalização: &bx=%x% y=%y% z=%z%"
+        - ""
+        - "&c♦ &fExpira: &c%despawn-time%"
+        - ""
+        - "&eClique para inspecionar"
+

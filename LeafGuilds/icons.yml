@@ -1,0 +1,120 @@
+# Icones disponiveis
+banner:
+  # Nome de exibição
+  name: "&7Banner Preto"
+
+  # Item
+  item: "black_banner"
+
+  # Permissão necessária
+  permission:
+    # Apenas Guildas VIPs podem selecionar
+    only-vip: false
+
+    # Apenas administradores da equipe podem defini-la em uma guilda
+    only-admin: false
+
+red_banner:
+  name: "&cBanner Vermelho"
+  item: "red_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+green_banner:
+  name: "&2Banner Verde"
+  item: "green_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+brown_banner:
+  name: "&6Banner Marrom"
+  item: "brown_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+blue_banner:
+  name: "&9Banner Azul"
+  item: "blue_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+purple_banner:
+  name: "&5Banner Roxo"
+  item: "purple_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+cyan_banner:
+  name: "&3Banner Ciano"
+  item: "cyan_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+light_gray_banner:
+  name: "&7Banner Cinza Claro"
+  item: "light_gray_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+gray_banner:
+  name: "&8Banner Cinza"
+  item: "gray_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+pink_banner:
+  name: "&dBanner Rosa"
+  item: "pink_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+lime_banner:
+  name: "&aBanner Verde Limão"
+  item: "lime_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+yellow_banner:
+  name: "&eBanner Amarelo"
+  item: "yellow_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+light_blue_banner:
+  name: "&bBanner Azul Claro"
+  item: "light_blue_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+magenta_banner:
+  name: "&dBanner Magenta"
+  item: "magenta_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+orange_banner:
+  name: "&6Banner Laranja"
+  item: "orange_banner"
+  permission:
+    only-vip: false
+    only-admin: false
+
+white_banner:
+  name: "&fBanner Branco"
+  item: "white_banner"
+  permission:
+    only-vip: false
+    only-admin: false

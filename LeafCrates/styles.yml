@@ -1,0 +1,65 @@
+none:
+  name: "Nenhum"
+  blocks:
+    external: ""
+    internal:
+      enabled: false
+      item: ""
+      small: true
+      animation:
+        rotating: true
+        floating: false
+  particle:
+    enabled: true
+    type: "ROUND"
+    particle: "WITCH"
+    style:
+      color: ""
+      height: -0.5
+      size: 0
+
+avancada:
+  # Nome de identificação
+  name: "Avançada"
+
+  # Blocos
+  blocks:
+    # Bloco que será o "baú" (Bloco normal)
+    # Deixe vazio desativar e usar o bloco que o baú já é
+    external: "WHITE_STAINED_GLASS"
+
+    # Bloco interno do bloco externo
+    internal:
+      enabled: true
+      item: "https://textures.minecraft.net/texture/413e96df6ed4b70a5a70fc29dcde9314dbe976696474f120e0b30ea5d7b96b3a"
+      small: true
+      animation:
+        rotating: true
+        floating: false
+
+  particle:
+    enabled: true
+
+    # Tipos de animação:
+    # Confira na página do produto a lista atualizada https://leafplugins.com/plugin/LeafCrates
+    # ROUND | DOUBLE_HELIX | VORTEX_CONE | PULSE_RINGS | INFINITY_ORBIT | CROWN_RINGS | TIMED_BURST
+    # SPIRAL_PULSE | ORBIT_CROSS | DUAL_RING_WAVE | FIGURE8_PLUS_RING | BOUNCE_ORBIT | DUAL_AXIS_SPIN
+    # ORBIT_TRAIL_BOB | DOUBLE_RING_COUNTER_WAVE | SPIRAL_COLUMN_PULSE | STAR_SPIN_ORBIT | RING_PLUS_BURST_TIMED | DOUBLE_HELIX_MINI_RING
+    # WAVE_RING | PULSE_RING_PLUS_DOT | SQUARE_SPIN | DIAMOND_PLUS_RING | PLUS_ARMS_ORBIT
+    # TWIN_DOTS_COUNTER_ORBIT | ZIGZAG_RING | SMALL_RING_PLUS_HELIX2 | TRIANGLE_SPIN_ORBIT | EXPANDING_RING_SWEEP
+    type: "ORBIT_CROSS"
+
+    # Partícula base enviada
+    # Se quiser cor HEX, use REDSTONE aqui.
+    particle: "REDSTONE"
+
+    # Só tem efeito real se particle = REDSTONE (dust)
+    style:
+      # Cor HEX
+      color: "#ffb413"
+
+      # Altura do centro da particula
+      height: -0.5
+
+      # Tamanho da particula
+      size: 1.2

@@ -1,0 +1,372 @@
+# Informação da guilda que estiver
+info-menu:
+  title: "%name% - Guilda"
+  slots: 6
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+
+  items:
+    g:
+      name: "&dGUILD"
+      item: "head:58c336dedfe197b434b5ab67988cbe9c2c9f285ec1871fdd1ba434855b"
+      slot: 1
+      lore: []
+    u:
+      name: "&eGUILD"
+      item: "head:9fdc4f321c78d67484135ae464af4fd925bd57d459383a4fe9d2f60a3431a79"
+      slot: 2
+      lore: []
+    i:
+      name: "&6GUILD"
+      item: "head:c148a8865bc4afe0747f3415138b96bbb4e8bbb7261f45e5d11d7219f368e4"
+      slot: 3
+      lore: []
+    l:
+      name: "&bGUILD"
+      item: "head:cc58321d4bffbec2ddf66bf38cf2f9e9ddf3fa2f1387dc7d30c62b4d010c8"
+      slot: 4
+      lore: []
+    d:
+      name: "&aGUILD"
+      item: "head:59aa69229ffdfa182889bf3097d32215c1b2159d987103b1d5843646faac"
+      slot: 5
+      lore: []
+
+
+    # Itens extras
+    # Vidro verde nos slots de 9 a 17
+    glass_1:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 9
+      lore: []
+
+    glass_2:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 10
+      lore: []
+
+    glass_3:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 11
+      lore: []
+
+    glass_4:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 12
+      lore: []
+
+    glass_5:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 13
+      lore: []
+
+    glass_6:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 14
+      lore: []
+
+    glass_7:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 15
+      lore: []
+
+    glass_8:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 16
+      lore: []
+
+    glass_9:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 17
+      lore: []
+
+    # Vidro verde nos slots de 36 a 44
+    glass_10:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 45
+      lore: []
+
+    glass_11:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 46
+      lore: []
+
+    glass_12:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 47
+      lore: []
+
+    glass_13:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 48
+      lore: []
+
+    glass_14:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 49
+      lore: []
+
+    glass_15:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 50
+      lore: []
+
+    glass_16:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 51
+      lore: []
+
+    glass_17:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 52
+      lore: []
+
+    glass_18:
+      name: "&5"
+      item: "stained_glass_pane:15"
+      slot: 53
+      lore: []
+
+    icon:
+      name: "%colortag%"
+      item: "%icon%"
+      slot: 7
+      lore:
+        - "%description%"
+        - ""
+        - "&eInformações:"
+        - " &a▸ &fNome: &a%name%"
+        - " &a▸ &fCriado em: &a%creation%"
+        - " &b▸ &fLíder: &b%leader%"
+        - ""
+        - "&eOpcões:"
+        - " &e▸ &fPúblico: %public%"
+        - " &e▸ &fStatus: %visibility%"
+        - " &e▸ &fAceita pedidos: %requests%"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    leave:
+      name: "&cAbandonar Guilda"
+      item: "barrier"
+      slot: 8
+      lore:
+        - ""
+        - " &fClique para abandonar"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: true
+
+      # Lista de comandos que o jogador executará
+      execute: ["/guild leave"]
+
+    delete:
+      name: "&cDeletar Guilda"
+      item: "barrier"
+      slot: 8
+      lore:
+        - ""
+        - " &fDeletar sua Guilda."
+        - ""
+        - "&eObservações:"
+        - " &fPerderá o nome &7%name%"
+        - " &fPerderá a tag &f%colortag%"
+        - " &fPerderá seus &a%members% membros&f."
+        - ""
+        - "&c(!) Esta ação é irreversível!"
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: ["/guild delete"]
+
+    player:
+      name: "&aSobre Mim"
+      item: "head:player"
+      slot: 28
+      lore:
+        - " "
+        - " %player_displayname% %colortag%"
+        - ""
+        - " &fEntrou em: &a%guild_joined_at%"
+        - " &fCargo atual: &a%role_color%%role_name%"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    chest:
+      name: "&aBau da Guilda"
+      item: "chest"
+      slot: 19
+      lore:
+        - ""
+        - " &fAbra o bau comunitario"
+        - " &fde %colortag%&f."
+        - ""
+        - "&e(Recursos da Guilda)"
+      closeInventory: false
+      execute: []
+
+    home:
+      name: "&aHome da Guilda"
+      item: "ender_pearl"
+      slot: 20
+      lore:
+        - ""
+        - " &fTeleporte para a base"
+        - " &fdefinida pela guilda."
+        - ""
+        - "&e(Recursos da Guilda)"
+      closeInventory: false
+      execute: []
+
+    sethome:
+      name: "&aDefinir Home"
+      item: "compass"
+      slot: 21
+      lore:
+        - ""
+        - " &fDefine sua posicao atual"
+        - " &fcomo home da guilda."
+        - ""
+        - "%permission%"
+      closeInventory: false
+      execute: []
+
+    ally:
+      name: "&aAliancas"
+      item: "emerald"
+      slot: 23
+      lore:
+        - ""
+        - " &fConferir guildas aliadas"
+        - " &fe gerenciar relacoes."
+        - ""
+        - "&e(Relacoes da Guilda)"
+      closeInventory: false
+      execute: []
+
+    enemy:
+      name: "&cInimigos"
+      item: "redstone"
+      slot: 24
+      lore:
+        - ""
+        - " &fConferir guildas inimigas"
+        - " &fe gerenciar rivalidades."
+        - ""
+        - "&e(Relacoes da Guilda)"
+      closeInventory: false
+      execute: []
+
+    settings:
+      name: "&aGerenciar Guilda"
+      item: "comparator"
+      slot: 29
+      lore:
+        - ""
+        - " &fEditar configurações"
+        - ""
+        - "%permission%"
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    level:
+      name: "&aNível da Guilda"
+      item: "brewing_stand"
+      slot: 30
+      lore:
+        - ""
+        - " &6Guilda VIP: &f%premium%"
+        - ""
+        - "&7Ao ser &6VIP&7, a guilda possui mais vantagens"
+        - "&7e mais espaço para membros na guilda"
+        - ""
+
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    members:
+      name: "&aMembros"
+      item: "head:b06c31249636361efd15dac1402cb3c8144a1798bd1af7257b95b12b8240399a"
+      slot: 31
+      lore:
+        - ""
+        - " &fConferir os membros"
+        - ""
+        - "&eInformações:"
+        - " &a▸ &fPossui: &a%members% membro(s)"
+        - " &b▸ &fMáximo: &b%maxmembers% membro(s)"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    invite:
+      name: "&aConvidar jogador"
+      item: "writable_book"
+      slot: 32
+      lore:
+        - ""
+        - " &fConvidar para %colortag%"
+        - ""
+        - "%permission%"
+
+    discord:
+      name: "&aDiscord"
+      item: "head:739ee7154979b3f87735a1c8ac087814b7928d0576a2695ba01ed61631942045"
+      slot: 34
+      lore:
+        - ""
+        - " &fClique para entrar"
+        - " &7discord.gg/&9%discord%"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    invites:
+      name: "&aConvites e pedidos"
+      item: "head:8d1b28f886ca3c8fc4301b785bf38c619ea66b68352a882bf8080e63034e0"
+      slot: 33
+      lore:
+        - ""
+        - " &fConferir &bconvites enviados"
+        - " &fConferir &epedidos recebidos"
+        - ""
+        - "%permission%"

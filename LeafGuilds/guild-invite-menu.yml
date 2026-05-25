@@ -1,0 +1,77 @@
+# Menu de convidar alguém online
+main-menu:
+  title: "%name% - Convidar"
+  slots: 5
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+
+    # Formato dos itens de player
+    format:
+      name: "%target_displayname%"
+      item: "head:%target%"
+      invited:
+        - ""
+        - " &aConvite enviado"
+        - ''
+      lore:
+        - ""
+        - " &fO jogador está &a&lONLINE"
+        - ''
+        - '&eClique para convidar'
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    icon:
+      name: "%colortag%"
+      item: "%icon%"
+      slot: 39
+      lore:
+        - ""
+        - " &fVocê está convidando"
+        - " &fcom o cargo de %role_color%%role_name%"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 40
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    invite:
+      name: "&aBuscar por Nome"
+      item: "writable_book"
+      slot: 41
+      lore:
+        - ""
+        - " &fConvidar alguém pelo nome"
+        - " &fmesmo não estando online"
+        - ""
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 18
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 26
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

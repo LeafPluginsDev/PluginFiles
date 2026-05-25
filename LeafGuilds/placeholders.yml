@@ -1,0 +1,13 @@
+# Configuração das placeholders pro jogador
+# Você pode criar, remover e editar
+# Formato: %leafguilds_<placeholder>%
+# Exemplo: %leafguilds_customtag%
+customname:
+  noClan: "&cSem Clan"
+  result: "%guild_name%"
+customtag:
+  noClan: "&cSem Clan"
+  result: "&8[%guild_colortag%&8]"
+abovename:
+  noClan: ""
+  result: "&8(%guild_colortag%&8) &f- %role_color%%role_name%"

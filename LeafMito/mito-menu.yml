@@ -1,0 +1,97 @@
+main-menu:
+  title: "Mitos - Principal"
+  slots: 27
+
+  items:
+    # Não altere o ID dos seguintes itens: mito-atual, mito-nenhum, top-list
+    mito-atual:
+      name: "&6&l➜ &6Mito Atual"
+      item: "head:%mitoname%"
+      slot: 13
+      lore:
+        - ""
+        - " &a%mitotimes%ª vez &fde &7%mitoname%"
+        - ""
+        - "&8Desde %mitodate%"
+
+    mito-nenhum:
+      name: "&c&l➜ &cMito Atual"
+      item: "player_head"
+      slot: 13
+      lore:
+        - ""
+        - " &fNenhum jogador"
+        - " &e&lPODE SER VOCÊ!"
+        - ""
+
+    top-list:
+      name: "&b&l➜ &bTop Mitos"
+      item: "head:a988419dd5b386f698a96913db1d97c2418e16d416d7f439d48acd41e3a436ce"
+      slot: 15
+      lore:
+        - ""
+        - " &fConfira o histórico de mitos"
+        - ""
+
+    # Itens extras
+    player:
+      name: '&a&l➜ &aMinhas informações'
+      item: 'head:player'
+      slot: 11
+      lore:
+        - ""
+        - " &fMito por &a%times% vez(es)"
+        - " &fÚltima vez: &7%date%"
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: [ ]
+
+top-menu:
+  title: "Mitos - Top List"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 28, 29, 30, 31, 32, 33 ]
+
+    # Formato dos itens dos mitos
+    format:
+      name: "&c%name%"
+      item: "head:%name%"
+      lore:
+        - ""
+        - " &fMito por &a%times% vez(es)"
+        - ""
+
+  items:
+    return:
+      name: "&7Voltar"
+      item: "head:a988419dd5b386f698a96913db1d97c2418e16d416d7f439d48acd41e3a436ce"
+      slot: 49
+      lore:
+        - ""
+        - "&7 Você está visualizando o histórico"
+        - "&7 de mitos do servidor"
+        - ""
+        - "&eClique para voltar"
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

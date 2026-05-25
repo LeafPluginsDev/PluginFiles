@@ -1,0 +1,255 @@
+creeper_head:
+  # Chance de ganhar este prêmio (0.0 a 100.0) em porcentagem
+  chance: 1.0
+  # Raridade deste prêmio (deve existir em rarities.yml)
+  rarity: legendary
+
+  # Visual do prêmio (no inventário da caixa, holograma, mensagem de broadcast, etc)
+  display:
+    # Nome do prêmio
+    name: "&aCabeça de Creeper"
+    # Descrição do prêmio
+    lore:
+      - "&7Uma cabeça assustadora de creeper — um troféu sinistro."
+      - "&7Perfeita para decoração ou para intimidar visitantes."
+      - "&7Mostre suas conquistas: item raro e cheio de personalidade."
+    # Icone do prêmio
+    icon:
+      item: "CREEPER_HEAD"
+      glow: false
+
+  gives:
+    1: "code"
+
+  # Comandos que serão executados ao ganhar este prêmio
+  commands:
+    - "give {player} minecraft:creeper_head 1"
+
+  # Mensagem enviada para todos os jogadores
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+1000_money:
+  # Chance de ganhar esta prêmio (0.0 a 100.0) em porcentagem
+  chance: 5.0
+  # Raridade desta prêmio (deve existir em rarities.yml)
+  rarity: common
+
+  # Visual da prêmio (no inventário da caixa, holograma, mensagem de broadcast, etc)
+  display:
+    # Nome da prêmio
+    name: "&aMoney &ex1000"
+    # Descrição da prêmio
+    lore:
+      - "&71000 de money para gastar como quiser!"
+    # Icone da prêmio
+    icon:
+      item: "GOLD_NUGGET"
+      glow: false
+
+  # Comandos que serão executados ao ganhar esta prêmio
+  commands:
+    - "money give {player} 1000"
+
+  # Mensagem enviada para todos os jogadores
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+netherite_ingot:
+  chance: 5.0
+  rarity: legendary
+  display:
+    name: "&6Lingote de Netherite"
+    lore:
+      - "&7Um material extremamente raro e resistente."
+      - "&7Perfeito para forjar equipamentos finais."
+    icon:
+      item: "NETHERITE_INGOT"
+      glow: false
+  commands:
+    - "give {player} minecraft:netherite_ingot 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+enchanted_golden_apple:
+  chance: 1.0
+  rarity: legendary
+  display:
+    name: "&5Maçã Dourada Encantada"
+    lore:
+      - "&7O item mais poderoso para emergências."
+      - "&7Proteção e regeneração instantâneas."
+    icon:
+      item: "ENCHANTED_GOLDEN_APPLE"
+      glow: true
+  commands:
+    - "give {player} minecraft:enchanted_golden_apple 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+elytra_wings:
+  chance: 3.0
+  rarity: epic
+  display:
+    name: "&bElytra"
+    lore:
+      - "&7Asas para voar pelos céus do mundo."
+      - "&7Use com cuidado — o céu é o limite."
+    icon:
+      item: "ELYTRA"
+      glow: false
+  commands:
+    - "give {player} minecraft:elytra 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+totem_of_undying:
+  chance: 4.0
+  rarity: epic
+  display:
+    name: "&eTotem da Imortalidade"
+    lore:
+      - "&7Salva o jogador de uma morte certa."
+      - "&7Um item heroico para momentos críticos."
+    icon:
+      item: "TOTEM_OF_UNDYING"
+      glow: true
+  commands:
+    - "give {player} minecraft:totem_of_undying 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+dragon_egg:
+  chance: 0.5
+  rarity: legendary
+  display:
+    name: "&cOvo do Ender Dragon"
+    lore:
+      - "&7Um troféu único — raríssimo."
+      - "&7Ótimo para quem quer ostentar no servidor."
+    icon:
+      item: "DRAGON_EGG"
+      glow: false
+  commands:
+    - "give {player} minecraft:dragon_egg 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+nether_star:
+  chance: 2.0
+  rarity: epic
+  display:
+    name: "&fEstrela do Nether"
+    lore:
+      - "&7Usada para construir beacons poderosos."
+      - "&7Perfeita para obras de alto nível."
+    icon:
+      item: "NETHER_STAR"
+      glow: true
+  commands:
+    - "give {player} minecraft:nether_star 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+beacon_block:
+  chance: 1.5
+  rarity: rare
+  display:
+    name: "&bBeacon"
+    lore:
+      - "&7Um bloco que concede efeitos mediante estrutura."
+      - "&7Ótimo para bases e áreas comunitárias."
+    icon:
+      item: "BEACON"
+      glow: false
+  commands:
+    - "give {player} minecraft:beacon 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+diamond_bundle:
+  chance: 10.0
+  rarity: rare
+  display:
+    name: "&bDiamantes x16"
+    lore:
+      - "&7Um bom pacote de diamantes para upgrade."
+      - "&716 unidades — ótimo para forjas e trocas."
+    icon:
+      item: "DIAMOND"
+      glow: false
+  commands:
+    - "give {player} minecraft:diamond 16"
+  broadcast:
+    enable: false
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""
+
+shulker_box_purple:
+  chance: 6.0
+  rarity: uncommon
+  display:
+    name: "&5Shulker Box Roxa"
+    lore:
+      - "&7Caixa prática para armazenamento móvel."
+      - "&7Ótima para aventuras longas."
+    icon:
+      item: "PURPLE_SHULKER_BOX"
+      glow: false
+  commands:
+    - "give {player} minecraft:purple_shulker_box 1"
+  broadcast:
+    enable: true
+    message:
+      - ""
+      - "&7[&6%box_name%&7] &fO jogador &7%player_displayname% &facabou de ganhar:"
+      - "&f- &a%prize_name% &fde raridade &a%rarity_displayname%"
+      - ""

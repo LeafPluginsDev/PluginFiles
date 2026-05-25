@@ -1,0 +1,24 @@
+common:
+  name: "Comum"
+  color: "&7"
+  displayName: "&7&lCOMUM"
+
+rare:
+  name: "Raro"
+  color: "&9"
+  displayName: "&9&lRARO"
+
+epic:
+  name: "Épico"
+  color: "&b"
+  displayName: "&b&lÉPICO"
+
+legendary:
+  name: "Lendário"
+  color: "&6"
+  displayName: "&6&lLENDÁRIO"
+
+uncommon:
+  name: "Incomum"
+  color: "&5&l"
+  displayName: "&f&l&kI &5&lINCOMUM &f&l&kI"

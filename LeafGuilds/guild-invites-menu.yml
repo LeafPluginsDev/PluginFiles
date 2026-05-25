@@ -1,0 +1,100 @@
+# Menu de convites enviados e pedidos recebidos
+main-menu:
+  title: "%name% - Convites"
+  slots: 6
+
+  invites:
+    slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+    format:
+      name: "&aConvite para &f%target_name%"
+      item: "head:%player%"
+      lore:
+        - ""
+        - " &fExpira em: &a%target_expires%"
+        - ""
+        - " &eClique para cancelar o convite"
+
+  requests:
+    slots: [ 28, 29, 30, 31, 32, 33, 34 ]
+    format:
+      name: "&ePedido de &f%target_name%"
+      item: "head:%player%"
+      lore:
+        - ""
+        - " &fJogador quer entrar em"
+        - " &f%colortag%&f."
+        - ""
+        - " &aClique esquerdo para aceitar"
+        - " &cClique direito para recusar"
+
+  items:
+    invites-info:
+      name: "&aConvites Enviados"
+      item: "writable_book"
+      slot: 4
+      lore:
+        - ""
+        - " &fJogadores convidados"
+        - " &fpela sua guilda."
+        - ""
+        - " &8▸ &fTotal: &a%invites_count%"
+        - " &8▸ &fPágina: &a%invites_page%&7/&a%invites_maxpages%"
+        - ""
+
+    requests-info:
+      name: "&ePedidos Recebidos"
+      item: "name_tag"
+      slot: 22
+      lore:
+        - ""
+        - " &fPedidos enviados pelo"
+        - " &flocalizador /guilds."
+        - ""
+        - " &8▸ &fTotal: &e%requests_count%"
+        - " &8▸ &fPágina: &e%requests_page%&7/&e%requests_maxpages%"
+        - ""
+
+    previous-invites-page:
+      name: "&7Pág. anterior &7(&b%invites_previouspage%&7/&b%invites_maxpages%&7)"
+      item: "arrow"
+      slot: 18
+      lore:
+        - ""
+        - " &7Ver convites anteriores"
+        - ""
+
+    next-invites-page:
+      name: "&7Próx. página &7(&b%invites_page%&7/&b%invites_maxpages%&7)"
+      item: "arrow"
+      slot: 26
+      lore:
+        - ""
+        - " &7Ver próximos convites"
+        - ""
+
+    previous-requests-page:
+      name: "&7Pág. anterior &7(&b%requests_previouspage%&7/&b%requests_maxpages%&7)"
+      item: "arrow"
+      slot: 36
+      lore:
+        - ""
+        - " &7Ver pedidos anteriores"
+        - ""
+
+    next-requests-page:
+      name: "&7Próx. página &7(&b%requests_page%&7/&b%requests_maxpages%&7)"
+      item: "arrow"
+      slot: 44
+      lore:
+        - ""
+        - " &7Ver próximos pedidos"
+        - ""
+
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 49
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""

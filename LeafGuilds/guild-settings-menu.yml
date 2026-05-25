@@ -1,0 +1,276 @@
+# Menu principal
+main-menu:
+  title: "%name% - Config"
+  slots: 4
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 31
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    icon:
+      name: "&aIcone da Guilda"
+      item: "%icon%"
+      slot: 10
+      lore:
+        - ""
+        - " &8Atual: %icon_name%"
+        - " &fAltere o ícone exibido"
+        - " &7Segure um banner e clique no"
+        - " &7icone atual para personalizar."
+        - ""
+        - "&e(Visual da Guilda)"
+
+    tag:
+      name: "&aTag da Guilda"
+      item: "name_tag"
+      slot: 11
+      lore:
+        - ""
+        - " &8Atual: %tag%"
+        - " &fAltere a tag ao lado do nome"
+        - ""
+        - "&e(Visual da Guilda)"
+
+    colortag:
+      name: "&aCor da Tag da Guilda"
+      item: "red_dye"
+      slot: 12
+      lore:
+        - ""
+        - " &8Atual: %colortag%"
+        - " &fAltere a cor da tag ao lado do nome"
+        - ""
+        - "&e(Visual da Guilda)"
+
+    visibility:
+      name: "&aVisível no Localizador"
+      item: "compass"
+      slot: 13
+      lore:
+        - ""
+        - " &8Atual: %visibility%"
+        - " &fDefina se a Guilda poderá ser"
+        - " &fexibida no localizador de Guildas"
+        - ""
+        - "&e(Ajuda a encontrar novos membros)"
+
+    public:
+      name: "&aGuilda Pública"
+      item: "sunflower"
+      slot: 14
+      lore:
+        - ""
+        - " &8Atual: %public%"
+        - " &fDefina se qualquer pessoa poderá entrar"
+        - " &fna guilda através do localizador de guildas."
+        - ""
+        - " &fQualquer membro poderá recrutar outros jogadores."
+        - ""
+        - "&e(Ajuda a encontrar novos membros)"
+
+    requests:
+      name: "&aAceitar pedidos"
+      item: "head:8d1b28f886ca3c8fc4301b785bf38c619ea66b68352a882bf8080e63034e0"
+      slot: 15
+      lore:
+        - ""
+        - " &8Atual: %requests%"
+        - " &fDefina se a Guilda poderá"
+        - " &freceber pedidos para entrar"
+        - ""
+        - "&e(Controle de Membros)"
+
+    description:
+      name: "&aDescrição da Guilda"
+      item: "writable_book"
+      slot: 16
+      lore:
+        - ""
+        - " &8Atual: %description_name%"
+        - " &fDefina a descrição que"
+        - " &fmelhor defina sua Guilda"
+        - ""
+        - "&e(Controle de Membros)"
+
+icon-menu:
+  title: "%name% - Icones"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos ícones
+    format:
+      name: "%name%"
+      item: "%icon%"
+      lore:
+        - ""
+        - " &7Clique para selecionar"
+        - ""
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 50
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    icon:
+      name: "%colortag%"
+      item: "%icon%"
+      slot: 48
+      lore:
+        - ""
+        - " &8Atual: &7%icon_name%"
+        - " &fClique segurando um banner"
+        - " &fpara definir um icone customizado."
+        - ""
+      # Fechará o inventário caso clique
+      closeInventory: false
+
+      # Lista de comandos que o jogador executará
+      execute: []
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""
+
+colortag-menu:
+  title: "%name% - Cores para Tag"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos ícones
+    format:
+      name: "%name%"
+      item: "%icon%"
+      lore:
+        - ""
+        - " %preview%"
+        - " &7Clique para selecionar"
+        - ""
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 50
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    icon:
+      name: "%colortag%"
+      item: "%icon%"
+      slot: 48
+      lore: []
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""
+
+description-menu:
+  title: "%name% - Descrições"
+  slots: 54
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos ícones
+    format:
+      name: "%name%"
+      item: "%icon%"
+      lore:
+        - ""
+        - "%message%"
+        - ""
+        - " &7Clique para selecionar"
+        - ""
+
+  # Sinta-se a vontade para por novos itens
+  # apenas respeite os ids padrões para o funcionamento correto
+  items:
+    return:
+      name: "&cVoltar"
+      item: "arrow"
+      slot: 50
+      lore:
+        - ""
+        - " &fClique para voltar"
+        - ""
+
+    icon:
+      name: "%colortag%"
+      item: "%icon%"
+      slot: 48
+      lore:
+        - ""
+        - " &8Atual: &f%description_name%"
+        - ""
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

@@ -1,0 +1,36 @@
+default:
+  # Nome da descrição
+  name: "&cNenhuma"
+
+  # Icone da descrição
+  icon: "sign"
+
+  # Mensagem da descrição
+  message:
+    - "&cNenhuma descrição"
+
+  # Permissão necessária
+  permission:
+    # Apenas Guildas VIPs podem selecionar
+    only-vip: false
+
+    # Apenas administradores da equipe podem defini-la em uma guilda
+    only-admin: false
+
+sopa:
+  name: "&aSopeiros!"
+  icon: "mushroom_stew"
+  message:
+    - "&7Focados em PvP com Sopa"
+  permission:
+    only-vip: false
+    only-admin: false
+
+foguete:
+  name: "&aOs Foguetes!"
+  icon: "firework_rocket"
+  message:
+    - "&7Somos imparáveis!"
+  permission:
+    only-vip: false
+    only-admin: false

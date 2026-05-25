@@ -1,0 +1,24 @@
+# É necessário reiniciar o servidor após a alteração
+guild:
+  name: guild
+  use-command: true
+  permission: ''
+  aliases:
+    - guilda
+    - clan  
+  usage: ''
+
+guildadmin:
+  name: guildadmin
+  use-command: true
+  aliases:
+    - clanadmin
+  usage: ''
+
+guilds:
+  name: guilds
+  use-command: true
+  aliases:
+    - guildas
+    - clans
+  usage: ''

@@ -1,0 +1,9 @@
+# É necessário reiniciar o servidor após a alteração
+userinfo:
+  name: userinfo
+  use-command: true
+  permission: 'leafplugins.command.userinfo'
+  aliases:
+    - alts
+    - dupeip
+  usage: para ver informações de um usuário.

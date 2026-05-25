@@ -1,0 +1,39 @@
+main-menu:
+  title: "Seus Sufixos"
+  slots: 54
+
+  # Fechará o menu ao selecionar
+  closeInventory: true
+
+  list:
+    # Slots que os itens ocuparão
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+
+    # Formato dos itens dos sufixos
+    format:
+      name: "%preset%"
+      item: "%icon%"
+      lore:
+        - ""
+        - " &fPreview: &7%preview%"
+        - ""
+        - "&eClique para selecionar"
+
+  items:
+    previous-page:
+      name: "&7Pág. anterior &7(&b%previouspage%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - ""
+        - " &7Ir para &fpágina anterior"
+        - ""
+
+    next-page:
+      name: "&7Próx. página &7(&b%page%&7/&b%maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - ""
+        - " &7Ir para &fpróxima página"
+        - ""

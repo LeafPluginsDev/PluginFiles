@@ -1,0 +1,72 @@
+# Agradecemos por escolher o LeafCrates ♥
+# Desejamos que tudo ocorra da melhor forma para você,
+# e que seus esforços sejam recompensados!
+
+# Seção de configuração do banco de dados individual
+database:
+  # Tipos disponíveis:
+  # ==> SQLite
+  # ==> MySQL
+  type: SQLite
+
+  # Caso esteja 'true', não usará o banco de dados global do LeafPlugins (NÃO ATIVE SEM TER CERTEZA)
+  # Caso não saiba, você pode configurar todos os banco de dados dos plugins Leaf através do LeafPlugins
+  enable: false
+
+  # Configurações para o banco de dados MySQL
+  mysql:
+    host: 'localhost'
+    user: 'root'
+    password: ''
+    port: 3306
+    database: 'leaf'
+
+  # Configurações de pool da conexão MYSQL (AVANÇADO)
+  pool-settings:
+    enable: true
+    max-pool-size: 30
+    min-idle: 10
+    max-lifetime: 1800000 # 30 minutos
+    connection-timeout: 5000 # 5 segundos
+
+# Ativar/desativar modo de depuração
+# Quando ativado, o plugin registrará informações detalhadas de depuração
+# Útil para diagnóstico de problemas
+debug-mode: false
+
+# Configurações gerais de caixa
+crates:
+  # Altura do item que será exibido na animação da caixa
+  item-height: 0.3
+
+  # [Premium] Permitirá que qualquer bloco seja uma caixa
+  any-block:
+    enable: true
+    blacklist:
+      - BARRIER
+      - BEDROCK
+
+options:
+  # Usará o sistema de chaves para abrir caixas
+  use-keys: true
+
+  # Anunciará prêmios com broadcast
+  # ==> 'true' Anunciará para todos os jogadores do servidor
+  # ==> 'false' Anunciará apenas para jogadores no mesmo mundo
+  broadcast-all: false
+
+  # Quantidade máxima de caixas que podem ser abertas ao mesmo tempo por um jogador
+  max-opening-boxes: 1
+
+  # [Premium] Fará com que as animações sejam individuais para cada jogador
+  individual-opening: true
+
+  # [Premium] Permitir que caixas sejam abertas instantaneamente (sem animação)
+  allow-open-instantly: true
+
+  # Desativa as animações gerais e entrega o prêmio diretamente
+  disable-animations: false
+
+  # Quando ativado, o jogador escolhe o prêmio antes de abrir a caixa
+  # e precisa confirmar a escolha. Assim não há sorteio aleatório.
+  choose-prize-before-opening: false

@@ -35,17 +35,12 @@ database:
 debug-mode: false
 
 # Ativará o filtro Log4j para desativar logs de desconnects (Necessário reiniciar)
-log-filter: true
+log-filter: false
 
-# Ative esse modo caso o servidor seja o servidor de bans
-# Isso desabilitará todas as interações do servidor
-ban-server: false
-
-# Ative nos Spigots atras do Velocity/Bungee para cancelar localmente
-# o chat de jogadores silenciados em options.server ou Global.
-# Nao envia aviso; apenas impede que plugins do Spigot processem o chat.
-# (Tentativa de solução para alguns casos, apenas ative se souber o que está fazendo)
-proxy-mute-chat-cancel: false
+# Caso você coloque o LeafPunish nos Spigots para ter os menus, ative esta opção
+# para que ele não registre comandos que conflitem e outros ajustes automáticos
+# (Necessário reiniciar)
+spigot-backend: false
 
 # Lista de nicknames que não poderão ser punidos
 blocked-nicks:
@@ -83,6 +78,26 @@ allowed-servers:
   - "HungerGames"
   - "SkyWars"
 
+ban-redirect:
+  # Fará que os jogadores que estiverem banidos de forma GLOBAL
+  # sejam redirecionados para o servidor selecionado
+  # ao em vez de serem desconectados ao entrar
+  enable: false
+
+  # Servidor padrão do BungeeCord (O jogador será redirecionado caso seja desbanido)
+  defaultServer: "Lobby"
+
+  # ID do servidor BungeeCord
+  serverName: "bans"
+
+  # Comandos permitidos no servidor de bans
+  allowed-commands:
+    - "/login"
+    - "/logar"
+    - "/autenticar"
+    - "/site"
+    - "/discord"
+
 punishment:
   # Caso a punição seja Global, esta será a mensagem
   global: "Todos"
@@ -107,9 +122,6 @@ options:
 
   # Usará os anúncios de punições
   broadcasts: true
-
-  # Quando o jogador for desconectado, será expulso do Proxy
-  disconnect-proxy: false
 
   # Notificar o jogador quando entrar caso esteja punido
   # Exemplo: Silenciamentos
@@ -151,14 +163,11 @@ options:
 
 # Opções do comando punir
 punish:
-  # Abrirá o menu [Premium]
-  open-menu: true
-
   # Mensagem em cima da lista
   reasons-list-top: "§eTipos de infrações disponíveis"
 
   # Mensagem em baixo da lista
-  reasons-list-footer: "&eClique no motivo desejado"
+  reasons-list-footer: ""
 
   # Formato do motivo na lista
   reason-format: "&b* &f%reason%"
@@ -166,7 +175,6 @@ punish:
 # [Premium]
 warn:
   # Máximo de alertas até o jogador ser punido pelo motivo do aviso
-  # Deixe 0 para desativar esta função
   max-warns: 3
 
   # Duração para que a warn seja expirada
@@ -193,12 +201,8 @@ broadcasts:
   # Útil para evitar anúncios globais em toda a rede
   announce-only-local: false
 
-  # [Premium]
   status:
     enable: true
-
-    # Som que irá tocar quando o anúncio for feito (Deixe vazio para desativar)
-    sound: WOOD_CLICK
 
     # Tempo em minutos para que o status seja anunciado
     delay: 30
@@ -244,6 +248,3 @@ broadcasts:
 
     # Permissão necessária para receber estes anúncios
     permission: ""
-
-    # Som que irá tocar quando algum dos anúncios for feito (Deixe vazio para desativar)
-    sound: WOOD_CLICK

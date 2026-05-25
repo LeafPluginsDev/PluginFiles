@@ -1,0 +1,26 @@
+options:
+  # Tempo em segundos que a ActionBar permanecerá
+  delay: 2
+
+  # Distância de blocos entre os jogadores
+  blocks-range: 5
+
+# Lista de mundos que aparecerão as stats
+# Caso deixe vazia, mostrará em todos
+allowed-worlds: []
+
+message: "&eJogador &f{display} &7{clan}"
+
+hooks:
+  player:
+    label: '{player}'
+    return: '%player_name%'
+  displayName:
+    label: '{display}'
+    return: '%player_displayname%'
+  currentTag:
+    label: '{currentTag}'
+    return: '%leaftags_tag_preset%'
+  clan:
+    label: '{clan}'
+    return: '<when="empty">%simpleclans_clan_color_tag%</when="&cSem clan">'

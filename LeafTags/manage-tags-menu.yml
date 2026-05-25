@@ -1,0 +1,356 @@
+main-menu:
+  title: "&bGerenciar Tags"
+  slots: 54
+
+  list:
+    slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+    format:
+      name: "&b%tag_id% &7(%tag_type%)"
+      item: "%tag_icon%"
+      lore:
+        - ""
+        - "&fNome: &b%tag_name%"
+        - "&fArquivo: &7%tag_file%"
+        - "&fCategoria: &7%tag_category%"
+        - "&fPermissão: &7%tag_permission%"
+        - ""
+        - "&eClique para editar"
+
+  items:
+    info:
+      name: "&bTags do servidor"
+      item: "name_tag"
+      slot: 4
+      lore:
+        - "&fVersão: &b%tags_version%"
+        - "&fTotal: &b%tags_total%"
+
+    create-normal:
+      name: "&aCriar tag normal"
+      item: "emerald"
+      slot: 47
+      lore:
+        - "&7Cria uma tag no arquivo configurado."
+
+    create-animated:
+      name: "&dCriar tag animada"
+      item: "nether_star"
+      slot: 48
+      lore:
+        - "&7Disponível apenas no Premium."
+        - "&7Cria a tag em animated.yml."
+
+    save:
+      name: "&aSalvar alterações"
+      item: "ink_sack:10"
+      slot: 49
+      lore:
+        - "&7Grava os arquivos e recarrega"
+        - "&7as tags em seguida."
+
+    reload:
+      name: "&eRecarregar arquivos"
+      item: "watch"
+      slot: 50
+      lore:
+        - "&7Descarta alterações não salvas"
+        - "&7e lê os arquivos novamente."
+
+    previous-page:
+      name: "&7Pág. anterior &7(&b%tags_previouspage%&7/&b%tags_maxpages%&7)"
+      item: "arrow"
+      slot: 45
+      lore:
+        - "&7Ir para a página anterior."
+
+    next-page:
+      name: "&7Próx. página &7(&b%tags_nextpage%&7/&b%tags_maxpages%&7)"
+      item: "arrow"
+      slot: 53
+      lore:
+        - "&7Ir para a próxima página."
+
+edit-menu:
+  title: "&bEditar tag"
+  slots: 54
+
+  items:
+    tag-info:
+      name: "&b%tag_id% &7(%tag_type%)"
+      item: "name_tag"
+      slot: 4
+      lore:
+        - "&fArquivo: &7%tag_file%"
+        - "&fModo: &b%tag_version%"
+
+    id:
+      name: "&bId &7| &f%tag_value%"
+      item: "paper"
+      slot: 10
+      lore:
+        - "&7Renomeia a chave da tag."
+        - "&eClique para alterar."
+
+    name:
+      name: "&bNome &7| &f%tag_value%"
+      item: "name_tag"
+      slot: 11
+      lore:
+        - "&eClique para alterar."
+
+    color:
+      name: "&bCor &7| &f%tag_value%"
+      item: "ink_sack:4"
+      slot: 12
+      lore:
+        - "&eClique para alterar."
+
+    prefix:
+      name: "&bPrefixo &7| &f%tag_value%"
+      item: "sign"
+      slot: 13
+      lore:
+        - "&eClique para alterar."
+
+    suffix:
+      name: "&bSufixo &7| &f%tag_value%"
+      item: "sign"
+      slot: 14
+      lore:
+        - "&eClique para alterar."
+
+    preset:
+      name: "&bPreset &7| &f%tag_value%"
+      item: "book"
+      slot: 15
+      lore:
+        - "&eClique para alterar."
+
+    icon:
+      name: "&bÍcone"
+      item: "%tag_icon%"
+      slot: 16
+      lore:
+        - "&7Valor: &f%tag_value%"
+        - "&7Clique segurando um item no cursor"
+        - "&7para salvar o item em Base64."
+        - "&eClique sem item para digitar manualmente."
+
+    permission:
+      name: "&bPermissão &7| &f%tag_value%"
+      item: "tripwire_hook"
+      slot: 19
+      lore:
+        - "&eClique para alterar."
+
+    position:
+      name: "&bPosição &7| &f%tag_value%"
+      item: "redstone_comparator"
+      slot: 20
+      lore:
+        - "&eClique para alterar."
+
+    category:
+      name: "&bCategoria &7| &f%tag_value%"
+      item: "chest"
+      slot: 21
+      lore:
+        - "&7Use o id de categories.yml."
+        - "&eClique para alterar."
+
+    visible:
+      name: "&bVisível &7| &f%tag_value%"
+      item: "eye_of_ender"
+      slot: 22
+      lore:
+        - "&eClique para alternar."
+
+    custom-suffix:
+      name: "&bSufixo customizado &7| &f%tag_value%"
+      item: "book_and_quill"
+      slot: 23
+      lore:
+        - "&eClique para alternar."
+
+    purchase:
+      name: "&bPreço &7| &f%tag_value%"
+      item: "gold_ingot"
+      slot: 24
+      lore:
+        - "&7Use -1 para não vender."
+        - "&eClique para alterar."
+
+    obtainable:
+      name: "&bObtível &7| &f%tag_value%"
+      item: "map"
+      slot: 25
+      lore:
+        - "&eClique para alternar."
+
+    description:
+      name: "&bDescrição"
+      item: "book"
+      slot: 28
+      lore:
+        - "&7Valor: &f%tag_value%"
+        - "&7Separe linhas com |"
+        - "&eClique para alterar."
+
+    aliases:
+      name: "&bAliases"
+      item: "paper"
+      slot: 29
+      lore:
+        - "&7Valor: &f%tag_value%"
+        - "&7Separe aliases com |"
+        - "&eClique para alterar."
+
+    tablist-prefix:
+      name: "&bTab prefix &7| &f%tag_value%"
+      item: "skull_item:3"
+      slot: 30
+      lore:
+        - "&eClique para alterar."
+
+    tablist-suffix:
+      name: "&bTab suffix &7| &f%tag_value%"
+      item: "skull_item:3"
+      slot: 31
+      lore:
+        - "&eClique para alterar."
+
+    player-glow:
+      name: "&dBrilho &7| &f%tag_value%"
+      item: "glowstone_dust"
+      slot: 32
+      lore:
+        - "&7Disponível apenas no Premium."
+        - "&eClique para alternar."
+
+    glow-color:
+      name: "&dCor do brilho &7| &f%tag_value%"
+      item: "glowstone"
+      slot: 33
+      lore:
+        - "&7Disponível apenas no Premium."
+        - "&eClique para alterar."
+
+    self-prefix:
+      name: "&bSelf prefix &7| &f%tag_value%"
+      item: "armor_stand"
+      slot: 34
+      lore:
+        - "&eClique para alterar."
+
+    above-name:
+      name: "&dTexto acima &7| &f%tag_value%"
+      item: "feather"
+      slot: 37
+      lore:
+        - "&7Disponível apenas no Premium."
+        - "&eClique para alterar."
+
+    below-name:
+      name: "&dTexto abaixo &7| &f%tag_value%"
+      item: "string"
+      slot: 38
+      lore:
+        - "&7Disponível apenas no Premium."
+        - "&eClique para alterar."
+
+    animation-prefix:
+      name: "&dFrames do prefixo"
+      item: "watch"
+      slot: 37
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&7Separe frames com |"
+        - "&eClique para alterar."
+
+    animation-above-name:
+      name: "&dFrames do texto acima"
+      item: "watch"
+      slot: 38
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&7Separe frames com |"
+        - "&eClique para alterar."
+
+    animation-below-name:
+      name: "&dFrames do texto abaixo"
+      item: "watch"
+      slot: 39
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&7Separe frames com |"
+        - "&eClique para alterar."
+
+    animation-prefix-interval:
+      name: "&dIntervalo do prefixo &7| &f%tag_value%"
+      item: "redstone_comparator"
+      slot: 40
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alterar."
+
+    animation-above-interval:
+      name: "&dIntervalo acima &7| &f%tag_value%"
+      item: "redstone_comparator"
+      slot: 41
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alterar."
+
+    animation-below-interval:
+      name: "&dIntervalo abaixo &7| &f%tag_value%"
+      item: "redstone_comparator"
+      slot: 42
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alterar."
+
+    animation-tab-prefix:
+      name: "&dTab prefix animado &7| &f%tag_value%"
+      item: "skull_item:3"
+      slot: 43
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alterar."
+
+    animation-tab-suffix:
+      name: "&dTab suffix animado &7| &f%tag_value%"
+      item: "skull_item:3"
+      slot: 44
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alterar."
+
+    animation-tab-use-prefix:
+      name: "&dTab usa animação &7| &f%tag_value%"
+      item: "redstone_torch"
+      slot: 35
+      lore:
+        - "&7Apenas tags animadas Premium."
+        - "&eClique para alternar."
+
+    back:
+      name: "&7Voltar"
+      item: "arrow"
+      slot: 45
+      lore:
+        - "&7Voltar para a lista."
+
+    delete:
+      name: "&cApagar tag"
+      item: "barrier"
+      slot: 49
+      lore:
+        - "&7Remove a tag do arquivo."
+        - "&cClique com cuidado."
+
+    save:
+      name: "&aSalvar alterações"
+      item: "ink_sack:10"
+      slot: 53
+      lore:
+        - "&7Grava e recarrega as tags."

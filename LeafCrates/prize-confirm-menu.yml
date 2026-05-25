@@ -1,0 +1,34 @@
+main-menu:
+  title: "Confirmar prêmio"
+  slots: 27
+
+  items:
+    confirm:
+      name: "&aConfirmar"
+      item: "LIME_DYE"
+      slot: 11
+      lore:
+        - ""
+        - " &7Abrir a caixa e receber:"
+        - " &f%prize_name%"
+        - ""
+
+    prize:
+      append-prize-lore: true
+      name: "%prize_name%"
+      item: "%prize_icon%"
+      slot: 13
+      lore:
+        - ""
+        - " &fRaridade: &a%rarity_displayname%"
+        - " &fProbabilidade configurada: &b%prize_chance%%"
+        - ""
+
+    return:
+      name: "&cVoltar"
+      item: "RED_DYE"
+      slot: 15
+      lore:
+        - ""
+        - " &7Escolher outro prêmio"
+        - ""

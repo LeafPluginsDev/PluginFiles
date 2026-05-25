@@ -1,0 +1,19 @@
+command-usage:
+  - ""
+  - "&a/%label% list &8- &7Lista de scoreboards e tablists"
+  - "&a/%label% reset &8- &7Parar de experimentar"
+  - "&a/%label% scoreboard [id] &8- &7Experimentar uma scoreboard"
+  - "&a/%label% tablist [id] &8- &7Experimentar uma tablist"
+  - ""
+
+command-list:
+  - "&7Scoreboards disponíveis: &a%scoreboards%"
+  - "&7Tablists disponíveis: &a%tablists%"
+
+command-reset: "&aScoreboard e Tablist redefinida."
+scoreboard-change: "&aScoreboard alterada para &f%scoreboard%&a!"
+scoreboard-not-found: "&cScoreboard não encontrada ou não possui permissão."
+scoreboard-enable: "&e&lWARNING: &eSua scoreboard foi ativada! Você pode desativar a qualquer momento."
+scoreboard-disable: "&e&lWARNING: &eSua scoreboard foi desativada! Você pode reativar a qualquer momento."
+tablist-change: "&aTablist alterada para &f%tablist%&a!"
+tablist-not-found: "&cTablist não encontrada ou não possui permissão."
